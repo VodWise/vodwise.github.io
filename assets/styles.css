@@ -28,7 +28,7 @@ img,svg{max-width:100%;display:block}
 @media (max-width:520px){.menu .btn-sm{display:none}}
 
 /* Botones */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:12px;font-weight:650;font-size:15.5px;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s}
+.btn{font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px;height:46px;padding:0 22px;border-radius:12px;font-weight:650;font-size:15.5px;border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .15s}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
 .btn-primary{background:var(--grad);color:#0b0f17;box-shadow:0 8px 28px -10px rgba(62,230,200,.55)}
 .btn-ghost{border-color:var(--line);color:var(--text);background:rgba(255,255,255,.02)}
@@ -159,3 +159,20 @@ footer.site .legal{margin-top:22px;font-size:13px;line-height:1.6}
 .guides a{display:block;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;color:var(--text);font-weight:650}
 .guides a small{display:block;color:var(--muted);font-weight:400;margin-top:4px}
 .guides a:hover{text-decoration:none;border-color:rgba(62,230,200,.5)}
+
+/* Lista de acceso anticipado */
+.waitlist{max-width:520px;margin:0 auto;text-align:left}
+.wl-row{display:flex;gap:10px}
+.wl-row input{flex:1;min-width:0;height:46px;border-radius:12px;border:1px solid var(--line);background:var(--bg2);color:var(--text);padding:0 16px;font:inherit;font-size:16px}
+.wl-row input:focus{outline:2px solid var(--a1);outline-offset:1px;border-color:transparent}
+.wl-consent{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-size:14px;color:var(--muted);line-height:1.5;cursor:pointer}
+.wl-consent input{margin-top:3px;accent-color:var(--a1);flex:0 0 auto}
+.wl-hp{position:absolute;left:-5000px;width:1px;height:1px;opacity:0}
+.wl-msg{min-height:1.5em;margin:12px 0 0;font-size:15px;color:var(--soft)}
+.wl-msg.ok{color:var(--a1);font-weight:650}
+.wl-msg.err{color:#ff8a8a}
+.waitlist.done .wl-row,.waitlist.done .wl-consent{display:none}
+.cta-final .wl-alt{font-size:14px;color:var(--muted);margin:18px 0 0;text-align:center}
+.cta-final .wl-msg{font-size:15px;margin:12px 0 0;max-width:none}
+@media (max-width:520px){.wl-row{flex-direction:column}.wl-row input{flex:none;width:100%}.wl-row .btn{width:100%}}
+.waitlist.done .wl-msg{text-align:center;font-size:17px}

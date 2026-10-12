@@ -181,7 +181,7 @@
       <details><summary>Does it publish anything without me seeing it?</summary><p>No. Vodwise prepares the videos and the copy, and you decide what gets published. Actions during the stream, such as changing the title or moderating, also wait for your confirmation.</p></details>
       <details><summary>How long does it take to edit a stream?</summary><p>It depends on the stream length and your hardware. Since it works after you finish streaming, it is usually ready the next day.</p></details>
       <details><summary>How much does it cost?</summary><p>Vodwise is in development and has no price yet. If you join early access, you will be the first to know.</p></details>
-      <details><summary>Can I use it now?</summary><p>It is currently in private development. Write to us to join the early access list.</p></details>
+      <details><summary>Can I use it now?</summary><p>It is currently in private development. <a href="#early-access">Join the early access list</a> and we will let you know when spots open.</p></details>
     </div>
   </div>
 </section>
@@ -190,8 +190,18 @@
   <div class="wrap">
     <div class="box">
       <h2>Join early access</h2>
-      <p>Vodwise is in private development. Write to us and we will let you know when the first spots open.</p>
-      <a class="btn btn-primary" href="mailto:soporte@vodwise.com?subject=Vodwise%20early%20access">Write to soporte@vodwise.com</a>
+      <p>Vodwise is in private development. Leave your email and we will let you know when the first spots open.</p>
+      <form class="waitlist" id="waitlist" action="https://b66e339b.sibforms.com/serve/MUIFAOWdr-9OKKLn5rO713mSKUxn0snLRlIuHkZA_ng_0GzOEXy6z0Aa9nJC7H29FY2TIuIcZuEZH-xS-gVWRbg4DdQUGRnmLFYLPce0Ot4BknlyhStb42ryQ6h0BHH7Vq2-XmkvDRmne6jR8wj3nn660p2Si0frxNn8kAVgjxraXUiBpWdhdaWNJCL9sKrt-s74fn2dSCJ19aSnAA==" method="post" data-sending="Sending…" data-ok="Done! We will let you know as soon as spots open." data-err="It could not be sent. Try again or write to soporte@vodwise.com.">
+        <div class="wl-row">
+          <input type="email" id="wl-email" name="EMAIL" required autocomplete="email" placeholder="you@email.com" aria-label="Your email address">
+          <button class="btn btn-primary" type="submit">Join the list</button>
+        </div>
+        <label class="wl-consent"><input type="checkbox" name="OPT_IN" value="1" required><span>I agree to receive emails from Vodwise about early access and product news. I can unsubscribe at any time. More in the <a href="../privacidad.html#lista">privacy policy</a>.</span></label>
+        <input type="text" name="email_address_check" value="" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="en">
+        <p class="wl-msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="wl-alt">Prefer to write? <a href="mailto:soporte@vodwise.com?subject=Vodwise%20early%20access">soporte@vodwise.com</a></p>
     </div>
   </div>
 </section>
@@ -207,5 +217,6 @@
     <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram and X are trademarks of their respective owners; Vodwise is not affiliated with them.<br>© 2026 Vodwise.</p>
   </div>
 </footer>
+<script src="../assets/waitlist.js" defer></script>
 </body>
 </html>

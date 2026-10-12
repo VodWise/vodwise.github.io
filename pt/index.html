@@ -181,7 +181,7 @@
       <details><summary>Ele publica algo sem eu ver?</summary><p>Não. O Vodwise prepara os vídeos e os textos, e você decide o que é publicado. As ações durante a live, como mudar o título ou moderar, também esperam a sua confirmação.</p></details>
       <details><summary>Quanto tempo leva para editar uma live?</summary><p>Depende da duração da live e do seu hardware. Como trabalha depois que você termina, normalmente fica pronto no dia seguinte.</p></details>
       <details><summary>Quanto custa?</summary><p>O Vodwise está em desenvolvimento e ainda não tem preço. Se você entrar no acesso antecipado, vai ser dos primeiros a saber.</p></details>
-      <details><summary>Já posso usar?</summary><p>Por enquanto está em desenvolvimento privado. Escreva para nós para entrar na lista de acesso antecipado.</p></details>
+      <details><summary>Já posso usar?</summary><p>Por enquanto está em desenvolvimento privado. <a href="#acesso-antecipado">Entre na lista de acesso antecipado</a> e avisamos quando abrirem vagas.</p></details>
     </div>
   </div>
 </section>
@@ -190,8 +190,18 @@
   <div class="wrap">
     <div class="box">
       <h2>Entre no acesso antecipado</h2>
-      <p>O Vodwise está em desenvolvimento privado. Escreva para nós e avisamos quando abrirem as primeiras vagas.</p>
-      <a class="btn btn-primary" href="mailto:soporte@vodwise.com?subject=Vodwise%20acesso%20antecipado">Escrever para soporte@vodwise.com</a>
+      <p>O Vodwise está em desenvolvimento privado. Deixe seu e-mail e avisamos quando abrirem as primeiras vagas.</p>
+      <form class="waitlist" id="waitlist" action="https://b66e339b.sibforms.com/serve/MUIFAOWdr-9OKKLn5rO713mSKUxn0snLRlIuHkZA_ng_0GzOEXy6z0Aa9nJC7H29FY2TIuIcZuEZH-xS-gVWRbg4DdQUGRnmLFYLPce0Ot4BknlyhStb42ryQ6h0BHH7Vq2-XmkvDRmne6jR8wj3nn660p2Si0frxNn8kAVgjxraXUiBpWdhdaWNJCL9sKrt-s74fn2dSCJ19aSnAA==" method="post" data-sending="Enviando…" data-ok="Pronto! Avisaremos assim que houver vagas." data-err="Não foi possível enviar. Tente de novo ou escreva para soporte@vodwise.com.">
+        <div class="wl-row">
+          <input type="email" id="wl-email" name="EMAIL" required autocomplete="email" placeholder="voce@email.com" aria-label="Seu e-mail">
+          <button class="btn btn-primary" type="submit">Quero entrar</button>
+        </div>
+        <label class="wl-consent"><input type="checkbox" name="OPT_IN" value="1" required><span>Aceito receber e-mails do Vodwise sobre o acesso antecipado e novidades. Posso cancelar quando quiser. Mais informações na <a href="../privacidad.html#lista">política de privacidade</a>.</span></label>
+        <input type="text" name="email_address_check" value="" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <input type="hidden" name="locale" value="pt">
+        <p class="wl-msg" role="status" aria-live="polite"></p>
+      </form>
+      <p class="wl-alt">Prefere escrever? <a href="mailto:soporte@vodwise.com?subject=Vodwise%20acesso%20antecipado">soporte@vodwise.com</a></p>
     </div>
   </div>
 </section>
@@ -207,5 +217,6 @@
     <p class="legal">O Vodwise usa os <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Serviços de API do YouTube</a>: <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> · <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. Twitch, Kick, YouTube, TikTok, Instagram e X são marcas de seus respectivos donos; o Vodwise não é afiliado a elas.<br>© 2026 Vodwise.</p>
   </div>
 </footer>
+<script src="../assets/waitlist.js" defer></script>
 </body>
 </html>
