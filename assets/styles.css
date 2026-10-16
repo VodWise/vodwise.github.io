@@ -187,4 +187,5 @@ h1.page-h1{font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.02
 .calc{margin-top:30px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px 22px}.calc h3{margin:0 0 12px}
 .calc-row{display:flex;flex-wrap:wrap;gap:14px}.calc-row label{display:flex;flex-direction:column;gap:6px;color:var(--soft);font-size:14px}
 .calc-row input{width:150px;max-width:100%;background:#0b0f17;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit}
-.calc-out{margin:14px 0 4px;font-size:17px;color:var(--soft)}.calc-out strong{color:var(--a1)}
+.calc-out{margin:14px 0 4px;font-size:17px;color:var(--soft)}
+.calc-total{font-size:14px;color:var(--muted)}.calc-warn{display:inline-block;margin:6px 0 2px;font-size:14px;color:#ffb86b}.calc-out strong{color:var(--a1)}
