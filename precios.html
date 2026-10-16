@@ -140,25 +140,25 @@
   <div class="wrap">
     <p class="eyebrow">Precios</p>
     <h1 class="page-h1">Precios de Vodwise: paga según cuántos directos haces</h1>
-    <p class="intro"><strong>Durante la beta cerrada, Vodwise es gratis</strong> para los probadores invitados. Estos son los precios previstos para el lanzamiento, que empezará con <strong>14 días gratis</strong> (500 créditos, sin tarjeta). Después, eliges el plan que encaje con tu ritmo. Cada directo de 4 horas gasta unos 240 créditos en el modo Equilibrado: con el directo editado, los Shorts, las miniaturas y la asistente durante el directo.</p>
+    <p class="intro"><strong>Durante la beta cerrada, Vodwise es gratis</strong> para los probadores invitados. Estos son los precios previstos para el lanzamiento, que empezará con <strong>14 días gratis</strong> (500 créditos, sin tarjeta). Después, eliges el plan que encaje con tu ritmo. Cada directo de 4 horas gasta unos 360 créditos en el modo Equilibrado: con el directo editado, los Shorts, las miniaturas y la asistente durante el directo.</p>
     <div class="plans">
       <div class="plan"><h3>Básico</h3><div class="price">14,99 € <small>/ mes</small></div>
-        <ul><li>1.800 créditos al mes</li><li>≈ 7 directos de 4 h al mes</li><li>Todas las funciones</li></ul></div>
+        <ul><li>1.800 créditos al mes</li><li>≈ 5 directos de 4 h al mes</li><li>Todas las funciones</li></ul></div>
       <div class="plan best"><span class="tag">Recomendado</span><h3>Creador</h3><div class="price">29,99 € <small>/ mes</small></div>
-        <ul><li>3.600 créditos al mes</li><li>≈ 15 directos de 4 h al mes</li><li>Todas las funciones</li></ul></div>
+        <ul><li>3.600 créditos al mes</li><li>≈ 10 directos de 4 h al mes</li><li>Todas las funciones</li></ul></div>
       <div class="plan"><h3>Pro</h3><div class="price">59,99 € <small>/ mes</small></div>
-        <ul><li>7.200 créditos al mes</li><li>≈ 30 directos de 4 h al mes</li><li>Lo que no gastes se guarda hasta 2 meses</li></ul></div>
+        <ul><li>7.200 créditos al mes</li><li>≈ 20 directos de 4 h al mes</li><li>Lo que no gastes se guarda hasta 2 meses</li></ul></div>
       <div class="plan"><span class="tag">Exclusivo</span><h3>Élite</h3><div class="price">159,99 € <small>/ mes</small></div>
-        <ul><li>20.000 créditos al mes</li><li>≈ 83 directos de 4 h al mes</li><li>Lo que no gastes se guarda hasta 3 meses</li><li>Soporte prioritario</li></ul></div>
+        <ul><li>20.000 créditos al mes</li><li>≈ 55 directos de 4 h al mes</li><li>Lo que no gastes se guarda hasta 3 meses</li><li>Soporte prioritario</li></ul></div>
     </div>
     <p class="fine">Precios con IVA incluido. Cancela cuando quieras: sigues hasta el final del mes pagado. Los cálculos de directos son aproximados, en modo Equilibrado (en Ahorro rinden más) y dependen de lo que actives; la app te dice siempre cuántos te quedan.</p>
     <div class="calc" id="calculadora">
       <h3>¿Qué plan te encaja?</h3>
       <div class="calc-row"><label>Horas por directo<input type="number" id="calc-h" min="0.5" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Directos al mes<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
       <p class="calc-out" id="calc-out" aria-live="polite"></p>
-      <p class="fine">Cálculo aproximado en modo Equilibrado: unos 60 créditos por hora de directo con la edición incluida (240 por un directo de 4 h). Medido en directos reales; usando mucho la IA en directo puede subir algo.</p>
+      <p class="fine">Cálculo aproximado en modo Equilibrado: unos 90 créditos por hora de directo con la edición incluida (360 por un directo de 4 h). Es un cálculo prudente: en los directos reales que hemos medido se gasta bastante menos.</p>
     </div>
-    <script>(()=>{const P=[["Básico", 1800], ["Creador", 3600], ["Pro", 7200], ["Élite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>{try{return new Intl.NumberFormat('es-ES',{useGrouping:'always',maximumFractionDigits:1}).format(x);}catch{return x.toLocaleString('es-ES');}},need="Unos {c} créditos al mes",plan="plan {p} ({k} créditos)",over="plan Élite y alguna recarga";const total="{t} h de directo al mes",cap="Las horas son por cada directo (24 como mucho). Si son {r} h al mes en {n} directos, pon {s} h por directo.";const r=()=>{const raw=Math.max(0,parseFloat(h.value)||0),H=Math.min(24,raw),N=Math.min(62,Math.max(0,parseInt(n.value)||0)),T=Math.round(H*N*10)/10,C=Math.ceil(H*60*N),p=P.find(x=>x[1]>=C);if(raw>24){o.innerHTML='<span class="calc-warn">'+cap.replace('{r}',f(raw)).replace('{n}',f(N||1)).replace('{s}',f(Math.round(raw/(N||1)*10)/10))+'</span>';return;}o.innerHTML='<span class="calc-total">'+total.replace('{t}','<b>'+f(T)+'</b>')+'</span><br>'+need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
+    <script>(()=>{const P=[["Básico", 1800], ["Creador", 3600], ["Pro", 7200], ["Élite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>{try{return new Intl.NumberFormat('es-ES',{useGrouping:'always',maximumFractionDigits:1}).format(x);}catch{return x.toLocaleString('es-ES');}},need="Unos {c} créditos al mes",plan="plan {p} ({k} créditos)",over="plan Élite y alguna recarga";const total="{t} h de directo al mes",cap="Las horas son por cada directo (24 como mucho). Si son {r} h al mes en {n} directos, pon {s} h por directo.";const r=()=>{const raw=Math.max(0,parseFloat(h.value)||0),H=Math.min(24,raw),N=Math.min(62,Math.max(0,parseInt(n.value)||0)),T=Math.round(H*N*10)/10,C=Math.ceil(H*90*N),p=P.find(x=>x[1]>=C);if(raw>24){o.innerHTML='<span class="calc-warn">'+cap.replace('{r}',f(raw)).replace('{n}',f(N||1)).replace('{s}',f(Math.round(raw/(N||1)*10)/10))+'</span>';return;}o.innerHTML='<span class="calc-total">'+total.replace('{t}','<b>'+f(T)+'</b>')+'</span><br>'+need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
 
     <h3 style="margin-top:36px">¿Te quedas sin créditos? Recarga</h3>
     <p class="req">Los créditos de las recargas <strong>no caducan nunca</strong> y se usan después de los de tu plan.</p>

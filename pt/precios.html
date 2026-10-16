@@ -140,25 +140,25 @@
   <div class="wrap">
     <p class="eyebrow">Preços</p>
     <h1 class="page-h1">Preços do Vodwise: pague conforme quantas lives você faz</h1>
-    <p class="intro"><strong>Durante o beta fechado, o Vodwise é grátis</strong> para os testadores convidados. Estes são os preços previstos para o lançamento, que começará com <strong>14 dias grátis</strong> (500 créditos, sem cartão). Depois, você escolhe o plano que combina com o seu ritmo. Cada live de 4 horas gasta uns 240 créditos no modo Equilibrado: com a live editada, os Shorts, as miniaturas e a assistente durante a live.</p>
+    <p class="intro"><strong>Durante o beta fechado, o Vodwise é grátis</strong> para os testadores convidados. Estes são os preços previstos para o lançamento, que começará com <strong>14 dias grátis</strong> (500 créditos, sem cartão). Depois, você escolhe o plano que combina com o seu ritmo. Cada live de 4 horas gasta uns 360 créditos no modo Equilibrado: com a live editada, os Shorts, as miniaturas e a assistente durante a live.</p>
     <div class="plans">
       <div class="plan"><h3>Básico</h3><div class="price">€ 14,99 <small>/ mês</small></div>
-        <ul><li>1.800 créditos por mês</li><li>≈ 7 lives de 4 h por mês</li><li>Todas as funções</li></ul></div>
+        <ul><li>1.800 créditos por mês</li><li>≈ 5 lives de 4 h por mês</li><li>Todas as funções</li></ul></div>
       <div class="plan best"><span class="tag">Recomendado</span><h3>Criador</h3><div class="price">€ 29,99 <small>/ mês</small></div>
-        <ul><li>3.600 créditos por mês</li><li>≈ 15 lives de 4 h por mês</li><li>Todas as funções</li></ul></div>
+        <ul><li>3.600 créditos por mês</li><li>≈ 10 lives de 4 h por mês</li><li>Todas as funções</li></ul></div>
       <div class="plan"><h3>Pro</h3><div class="price">€ 59,99 <small>/ mês</small></div>
-        <ul><li>7.200 créditos por mês</li><li>≈ 30 lives de 4 h por mês</li><li>O que você não gastar fica guardado até 2 meses</li></ul></div>
+        <ul><li>7.200 créditos por mês</li><li>≈ 20 lives de 4 h por mês</li><li>O que você não gastar fica guardado até 2 meses</li></ul></div>
       <div class="plan"><span class="tag">Exclusivo</span><h3>Elite</h3><div class="price">€ 159,99 <small>/ mês</small></div>
-        <ul><li>20.000 créditos por mês</li><li>≈ 83 lives de 4 h por mês</li><li>O que você não gastar fica guardado até 3 meses</li><li>Suporte prioritário</li></ul></div>
+        <ul><li>20.000 créditos por mês</li><li>≈ 55 lives de 4 h por mês</li><li>O que você não gastar fica guardado até 3 meses</li><li>Suporte prioritário</li></ul></div>
     </div>
     <p class="fine">Preços com impostos incluídos. Cancele quando quiser: você continua até o fim do mês pago. Os cálculos de lives são aproximados, no modo Equilibrado (no Economia rendem mais) e dependem do que você ativar; o app sempre mostra quantas ainda restam.</p>
     <div class="calc" id="calculadora">
       <h3>Qual plano combina com você?</h3>
       <div class="calc-row"><label>Horas por live<input type="number" id="calc-h" min="0.5" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Lives por mês<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
       <p class="calc-out" id="calc-out" aria-live="polite"></p>
-      <p class="fine">Cálculo aproximado no modo Equilibrado: cerca de 60 créditos por hora de live com a edição incluída (240 por uma live de 4 h). Medido em lives reais; usando muito a IA durante a live pode subir um pouco.</p>
+      <p class="fine">Cálculo aproximado no modo Equilibrado: cerca de 90 créditos por hora de live com a edição incluída (360 por uma live de 4 h). É um cálculo prudente: nas lives reais que medimos o gasto é bem menor.</p>
     </div>
-    <script>(()=>{const P=[["Básico", 1800], ["Criador", 3600], ["Pro", 7200], ["Elite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>{try{return new Intl.NumberFormat('pt-BR',{useGrouping:'always',maximumFractionDigits:1}).format(x);}catch{return x.toLocaleString('pt-BR');}},need="Cerca de {c} créditos por mês",plan="plano {p} ({k} créditos)",over="plano Elite e alguma recarga";const total="{t} h de live por mês",cap="As horas são por live (no máximo 24). Se são {r} h por mês em {n} lives, coloque {s} h por live.";const r=()=>{const raw=Math.max(0,parseFloat(h.value)||0),H=Math.min(24,raw),N=Math.min(62,Math.max(0,parseInt(n.value)||0)),T=Math.round(H*N*10)/10,C=Math.ceil(H*60*N),p=P.find(x=>x[1]>=C);if(raw>24){o.innerHTML='<span class="calc-warn">'+cap.replace('{r}',f(raw)).replace('{n}',f(N||1)).replace('{s}',f(Math.round(raw/(N||1)*10)/10))+'</span>';return;}o.innerHTML='<span class="calc-total">'+total.replace('{t}','<b>'+f(T)+'</b>')+'</span><br>'+need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
+    <script>(()=>{const P=[["Básico", 1800], ["Criador", 3600], ["Pro", 7200], ["Elite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>{try{return new Intl.NumberFormat('pt-BR',{useGrouping:'always',maximumFractionDigits:1}).format(x);}catch{return x.toLocaleString('pt-BR');}},need="Cerca de {c} créditos por mês",plan="plano {p} ({k} créditos)",over="plano Elite e alguma recarga";const total="{t} h de live por mês",cap="As horas são por live (no máximo 24). Se são {r} h por mês em {n} lives, coloque {s} h por live.";const r=()=>{const raw=Math.max(0,parseFloat(h.value)||0),H=Math.min(24,raw),N=Math.min(62,Math.max(0,parseInt(n.value)||0)),T=Math.round(H*N*10)/10,C=Math.ceil(H*90*N),p=P.find(x=>x[1]>=C);if(raw>24){o.innerHTML='<span class="calc-warn">'+cap.replace('{r}',f(raw)).replace('{n}',f(N||1)).replace('{s}',f(Math.round(raw/(N||1)*10)/10))+'</span>';return;}o.innerHTML='<span class="calc-total">'+total.replace('{t}','<b>'+f(T)+'</b>')+'</span><br>'+need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
 
     <h3 style="margin-top:36px">Ficou sem créditos? Recarregue</h3>
     <p class="req">Os créditos das recargas <strong>nunca expiram</strong> e são usados depois dos do seu plano.</p>
