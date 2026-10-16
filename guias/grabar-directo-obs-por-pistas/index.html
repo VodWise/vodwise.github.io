@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo grabar el directo en OBS con el audio por pistas · Vodwise</title>
+<meta name="description" content="Cómo grabar tu directo en OBS con el micro, el juego, la música y Discord en pistas separadas: modo avanzado, MKV, propiedades avanzadas de audio y cómo comprobarlo.">
+<meta name="theme-color" content="#0b0f17">
+<link rel="canonical" href="https://vodwise.com/guias/grabar-directo-obs-por-pistas/">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta property="og:title" content="Cómo grabar el directo en OBS con el audio por pistas">
+<meta property="og:description" content="Micro, juego, música y Discord en pistas separadas: cómo configurarlo en OBS paso a paso.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vodwise.com/guias/grabar-directo-obs-por-pistas/">
+<meta property="og:image" content="https://vodwise.com/assets/og-es.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cómo grabar el directo en OBS con el audio por pistas",
+  "inLanguage": "es",
+  "datePublished": "2026-10-16",
+  "dateModified": "2026-10-16",
+  "mainEntityOfPage": "https://vodwise.com/guias/grabar-directo-obs-por-pistas/",
+  "image": "https://vodwise.com/assets/og-es.png",
+  "author": {"@type": "Organization", "name": "Vodwise", "url": "https://vodwise.com/"},
+  "publisher": {"@type": "Organization", "name": "Vodwise", "logo": {"@type": "ImageObject", "url": "https://vodwise.com/assets/apple-touch-icon.png"}}
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
+    <nav class="menu" aria-label="Principal">
+      <a class="hide-sm" href="../../#como-funciona">Cómo funciona</a>
+      <a class="hide-sm" href="../../#funciones">Funciones</a>
+      <a class="btn btn-primary btn-sm" href="../../#acceso">Acceso anticipado</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article">
+  <nav class="crumbs" aria-label="Ruta"><a href="../../">Vodwise</a> › Guías › Grabar el directo en OBS por pistas</nav>
+  <h1>Cómo grabar el directo en OBS con el audio por pistas</h1>
+  <p class="meta">Guía · actualizada el 16 de octubre de 2026</p>
+
+  <p class="lead">Grabar el directo en local con OBS mientras emites es lo mejor que puedes hacer por tu contenido: tienes el vídeo con más calidad que la emisión y no dependes de que la plataforma lo guarde. Y si además separas el audio por pistas (tu micro, el juego, la música, Discord), después podrás quitar la música con derechos, subir tu voz o arreglar un volumen sin tocar lo demás. Esta guía explica cómo configurarlo paso a paso.</p>
+
+  <div class="toc">
+    <strong>En esta guía</strong>
+    <ol>
+      <li><a href="#por-que">Por qué grabar por pistas</a></li>
+      <li><a href="#plan">Decide tus pistas</a></li>
+      <li><a href="#salida">Configura la grabación en OBS</a></li>
+      <li><a href="#asignar">Asigna cada fuente a su pista</a></li>
+      <li><a href="#emision">Que la emisión no cambie</a></li>
+      <li><a href="#comprobar">Comprueba que funciona</a></li>
+      <li><a href="#despues">Después: MKV, MP4 y edición</a></li>
+      <li><a href="#preguntas">Preguntas frecuentes</a></li>
+    </ol>
+  </div>
+
+  <h2 id="por-que">1. Por qué grabar por pistas</h2>
+  <ul>
+    <li><strong>Quitar la música con derechos</strong> antes de subir a YouTube o a TikTok, sin perder tu voz.</li>
+    <li><strong>Arreglar volúmenes:</strong> si el juego tapaba tu voz, lo bajas después.</li>
+    <li><strong>Limpiar tu micro</strong> sin afectar al juego.</li>
+    <li><strong>Silenciar una llamada</strong> de Discord o una alerta que no querías en el vídeo.</li>
+  </ul>
+
+  <h2 id="plan">2. Decide tus pistas</h2>
+  <p>OBS puede grabar hasta seis pistas de audio. Una distribución que funciona para la mayoría:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Pista</th><th>Qué lleva</th><th>Para qué</th></tr></thead>
+    <tbody>
+      <tr><th>1</th><td>Todo mezclado</td><td>Es lo que oye tu público; la que usan los reproductores</td></tr>
+      <tr><th>2</th><td>Tu micrófono</td><td>Subir, limpiar o cortar tu voz</td></tr>
+      <tr><th>3</th><td>El juego o el escritorio</td><td>Bajarlo si tapaba tu voz</td></tr>
+      <tr><th>4</th><td>Música</td><td>Quitarla antes de subir</td></tr>
+      <tr><th>5</th><td>Discord o llamadas</td><td>Silenciar a otros si hace falta</td></tr>
+      <tr><th>6</th><td>Alertas y sonidos</td><td>Quitarlas del vídeo editado</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Para separar la música del juego, la música tiene que entrar en OBS por su propia fuente (por ejemplo, una captura de audio de la aplicación de música) y no por el audio del escritorio.</p>
+
+  <h2 id="salida">3. Configura la grabación en OBS</h2>
+  <ol>
+    <li>Abre <strong>Ajustes › Salida</strong> y cambia el <strong>modo de salida a Avanzado</strong>. En el modo sencillo no puedes elegir pistas.</li>
+    <li>Ve a la pestaña <strong>Grabación</strong>.</li>
+    <li>Deja el <strong>tipo en Estándar</strong>. Con el tipo de salida personalizada (FFmpeg) solo se puede elegir una pista.</li>
+    <li>Elige el <strong>formato MKV</strong>. Si OBS o el PC se cierran de golpe, no pierdes la grabación.</li>
+    <li>Marca las <strong>pistas de audio</strong> que quieres grabar (por ejemplo, de la 1 a la 6).</li>
+    <li>En la pestaña <strong>Audio</strong>, revisa la calidad de cada pista.</li>
+  </ol>
+
+  <h2 id="asignar">4. Asigna cada fuente a su pista</h2>
+  <ol>
+    <li>En el mezclador de audio, abre el menú (los tres puntos o el engranaje) y entra en <strong>Propiedades avanzadas de audio</strong>. También está en <strong>Editar</strong>.</li>
+    <li>Verás una fila por fuente y una casilla por pista. Marca la <strong>pista 1 en todas</strong> las fuentes que deba oír tu público.</li>
+    <li>Marca además la pista propia de cada fuente: el micro en la 2, el juego en la 3, la música en la 4, etc.</li>
+    <li>Las fuentes que solo existen en una escena solo aparecen en esta ventana cuando esa escena está activa: revisa todas tus escenas.</li>
+  </ol>
+  <p>Un error habitual: tener el mismo dispositivo dos veces, como audio global en Ajustes › Audio y como fuente en una escena. Se duplica el sonido o una pista queda vacía. Usa solo una de las dos formas.</p>
+
+  <h2 id="emision">5. Que la emisión no cambie</h2>
+  <p>En <strong>Ajustes › Salida › Emisión</strong>, comprueba qué pista de audio se emite (normalmente la 1, la mezcla completa). Así tu público sigue oyendo todo igual que antes. Si emites en Twitch, OBS tiene además una opción para mandar una pista distinta a los directos guardados de Twitch, útil para que la música no quede en el directo guardado.</p>
+
+  <h2 id="comprobar">6. Comprueba que funciona</h2>
+  <ol>
+    <li>Graba un minuto hablando, con el juego y la música sonando.</li>
+    <li>Ábrelo en un editor que muestre varias pistas (la mayoría de editores de vídeo lo hacen). Muchos reproductores solo reproducen la primera pista, así que no te fíes de lo que oyes ahí.</li>
+    <li>Comprueba que cada pista tiene solo lo que debe.</li>
+  </ol>
+
+  <aside class="callout">
+    <p class="eyebrow">Lo que estamos haciendo</p>
+    <h3>Vodwise: tu grabación de OBS convertida en vídeos sin salir de tu PC</h3>
+    <p>Vodwise es una app para Windows que te acompaña durante el directo (chat de Twitch, Kick y YouTube juntos, bot, moderación, alertas, voz) y, al terminar, trabaja con tu grabación de OBS en tu propio PC: el vídeo completo con capítulos, «lo mejor del directo» y los Shorts con subtítulos. También te ayuda a dejar OBS bien configurado, en un perfil nuevo que no toca lo tuyo. Nada se publica sin tu aprobación.</p>
+    <p>Está en beta cerrada y viene una gran actualización en camino.</p>
+    <p><a class="btn btn-primary" href="../../#acceso">Pedir acceso anticipado</a></p>
+  </aside>
+
+  <h2 id="despues">7. Después: MKV, MP4 y edición</h2>
+  <ul>
+    <li><strong>Pasar a MP4:</strong> en OBS, <strong>Archivo › Remultiplexar grabaciones</strong>. Tarda poco, no pierde calidad y conserva las pistas.</li>
+    <li><strong>Para YouTube</strong>, exporta tu vídeo editado con las pistas que quieras mezcladas: por ejemplo, todo menos la música. Te explicamos el resto en <a href="../../subir-directo-twitch-a-youtube/">cómo subir un directo de Twitch a YouTube</a>.</li>
+    <li><strong>Para clips</strong>, trabajar con la grabación local te da mejor calidad que el clip de la plataforma: <a href="../../clips-automaticos-twitch/">clips automáticos de Twitch</a> y <a href="../../clips-automaticos-kick/">de Kick</a>.</li>
+    <li><strong>Espacio en disco:</strong> los directos largos ocupan mucho; deja una carpeta solo para grabaciones y vacíala de vez en cuando.</li>
+  </ul>
+
+  <h2 id="preguntas">8. Preguntas frecuentes</h2>
+  <div class="faq">
+    <details><summary>¿Cómo grabo el audio por pistas en OBS?</summary><p>Pon la salida en modo Avanzado, en la pestaña Grabación elige el tipo Estándar, el formato MKV y marca las pistas. Luego, en Propiedades avanzadas de audio, asigna cada fuente a su pista.</p></details>
+    <details><summary>Solo me sale una pista, ¿qué pasa?</summary><p>Lo más habitual es que el tipo de grabación esté en salida personalizada (FFmpeg). Cámbialo a Estándar. Revisa también que tu reproductor no esté reproduciendo solo la primera pista.</p></details>
+    <details><summary>¿Afecta a lo que oye mi público?</summary><p>No, si la emisión sigue usando la pista 1 con la mezcla completa.</p></details>
+    <details><summary>¿MKV o MP4?</summary><p>Graba en MKV, que no se pierde si algo se cierra de golpe, y pásalo a MP4 después con Remultiplexar grabaciones.</p></details>
+  </div>
+
+  <h2 id="sigue-leyendo">Sigue leyendo</h2>
+  <ul>
+    <li><a href="../../subir-directo-twitch-a-youtube/">Cómo subir un directo de Twitch a YouTube</a></li>
+    <li><a href="../../guias/emitir-en-twitch-kick-y-youtube-a-la-vez/">Cómo emitir en Twitch, Kick y YouTube a la vez</a></li>
+    <li><a href="../../clips-automaticos-twitch/">Clips automáticos de Twitch</a></li>
+    <li><a href="../../guias/directo-horizontal-a-vertical/">Cómo pasar tu directo de horizontal a vertical</a></li>
+  </ul>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Copiloto de directos y editor automático para streamers.</p></div>
+      <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Política de privacidad</a><br><a href="../../condiciones.html">Condiciones del servicio</a></div>
+      <div><strong style="color:var(--text)">Contacto</strong><br><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></div>
+    </div>
+    <p class="legal">Twitch, Kick, YouTube, TikTok, Instagram y X son marcas de sus respectivos propietarios; Vodwise no está afiliado a ellos.<br>© 2026 Vodwise.</p>
+  </div>
+</footer>
+</body>
+</html>

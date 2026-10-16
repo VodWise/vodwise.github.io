@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cómo emitir en Twitch, Kick y YouTube a la vez · Vodwise</title>
+<meta name="description" content="Cómo hacer multistream en Twitch, Kick y YouTube: qué permiten las normas, emitir desde OBS con varias salidas o con un servicio de reemisión, y cómo atender tres chats a la vez.">
+<meta name="theme-color" content="#0b0f17">
+<link rel="canonical" href="https://vodwise.com/guias/emitir-en-twitch-kick-y-youtube-a-la-vez/">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta property="og:title" content="Cómo emitir en Twitch, Kick y YouTube a la vez">
+<meta property="og:description" content="Normas, OBS con varias salidas o reemisión, y cómo atender tres chats a la vez.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vodwise.com/guias/emitir-en-twitch-kick-y-youtube-a-la-vez/">
+<meta property="og:image" content="https://vodwise.com/assets/og-es.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Cómo emitir en Twitch, Kick y YouTube a la vez",
+  "inLanguage": "es",
+  "datePublished": "2026-10-16",
+  "dateModified": "2026-10-16",
+  "mainEntityOfPage": "https://vodwise.com/guias/emitir-en-twitch-kick-y-youtube-a-la-vez/",
+  "image": "https://vodwise.com/assets/og-es.png",
+  "author": {"@type": "Organization", "name": "Vodwise", "url": "https://vodwise.com/"},
+  "publisher": {"@type": "Organization", "name": "Vodwise", "logo": {"@type": "ImageObject", "url": "https://vodwise.com/assets/apple-touch-icon.png"}}
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
+    <nav class="menu" aria-label="Principal">
+      <a class="hide-sm" href="../../#como-funciona">Cómo funciona</a>
+      <a class="hide-sm" href="../../#funciones">Funciones</a>
+      <a class="btn btn-primary btn-sm" href="../../#acceso">Acceso anticipado</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article">
+  <nav class="crumbs" aria-label="Ruta"><a href="../../">Vodwise</a> › Guías › Emitir en Twitch, Kick y YouTube a la vez</nav>
+  <h1>Cómo emitir en Twitch, Kick y YouTube a la vez</h1>
+  <p class="meta">Guía · actualizada el 16 de octubre de 2026</p>
+
+  <p class="lead">Emitir en Twitch, Kick y YouTube a la vez (multistream o simulcast) te deja llegar a tu público esté donde esté. Técnicamente no es difícil; lo complicado es lo de alrededor: la conexión, las normas de cada plataforma y, sobre todo, atender tres chats a la vez. Esta guía explica las formas de hacerlo y cómo no volverte loco.</p>
+
+  <div class="toc">
+    <strong>En esta guía</strong>
+    <ol>
+      <li><a href="#normas">Primero: las normas</a></li>
+      <li><a href="#formas">Las dos formas de emitir a la vez</a></li>
+      <li><a href="#obs">Opción 1: desde OBS, con varias salidas</a></li>
+      <li><a href="#nube">Opción 2: con un servicio de reemisión</a></li>
+      <li><a href="#chats">Tres chats a la vez</a></li>
+      <li><a href="#despues">Después del directo</a></li>
+      <li><a href="#preguntas">Preguntas frecuentes</a></li>
+    </ol>
+  </div>
+
+  <h2 id="normas">1. Primero: las normas</h2>
+  <ul>
+    <li><strong>Twitch</strong> permite emitir a la vez en otras plataformas desde que actualizó sus normas en 2023. Lo que no permite es usar Twitch para mandar a tus espectadores a tu directo en otro sitio: puedes enlazar tus perfiles, pero no promocionar activamente el otro directo. Si tienes un contrato especial con Twitch, revisa sus condiciones.</li>
+    <li><strong>Kick y YouTube:</strong> revisa sus normas actuales antes de empezar, sobre todo si tienes algún acuerdo con la plataforma.</li>
+    <li><strong>Música y contenido de terceros:</strong> lo que es un problema en una plataforma lo suele ser en las demás.</li>
+  </ul>
+
+  <h2 id="formas">2. Las dos formas de emitir a la vez</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Desde OBS, varias salidas</th><th>Servicio de reemisión</th></tr></thead>
+    <tbody>
+      <tr><th>Cómo funciona</th><td>Tu PC envía una emisión a cada plataforma</td><td>Tu PC envía una emisión y el servicio la reparte</td></tr>
+      <tr><th>Subida que necesitas</th><td>La de una emisión por cada plataforma</td><td>La de una sola emisión</td></tr>
+      <tr><th>Carga en tu PC</th><td>Más, si cada salida tiene su propia calidad</td><td>Como una emisión normal</td></tr>
+      <tr><th>Dependes de terceros</th><td>No</td><td>Sí, del servicio</td></tr>
+      <tr><th>Ideal para</th><td>Buena conexión y PC con margen</td><td>Conexión justa</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="obs">3. Opción 1: desde OBS, con varias salidas</h2>
+  <p>OBS emite de serie a un solo destino. Para enviar a varios a la vez, lo habitual es instalar un complemento de salidas múltiples (por ejemplo, el conocido «Multiple RTMP outputs»). Los pasos generales:</p>
+  <ol>
+    <li><strong>Mide tu velocidad de subida</strong> y multiplica: si una emisión usa 6 Mbps, tres usan unos 18, y conviene dejar margen.</li>
+    <li><strong>Configura tu plataforma principal</strong> en Ajustes › Emisión, como siempre.</li>
+    <li><strong>Instala el complemento</strong> desde su página oficial y añade un destino por cada plataforma extra, con su servidor y su clave de emisión.</li>
+    <li><strong>Elige la calidad de cada salida.</strong> Si todas usan la misma codificación, tu PC trabaja menos; si cada una tiene la suya, trabaja más.</li>
+    <li><strong>Haz una prueba</strong> en privado o en un horario tranquilo antes del directo de verdad.</li>
+  </ol>
+  <p>Ten en cuenta que funciones exclusivas de una plataforma, como la emisión mejorada de Twitch, pueden no convivir con estos complementos. Si usas una, revisa su ayuda.</p>
+
+  <h2 id="nube">4. Opción 2: con un servicio de reemisión</h2>
+  <p>Los servicios de reemisión reciben tu emisión y la reparten a las plataformas que conectes. En OBS solo pones su servidor y su clave, como si fuera una plataforma más. Es la opción si tu subida es justa. A cambio, añades un intermediario: si el servicio falla, se cae el directo en todas partes, y cada uno tiene sus propias condiciones y límites. Míralas antes de elegir.</p>
+
+  <aside class="callout">
+    <p class="eyebrow">Lo que estamos haciendo</p>
+    <h3>Vodwise: un solo chat, un solo bot, tres plataformas</h3>
+    <p>Vodwise es una app para Windows pensada para quien emite en varias plataformas: reúne el chat de Twitch, Kick y YouTube en una sola ventana, con el mismo bot, los mismos comandos y puntos y la misma moderación en las tres. Las alertas se lanzan en OBS vengan de donde vengan, y una asistente te ayuda a cambiar el título o la categoría en todas a la vez cuando le dices «sí». Al terminar, prepara con tu grabación los clips y el vídeo para YouTube. Nada se publica sin tu aprobación.</p>
+    <p>Está en beta cerrada y viene una gran actualización en camino.</p>
+    <p><a class="btn btn-primary" href="../../#acceso">Pedir acceso anticipado</a></p>
+  </aside>
+
+  <h2 id="chats">5. Tres chats a la vez</h2>
+  <p>Este es el verdadero reto del multistream. Si solo miras un chat, el público de las otras plataformas se siente ignorado y se va. Algunas claves:</p>
+  <ul>
+    <li><strong>Junta los chats en una sola ventana,</strong> con una herramienta que los una, y si puedes, muéstralo también en pantalla para que todos vean a todos.</li>
+    <li><strong>Usa el mismo bot y los mismos comandos</strong> en las tres plataformas, para que las reglas sean iguales para todos.</li>
+    <li><strong>Modera las tres.</strong> Un chat sin moderar en una plataforma estropea el directo en todas.</li>
+    <li><strong>Agradece por igual</strong> follows, subs y apoyos, vengan de donde vengan.</li>
+    <li><strong>Mantén título y categoría iguales</strong> en todas, y cámbialos a la vez.</li>
+  </ul>
+
+  <h2 id="despues">6. Después del directo</h2>
+  <p>Aunque emitas en tres sitios, el directo es uno. Si lo grabas en local con OBS, tienes el vídeo con la mejor calidad y sin depender de cuánto tiempo lo guarde cada plataforma. Con esa grabación puedes sacar clips para todas las redes y subirlo a YouTube editado. Te lo contamos en <a href="../../guias/grabar-directo-obs-por-pistas/">cómo grabar el directo en OBS por pistas</a> y en <a href="../../subir-directo-twitch-a-youtube/">cómo subir un directo a YouTube</a>.</p>
+  <p>¿Quieres también emitir en vertical para TikTok? Mira <a href="../../guias/directo-horizontal-a-vertical/">cómo pasar tu directo de horizontal a vertical</a>.</p>
+
+  <h2 id="preguntas">7. Preguntas frecuentes</h2>
+  <div class="faq">
+    <details><summary>¿Se puede emitir en Twitch y Kick a la vez?</summary><p>Sí. Twitch permite emitir a la vez en otras plataformas desde 2023, siempre que no uses Twitch para mandar a tus espectadores al otro directo. Revisa también las normas de Kick.</p></details>
+    <details><summary>¿Cómo emito en Twitch, Kick y YouTube a la vez con OBS?</summary><p>Con un complemento de salidas múltiples para OBS, que envía una emisión a cada plataforma, o con un servicio de reemisión, al que envías una sola emisión y él la reparte.</p></details>
+    <details><summary>¿Qué conexión necesito?</summary><p>Desde OBS con varias salidas, la subida de una emisión multiplicada por el número de plataformas, con margen. Con un servicio de reemisión, la de una sola emisión.</p></details>
+    <details><summary>¿Cómo leo los tres chats a la vez?</summary><p>Con una herramienta que los una en una sola ventana. Vodwise, por ejemplo, junta Twitch, Kick y YouTube con el mismo bot y la misma moderación.</p></details>
+  </div>
+
+  <h2 id="sigue-leyendo">Sigue leyendo</h2>
+  <ul>
+    <li><a href="../../guias/grabar-directo-obs-por-pistas/">Cómo grabar el directo en OBS por pistas</a></li>
+    <li><a href="../../guias/directo-horizontal-a-vertical/">Cómo pasar tu directo de horizontal a vertical</a></li>
+    <li><a href="../../guias/crecer-en-kick/">Cómo crecer en Kick</a></li>
+    <li><a href="../../guias/crecer-en-twitch/">Cómo crecer en Twitch</a></li>
+  </ul>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Copiloto de directos y editor automático para streamers.</p></div>
+      <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Política de privacidad</a><br><a href="../../condiciones.html">Condiciones del servicio</a></div>
+      <div><strong style="color:var(--text)">Contacto</strong><br><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></div>
+    </div>
+    <p class="legal">Twitch, Kick, YouTube, TikTok, Instagram y X son marcas de sus respectivos propietarios; Vodwise no está afiliado a ellos.<br>© 2026 Vodwise.</p>
+  </div>
+</footer>
+</body>
+</html>
