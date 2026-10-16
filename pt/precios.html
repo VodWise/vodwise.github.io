@@ -11,6 +11,7 @@
 <link rel="alternate" hreflang="es" href="https://vodwise.com/precios.html">
 <link rel="alternate" hreflang="en" href="https://vodwise.com/en/precios.html">
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/precios.html">
+<link rel="alternate" hreflang="x-default" href="https://vodwise.com/precios.html">
 <meta property="og:title" content="Preços · Vodwise">
 <meta property="og:description" content="Preços previstos do Vodwise para streamers: beta fechado grátis, planos a partir de € 14,99 por mês conforme quantas lives você faz e recargas que não expiram.">
 <meta property="og:type" content="website">
@@ -48,6 +49,78 @@
 .req{color:var(--soft);font-size:15px}
 @media (max-width:900px){.plans{grid-template-columns:1fr 1fr}}@media (max-width:560px){.plans{grid-template-columns:1fr}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "O que é um crédito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A forma de medir o que você usa. Cada vez que a inteligência artificial trabalha para você (editar uma live, escrever um título, conversar com você ao vivo) ela gasta alguns créditos. O app mostra seu saldo e quantas lives ainda restam, e você pode escolher funções e qualidade para gastar menos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "E se os créditos acabarem no meio de uma edição?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O que começou termina: nunca é interrompido no meio. Só não começa nada novo até você recarregar ou começar o próximo mês."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Os créditos expiram?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Os das recargas, nunca. Os do plano se renovam todo mês; no Pro e no Elite, o que você não gastar fica guardado até 2 e 3 meses."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso cancelar quando quiser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, quando quiser. Você continua com o plano até o fim do mês pago e mantém os créditos das recargas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Preciso colocar chaves ou criar apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Não. Você entra com a Twitch ou o Google e conecta cada plataforma com um botão. Nada de chaves nem de configurar nada técnico."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Minhas gravações são enviadas para algum lugar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Suas gravações ficam no seu computador. Só é enviado à inteligência artificial o necessário para trabalhar, e não é guardado. Nada é publicado sem o seu \"sim\". Mais detalhes na política de privacidade."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Em quais plataformas funciona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twitch, YouTube e Kick para as suas lives; YouTube, TikTok e Instagram para os seus vídeos e clipes, e X para avisar que você está ao vivo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso excluir minha conta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, pelo próprio app: sua assinatura é cancelada e sua conta, seu saldo e seu histórico são apagados."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="top">
@@ -66,7 +139,7 @@
 <main><section class="block">
   <div class="wrap">
     <p class="eyebrow">Preços</p>
-    <h2>Pague conforme quantas lives você faz</h2>
+    <h1 class="page-h1">Preços do Vodwise: pague conforme quantas lives você faz</h1>
     <p class="intro"><strong>Durante o beta fechado, o Vodwise é grátis</strong> para os testadores convidados. Estes são os preços previstos para o lançamento, que começará com <strong>14 dias grátis</strong> (500 créditos, sem cartão). Depois, você escolhe o plano que combina com o seu ritmo. Cada live de 4 horas gasta uns 640 créditos no modo Equilibrado: com a live editada, os Shorts, as miniaturas e a assistente durante a live.</p>
     <div class="plans">
       <div class="plan"><h3>Básico</h3><div class="price">€ 14,99 <small>/ mês</small></div>
@@ -79,6 +152,13 @@
         <ul><li>20.000 créditos por mês</li><li>≈ 31 lives de 4 h por mês</li><li>O que você não gastar fica guardado até 3 meses</li><li>Suporte prioritário</li></ul></div>
     </div>
     <p class="fine">Preços com impostos incluídos. Cancele quando quiser: você continua até o fim do mês pago. Os cálculos de lives são aproximados, no modo Equilibrado (no Economia rendem mais) e dependem do que você ativar; o app sempre mostra quantas ainda restam.</p>
+    <div class="calc" id="calculadora">
+      <h3>Qual plano combina com você?</h3>
+      <div class="calc-row"><label>Horas por live<input type="number" id="calc-h" min="0.5" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Lives por mês<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
+      <p class="calc-out" id="calc-out" aria-live="polite"></p>
+      <p class="fine">Cálculo aproximado no modo Equilibrado: cerca de 160 créditos por hora de live (640 por uma live de 4 h).</p>
+    </div>
+    <script>(()=>{const P=[["Básico", 1800], ["Criador", 3600], ["Pro", 7200], ["Elite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>x.toLocaleString('pt-BR'),need="Cerca de {c} créditos por mês",plan="plano {p} ({k} créditos)",over="plano Elite e alguma recarga";const r=()=>{const H=Math.max(0,parseFloat(h.value)||0),N=Math.max(0,parseInt(n.value)||0),C=Math.ceil(H*160*N),p=P.find(x=>x[1]>=C);o.innerHTML=need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
 
     <h3 style="margin-top:36px">Ficou sem créditos? Recarregue</h3>
     <p class="req">Os créditos das recargas <strong>nunca expiram</strong> e são usados depois dos do seu plano.</p>
@@ -89,7 +169,7 @@
 
 <section class="block alt" id="baixar">
   <div class="wrap">
-    <p class="eyebrow">Baixar</p>
+    <p class="eyebrow">Beta grátis</p>
     <h2>Peça sua vaga no beta</h2>
     <p class="intro">Um único instalador. Entre com sua conta da Twitch ou do Google, conecte cada plataforma com um botão e pronto: nada técnico para configurar.</p>
     <div class="cta-row"><a class="btn btn-primary" href="descargar.html#acesso-antecipado">Pedir convite para o beta</a></div>
@@ -118,7 +198,7 @@
   <div class="wrap">
     <div class="cols">
       <div><a class="brand" href="./"><img src="../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Copiloto de lives e editor automático para streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p></div>
-      <div><strong style="color:var(--text)">Funções</strong><br><a href="funciones.html">Funções</a><br><a href="comparativa.html">Comparativo</a><br><a href="precios.html">Preços</a><br><a href="descargar.html">Baixar</a></div>
+      <div><strong style="color:var(--text)">Funções</strong><br><a href="funciones.html">Funções</a><br><a href="comparativa.html">Comparativo</a><br><a href="precios.html">Preços</a><br><a href="descargar.html">Beta grátis</a></div>
       <div><strong style="color:var(--text)">Guias (em espanhol)</strong><br><a href="../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../privacidad.html">Política de privacidade</a><br><a href="../condiciones.html">Termos do serviço</a><br><a href="aviso-legal.html">Aviso legal</a></div>
     </div>

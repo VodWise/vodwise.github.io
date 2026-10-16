@@ -11,6 +11,7 @@
 <link rel="alternate" hreflang="es" href="https://vodwise.com/">
 <link rel="alternate" hreflang="en" href="https://vodwise.com/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/">
+<link rel="alternate" hreflang="x-default" href="https://vodwise.com/">
 <meta property="og:title" content="Vodwise — Tú haces el directo. Vodwise hace el resto.">
 <meta property="og:description" content="Chat unificado de Twitch, Kick y YouTube, copiloto por voz, alertas y escenas de OBS con IA, y edición automática del directo en tu propio PC.">
 <meta property="og:type" content="website">
@@ -37,6 +38,78 @@
 .fn-text h3{margin:6px 0 10px;font-size:24px}.fn-text p{color:var(--soft);font-size:15.5px;line-height:1.55}.fn-nav{margin-top:14px}
 @media (max-width:860px){.fn-layout{grid-template-columns:1fr}.fn-tabs{position:static;max-height:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:10px;padding-bottom:6px}.fn-group{display:flex;gap:6px;align-items:center}.fn-group h4{display:none}.fn-tab{white-space:nowrap;width:auto;border-color:var(--line)}.fn-panel{grid-template-columns:1fr}.fn-shot img.fn-ui,.fn-shot img.fn-art{transform:none}}
 @media (max-width:700px){.cmp{font-size:13px}.cmp th,.cmp td{padding:9px 8px}}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Vodwise",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "MultimediaApplication",
+  "url": "https://vodwise.com/",
+  "inLanguage": "es",
+  "description": "Copiloto de directos para Twitch, Kick y YouTube y editor automático que monta el vídeo completo, lo mejor del directo y los Shorts en tu propio PC.",
+  "image": "https://vodwise.com/assets/og-es.png",
+  "offers": {
+    "@type": "Offer",
+    "name": "Beta cerrada gratuita",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vodwise",
+    "url": "https://vodwise.com/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué necesito?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Un PC con Windows, OBS para emitir y grabar, y espacio en disco para la grabación. Para la edición, una tarjeta gráfica NVIDIA va mejor, pero también funciona con AMD, Intel o solo el procesador (más despacio)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Con qué plataformas funciona?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twitch, Kick y YouTube para el directo, y YouTube, TikTok, Instagram y X para publicar. Se conectan con un clic desde la app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Publica algo sin que yo lo vea?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Prepara los vídeos y los textos y tú decides qué sale. Durante el directo, cambiar el título o moderar también pasa por tu confirmación."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuánto cuesta?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Durante la beta cerrada, nada: cada probador recibe créditos gratis. Después, planes desde 14,99 € al mes con créditos incluidos y recargas que no caducan. Cada función apunta lo que gasta: lo ves en la app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Es seguro instalarlo?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La beta todavía no lleva firma digital: Windows avisa con «Windows protegió tu PC»; pulsa «Más información» → «Ejecutar de todas formas». La app no toca OBS ni tus plataformas sin tu permiso."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="top">
@@ -82,6 +155,7 @@
   </div>
 </section>
 <div class="wrap platforms" aria-label="Plataformas"><span>Twitch</span><span>Kick</span><span>YouTube</span><span>TikTok</span><span>Instagram</span><span>X</span><span>Discord</span><span>OBS</span></div>
+<section class="proof" aria-label="En una edición de prueba"><div class="wrap"><p class="proof-lead">En una edición de prueba:</p><div class="proof-stats"><span><b>7 h 46 min</b> de directo</span><span class="proof-arrow" aria-hidden="true">→</span><span><b>59 min</b> de vídeo</span><span><b>19</b> capítulos</span><span><b>10 min</b> de resumen</span><span><b>6</b> clips</span></div><p class="proof-link"><a href="clips-automaticos-kick/" hreflang="es">Ver cómo se hizo</a></p></div></section>
 <section class="block alt" id="como-funciona">
   <div class="wrap">
     <p class="eyebrow">Cómo funciona</p>
@@ -185,7 +259,7 @@
   <div class="wrap">
     <div class="cols">
       <div><a class="brand" href="./"><img src="assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Copiloto de directos y editor automático para streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p></div>
-      <div><strong style="color:var(--text)">Funciones</strong><br><a href="funciones.html">Funciones</a><br><a href="comparativa.html">Comparativa</a><br><a href="precios.html">Precios</a><br><a href="descargar.html">Descargar</a></div>
+      <div><strong style="color:var(--text)">Funciones</strong><br><a href="funciones.html">Funciones</a><br><a href="comparativa.html">Comparativa</a><br><a href="precios.html">Precios</a><br><a href="descargar.html">Beta gratis</a></div>
       <div><strong style="color:var(--text)">Guías</strong><br><a href="clips-automaticos-twitch/" hreflang="es">Clips automáticos de Twitch</a><br><a href="clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a><br><a href="guias/" hreflang="es">Todas las guías</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="privacidad.html">Política de privacidad</a><br><a href="condiciones.html">Condiciones del servicio</a><br><a href="aviso-legal.html">Aviso legal</a></div>
     </div>

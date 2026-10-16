@@ -11,6 +11,7 @@
 <link rel="alternate" hreflang="es" href="https://vodwise.com/precios.html">
 <link rel="alternate" hreflang="en" href="https://vodwise.com/en/precios.html">
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/precios.html">
+<link rel="alternate" hreflang="x-default" href="https://vodwise.com/precios.html">
 <meta property="og:title" content="Pricing · Vodwise">
 <meta property="og:description" content="Planned Vodwise pricing for streamers: free closed beta, plans from €14.99 a month depending on how often you stream, and top-ups that never expire.">
 <meta property="og:type" content="website">
@@ -48,6 +49,78 @@
 .req{color:var(--soft);font-size:15px}
 @media (max-width:900px){.plans{grid-template-columns:1fr 1fr}}@media (max-width:560px){.plans{grid-template-columns:1fr}}
 </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a credit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The way your usage is measured. Every time the AI works for you (editing a stream, writing a title, talking with you live) it uses a few credits. The app shows your balance and how many streams you have left, and you can choose features and quality to spend less."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if I run out of credits in the middle of an edit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Whatever started finishes: it's never cut halfway. Nothing new starts until you top up or your next month begins."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do credits expire?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top-up credits, never. Plan credits renew every month; on Pro and Elite, unused credits roll over up to 2 and 3 months."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I cancel anytime?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, whenever you want. You keep your plan until the end of the paid month and you keep your top-up credits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need to enter keys or create apps?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. You sign in with Twitch or Google and connect each platform with one button. No keys, nothing technical to set up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are my recordings uploaded anywhere?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your recordings stay on your computer. Only what the AI needs to work is sent, and it isn't stored. Nothing is published without your \"yes\". More details in the privacy policy."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which platforms does it work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Twitch, YouTube and Kick for your streams; YouTube, TikTok and Instagram for your videos and clips, and X to announce you're live."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I delete my account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, from the app itself: your subscription is canceled and your account, balance and history are deleted."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="top">
@@ -66,7 +139,7 @@
 <main><section class="block">
   <div class="wrap">
     <p class="eyebrow">Pricing</p>
-    <h2>Pay for how often you stream</h2>
+    <h1 class="page-h1">Vodwise pricing: pay for how often you stream</h1>
     <p class="intro"><strong>During the closed beta, Vodwise is free</strong> for invited testers. These are the planned launch prices; the launch will start with <strong>14 days free</strong> (500 credits, no card). Then you pick the plan that fits your pace. Each 4-hour stream uses about 640 credits in Balanced mode: that covers the edited stream, the Shorts, the thumbnails and the assistant during the stream.</p>
     <div class="plans">
       <div class="plan"><h3>Basic</h3><div class="price">€14.99 <small>/ month</small></div>
@@ -79,6 +152,13 @@
         <ul><li>20,000 credits a month</li><li>≈ 31 four-hour streams a month</li><li>Unused credits roll over up to 3 months</li><li>Priority support</li></ul></div>
     </div>
     <p class="fine">Prices include VAT. Cancel anytime: you keep your plan until the end of the paid month. Stream counts are approximate, in Balanced mode (Saver mode goes further) and depend on what you turn on; the app always tells you how many you have left.</p>
+    <div class="calc" id="calculadora">
+      <h3>Which plan fits you?</h3>
+      <div class="calc-row"><label>Hours per stream<input type="number" id="calc-h" min="0.5" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Streams per month<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
+      <p class="calc-out" id="calc-out" aria-live="polite"></p>
+      <p class="fine">Rough estimate in Balanced mode: about 160 credits per hour of streaming (640 for a 4-hour stream).</p>
+    </div>
+    <script>(()=>{const P=[["Basic", 1800], ["Creator", 3600], ["Pro", 7200], ["Elite", 20000]],h=document.getElementById('calc-h'),n=document.getElementById('calc-n'),o=document.getElementById('calc-out'),f=x=>x.toLocaleString('en-GB'),need="About {c} credits a month",plan="{p} plan ({k} credits)",over="Elite plan plus a top-up";const r=()=>{const H=Math.max(0,parseFloat(h.value)||0),N=Math.max(0,parseInt(n.value)||0),C=Math.ceil(H*160*N),p=P.find(x=>x[1]>=C);o.innerHTML=need.replace('{c}','<b>'+f(C)+'</b>')+' → <strong>'+(p?plan.replace('{p}',p[0]).replace('{k}',f(p[1])):over)+'</strong>';};h.addEventListener('input',r);n.addEventListener('input',r);r();})();</script>
 
     <h3 style="margin-top:36px">Out of credits? Top up</h3>
     <p class="req">Top-up credits <strong>never expire</strong> and are used after your plan's credits.</p>
@@ -89,7 +169,7 @@
 
 <section class="block alt" id="download">
   <div class="wrap">
-    <p class="eyebrow">Download</p>
+    <p class="eyebrow">Free beta</p>
     <h2>Request your beta spot</h2>
     <p class="intro">One installer. Sign in with your Twitch or Google account, connect each platform with one button and you're done: nothing technical to set up.</p>
     <div class="cta-row"><a class="btn btn-primary" href="descargar.html#early-access">Request a beta invite</a></div>
@@ -118,7 +198,7 @@
   <div class="wrap">
     <div class="cols">
       <div><a class="brand" href="./"><img src="../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Live-stream copilot and automatic editor for streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p></div>
-      <div><strong style="color:var(--text)">Features</strong><br><a href="funciones.html">Features</a><br><a href="comparativa.html">Compare</a><br><a href="precios.html">Pricing</a><br><a href="descargar.html">Download</a></div>
+      <div><strong style="color:var(--text)">Features</strong><br><a href="funciones.html">Features</a><br><a href="comparativa.html">Compare</a><br><a href="precios.html">Pricing</a><br><a href="descargar.html">Free beta</a></div>
       <div><strong style="color:var(--text)">Guides (Spanish)</strong><br><a href="../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../privacidad.html">Privacy policy</a><br><a href="../condiciones.html">Terms of service</a><br><a href="aviso-legal.html">Legal notice</a></div>
     </div>
