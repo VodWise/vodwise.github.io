@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chat unificado de Twitch, Kick y YouTube: cómo leer los tres a la vez · Vodwise</title>
+<meta name="description" content="Cómo juntar el chat de Twitch, Kick y YouTube en una sola ventana: las opciones gratis, qué debe tener un chat unificado, cómo ponerlo en pantalla en OBS y cómo moderar las tres plataformas.">
+<meta name="theme-color" content="#0b0f17">
+<link rel="canonical" href="https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/">
+<link rel="alternate" hreflang="es" href="https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/">
+<link rel="alternate" hreflang="x-default" href="https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/">
+<link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="../../assets/apple-touch-icon.png">
+<meta property="og:title" content="Chat unificado de Twitch, Kick y YouTube: cómo leer los tres a la vez">
+<meta property="og:description" content="Las opciones para juntar tres chats en una ventana, qué debe tener un buen chat unificado y cómo moderar las tres plataformas.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/">
+<meta property="og:image" content="https://vodwise.com/assets/og-es.png">
+<meta property="og:locale" content="es_ES">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="../../assets/styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Chat unificado de Twitch, Kick y YouTube: cómo leer los tres a la vez",
+  "inLanguage": "es",
+  "datePublished": "2026-10-16",
+  "dateModified": "2026-10-16",
+  "mainEntityOfPage": "https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/",
+  "image": "https://vodwise.com/assets/og-es.png",
+  "author": {"@type": "Organization", "name": "Vodwise", "url": "https://vodwise.com/"},
+  "publisher": {"@type": "Organization", "name": "Vodwise", "logo": {"@type": "ImageObject", "url": "https://vodwise.com/assets/apple-touch-icon.png"}}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Vodwise", "item": "https://vodwise.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Guías", "item": "https://vodwise.com/guias/"},
+    {"@type": "ListItem", "position": 3, "name": "Chat unificado de Twitch, Kick y YouTube", "item": "https://vodwise.com/guias/chat-unificado-twitch-kick-youtube/"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "¿Qué es un chat unificado?", "acceptedAnswer": {"@type": "Answer", "text": "Una sola ventana donde aparecen los mensajes de todas las plataformas en las que emites, mezclados por orden de llegada y marcados con la plataforma de la que vienen."}},
+    {"@type": "Question", "name": "¿Se puede juntar el chat de Twitch, Kick y YouTube gratis?", "acceptedAnswer": {"@type": "Answer", "text": "Sí: puedes abrir los tres chats como paneles dentro de OBS, o usar alguna herramienta gratuita que los junte. Lo que suele faltar en las opciones gratis es moderar y tener el mismo bot en las tres desde el mismo sitio."}},
+    {"@type": "Question", "name": "¿Puedo poner el chat de las tres plataformas en pantalla?", "acceptedAnswer": {"@type": "Answer", "text": "Sí. La mayoría de herramientas de chat unificado dan una página para añadir en OBS como fuente de navegador, de forma que tus espectadores ven los mensajes de todas las plataformas."}},
+    {"@type": "Question", "name": "¿Cómo modero tres chats a la vez?", "acceptedAnswer": {"@type": "Answer", "text": "Con las mismas reglas y el mismo bot en las tres plataformas, moderadores en cada una y, si puedes, una herramienta que te deje expulsar o borrar mensajes desde la ventana unificada sin ir plataforma por plataforma."}},
+    {"@type": "Question", "name": "¿Es lo mismo que emitir en varias plataformas a la vez?", "acceptedAnswer": {"@type": "Answer", "text": "No. Emitir a la vez es enviar el vídeo a varias plataformas; el chat unificado es juntar lo que te escriben en ellas. Si haces multistream, necesitas las dos cosas."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
+    <nav class="menu" aria-label="Principal">
+      <a class="hide-sm" href="../../funciones.html">Funciones</a>
+      <a class="hide-sm" href="../../comparativa.html">Comparativa</a>
+      <a class="hide-sm" href="../../precios.html">Precios</a>
+      <a class="lang-switch" href="../../en/" hreflang="en" lang="en">EN</a>
+      <a class="lang-switch" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a class="btn btn-primary btn-sm" href="../../descargar.html">Pedir invitación</a>
+    </nav>
+  </div>
+</header>
+
+<main class="article">
+  <nav class="crumbs" aria-label="Ruta"><a href="../../">Vodwise</a> › <a href="../../guias/">Guías</a> › Chat unificado de Twitch, Kick y YouTube</nav>
+  <h1>Chat unificado de Twitch, Kick y YouTube: cómo leer los tres a la vez</h1>
+  <p class="meta">Guía · actualizada el 16 de octubre de 2026</p>
+
+  <p class="lead">Emitir en Twitch, Kick y YouTube a la vez es fácil de montar. Lo difícil viene después: tres chats que se mueven a la vez, tres sitios donde te saludan y tres sitios donde alguien puede liarla. Si solo miras uno, el público de los otros dos se siente ignorado y se va. Esta guía explica cómo juntar los tres chats en una sola ventana, qué debe tener un buen chat unificado y cómo moderar las tres plataformas sin volverte loco.</p>
+
+  <div class="toc">
+    <strong>En esta guía</strong>
+    <ol>
+      <li><a href="#que-es">Qué es un chat unificado y por qué importa</a></li>
+      <li><a href="#paneles">Opción 1: los tres chats como paneles de OBS</a></li>
+      <li><a href="#herramientas">Opción 2: una herramienta que los junte</a></li>
+      <li><a href="#que-mirar">Qué debe tener un buen chat unificado</a></li>
+      <li><a href="#pantalla">El chat de las tres plataformas en pantalla</a></li>
+      <li><a href="#moderar">Moderar tres chats y usar un solo bot</a></li>
+      <li><a href="#preguntas">Preguntas frecuentes</a></li>
+    </ol>
+  </div>
+
+  <h2 id="que-es">1. Qué es un chat unificado y por qué importa</h2>
+  <p>Un chat unificado (o «multichat») es una sola ventana donde aparecen los mensajes de todas las plataformas en las que emites, mezclados por orden de llegada y marcados con la plataforma de la que vienen. En vez de saltar entre tres pestañas, lees un único chat.</p>
+  <p>Importa por tres motivos:</p>
+  <ul>
+    <li><strong>No te pierdes mensajes.</strong> Con tres ventanas, siempre hay una que no estás mirando.</li>
+    <li><strong>Todos se sienten parte del mismo directo.</strong> Si en pantalla solo sale el chat de Twitch, quien te ve en YouTube o Kick entiende que es un invitado de segunda.</li>
+    <li><strong>Reaccionas más rápido</strong> a preguntas, apoyos y problemas, vengan de donde vengan.</li>
+  </ul>
+
+  <h2 id="paneles">2. Opción 1: los tres chats como paneles de OBS</h2>
+  <p>Es la opción gratis y sin instalar nada. OBS permite añadir páginas web como paneles acoplados (en el menú <strong>Paneles › Paneles de navegador personalizados</strong>). Puedes añadir el chat emergente de cada plataforma y colocarlos uno al lado del otro.</p>
+  <ol>
+    <li>Abre el chat de cada plataforma en el navegador y busca su versión «emergente» o «pop-out» (la que se abre en una ventana aparte). Copia su dirección.</li>
+    <li>En OBS, ve a <strong>Paneles › Paneles de navegador personalizados</strong>, pon un nombre (por ejemplo «Chat Kick») y pega la dirección.</li>
+    <li>Repite con las otras dos plataformas y coloca los paneles a tu gusto.</li>
+  </ol>
+  <p>Funciona, pero sigues teniendo <strong>tres chats separados</strong>: tienes que repartir la vista entre los tres, cada uno con su propio bot y su propia moderación, y en pantalla no hay una forma sencilla de enseñarlos juntos.</p>
+
+  <h2 id="herramientas">3. Opción 2: una herramienta que los junte</h2>
+  <p>Hay herramientas que se conectan a tus canales y mezclan los mensajes en una sola ventana. Las hay de varios tipos:</p>
+  <ul>
+    <li><strong>Herramientas de chat gratuitas</strong> que leen los chats y los muestran juntos. Suelen bastar para leer; para moderar o responder hay que volver a cada plataforma.</li>
+    <li><strong>Los servicios de reemisión</strong> (los que reparten tu emisión a varias plataformas) a veces incluyen un chat conjunto de los canales que reemiten. Comprueba qué plataformas cubre: no todos incluyen Kick.</li>
+    <li><strong>Apps de escritorio para streamers</strong> que juntan chat, bot, alertas y moderación en un mismo programa.</li>
+  </ul>
+  <p>Antes de elegir, prueba la herramienta en un directo tranquilo: es la única forma de ver si aguanta tu ritmo de chat.</p>
+
+  <h2 id="que-mirar">4. Qué debe tener un buen chat unificado</h2>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Qué mirar</th><th>Por qué</th></tr></thead>
+    <tbody>
+      <tr><th>Las tres plataformas, Kick incluido</th><td>Muchas herramientas nacieron para Twitch y YouTube; Kick llegó después y no siempre está.</td></tr>
+      <tr><th>De qué plataforma viene cada mensaje</th><td>Un icono o color por plataforma, para saber a quién respondes.</td></tr>
+      <tr><th>Insignias y emoticonos de cada sitio</th><td>Suscriptores, moderadores y los emotes que usa tu comunidad (también los de extensiones como 7TV, si los usáis).</td></tr>
+      <tr><th>Moderar desde la misma ventana</th><td>Borrar un mensaje o expulsar a alguien sin abrir la plataforma, que es cuando más prisa hay.</td></tr>
+      <tr><th>Destacar mensajes</th><td>Para que no se te pasen las preguntas, las primeras veces o los mensajes con apoyo.</td></tr>
+      <tr><th>Versión para OBS</th><td>Una página para ponerlo en pantalla con un aspecto que encaje con tu directo.</td></tr>
+      <tr><th>Que aguante sin cortes</th><td>Que se reconecte solo si una plataforma falla, sin que te des cuenta a mitad del directo.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <aside class="callout">
+    <p class="eyebrow">Lo que estamos haciendo</p>
+    <h3>Vodwise: los tres chats en una ventana, con un solo bot</h3>
+    <p>Vodwise es una app para Windows que junta el chat de Twitch, Kick y YouTube en una sola ventana, con emoticonos, insignias, destacados y la moderación a un clic desde el nombre. El mismo bot responde en las tres plataformas, con los mismos comandos, temporizadores y filtros, y el chat se puede poner en pantalla en OBS con varios estilos. Además te ayuda durante el directo y, al terminar, prepara el vídeo y los Shorts. Nada se publica sin tu aprobación.</p>
+    <p>Está en beta cerrada y viene una gran actualización en camino.</p>
+    <p><a class="btn btn-primary" href="../../descargar.html">Pedir invitación a la beta gratis</a></p>
+  </aside>
+
+  <h2 id="pantalla">5. El chat de las tres plataformas en pantalla</h2>
+  <p>Enseñar el chat en el directo hace que la gente escriba más: se ven a sí mismos. Si emites en varias plataformas, que salgan todas.</p>
+  <ul>
+    <li><strong>Añádelo como fuente de navegador</strong> en OBS, con la dirección que te dé tu herramienta de chat.</li>
+    <li><strong>Que se vea de dónde viene cada mensaje,</strong> con el icono o el color de cada plataforma.</li>
+    <li><strong>Tamaño legible en el móvil.</strong> Mucha gente te ve en el teléfono: mejor pocas líneas grandes que muchas pequeñas.</li>
+    <li><strong>Que desaparezcan los mensajes viejos</strong> a los pocos segundos, para no tapar el juego.</li>
+    <li><strong>Que no salga lo que se ha moderado.</strong> Comprueba que un mensaje borrado desaparece también de la pantalla.</li>
+  </ul>
+
+  <h2 id="moderar">6. Moderar tres chats y usar un solo bot</h2>
+  <p>Un chat sin moderar en una plataforma estropea el directo en todas. Algunas claves:</p>
+  <ul>
+    <li><strong>Las mismas reglas en las tres.</strong> Escríbelas una vez y ponlas igual en cada canal.</li>
+    <li><strong>Un solo bot para las tres plataformas.</strong> Si cada plataforma tiene un bot distinto, los comandos, los avisos y los filtros acaban siendo diferentes. Un bot multiplataforma los mantiene iguales.</li>
+    <li><strong>Filtros automáticos</strong> para enlaces, mayúsculas y spam en las tres, con el mismo nivel de exigencia.</li>
+    <li><strong>Moderadores en cada plataforma.</strong> Aunque tengas una herramienta unificada, tus mods necesitan permisos en cada sitio.</li>
+    <li><strong>Agradece por igual</strong> follows, suscripciones y apoyos, vengan de donde vengan.</li>
+  </ul>
+  <p>Si todavía no emites en las tres, empieza por aquí: <a href="../../guias/emitir-en-twitch-kick-y-youtube-a-la-vez/">cómo emitir en Twitch, Kick y YouTube a la vez</a>.</p>
+
+  <h2 id="preguntas">7. Preguntas frecuentes</h2>
+  <div class="faq">
+    <details><summary>¿Qué es un chat unificado?</summary><p>Una sola ventana donde aparecen los mensajes de todas las plataformas en las que emites, mezclados por orden de llegada y marcados con la plataforma de la que vienen.</p></details>
+    <details><summary>¿Se puede juntar el chat de Twitch, Kick y YouTube gratis?</summary><p>Sí: puedes abrir los tres chats como paneles dentro de OBS, o usar alguna herramienta gratuita que los junte. Lo que suele faltar en las opciones gratis es moderar y tener el mismo bot en las tres desde el mismo sitio.</p></details>
+    <details><summary>¿Puedo poner el chat de las tres plataformas en pantalla?</summary><p>Sí. La mayoría de herramientas de chat unificado dan una página para añadir en OBS como fuente de navegador, de forma que tus espectadores ven los mensajes de todas las plataformas.</p></details>
+    <details><summary>¿Cómo modero tres chats a la vez?</summary><p>Con las mismas reglas y el mismo bot en las tres plataformas, moderadores en cada una y, si puedes, una herramienta que te deje expulsar o borrar mensajes desde la ventana unificada sin ir plataforma por plataforma.</p></details>
+    <details><summary>¿Es lo mismo que emitir en varias plataformas a la vez?</summary><p>No. Emitir a la vez es enviar el vídeo a varias plataformas; el chat unificado es juntar lo que te escriben en ellas. Si haces multistream, necesitas las dos cosas.</p></details>
+  </div>
+
+  <h2 id="sigue-leyendo">Sigue leyendo</h2>
+  <ul>
+    <li><a href="../../guias/emitir-en-twitch-kick-y-youtube-a-la-vez/">Cómo emitir en Twitch, Kick y YouTube a la vez</a></li>
+    <li><a href="../../guias/crecer-en-kick/">Cómo crecer en Kick</a></li>
+    <li><a href="../../guias/crecer-en-twitch/">Cómo crecer en Twitch</a></li>
+    <li><a href="../../clips-automaticos-kick/">Clips automáticos de Kick</a></li>
+  </ul>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div><a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Copiloto de directos y editor automático para streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p></div>
+      <div><strong style="color:var(--text)">Funciones</strong><br><a href="../../funciones.html">Funciones</a><br><a href="../../comparativa.html">Comparativa</a><br><a href="../../precios.html">Precios</a><br><a href="../../descargar.html">Beta gratis</a></div>
+      <div><strong style="color:var(--text)">Guías</strong><br><a href="../../clips-automaticos-twitch/" hreflang="es">Clips automáticos de Twitch</a><br><a href="../../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a><br><a href="../../guias/" hreflang="es">Todas las guías</a></div>
+      <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Política de privacidad</a><br><a href="../../condiciones.html">Condiciones del servicio</a><br><a href="../../aviso-legal.html">Aviso legal</a></div>
+    </div>
+    <p class="legal">Vodwise usa los <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Servicios de la API de YouTube</a>: <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. Twitch, Kick, YouTube, TikTok, Instagram y X son marcas de sus respectivos propietarios; Vodwise no está afiliado a ellos.<br>© 2026 Vodwise.</p>
+  </div>
+</footer>
+</body>
+</html>
