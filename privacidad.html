@@ -24,7 +24,7 @@
 </header>
 <main class="doc">
 <h1>Política de privacidad</h1>
-<p class="meta">Privacy Policy · Política de privacidade · Última actualización / Last updated / Última atualização: 13 de octubre de 2026 / 13 October 2026 / 13 de outubro de 2026</p>
+<p class="meta">Privacy Policy · Política de privacidade · Última actualización / Last updated / Última atualização: 17 de octubre de 2026 / 17 October 2026 / 17 de outubro de 2026</p>
 
 <section>
   <p class="lang">Español</p>
@@ -45,10 +45,13 @@
   <h2>3. Qué datos tratamos y para qué</h2>
   <h3>Tu cuenta de Vodwise</h3>
   <ul>
-    <li><strong>Al entrar con Twitch o Google:</strong> el identificador de tu cuenta en esa plataforma y tu nombre visible. No recibimos ni guardamos tu contraseña ni tu correo electrónico.</li>
+    <li><strong>Al entrar con Twitch, Kick o Google:</strong> el identificador de tu cuenta en esa plataforma y tu nombre visible. No recibimos ni guardamos tu contraseña ni tu correo electrónico.</li>
     <li><strong>Sesión:</strong> una clave de sesión que se guarda cifrada en tu ordenador; en el servidor solo guardamos su huella (no la clave). Caduca a los 90 días.</li>
     <li><strong>Créditos:</strong> tu plan, tu saldo y el historial de uso (qué tipo de función se usó, cuándo y cuántos créditos costó). No incluye el contenido.</li>
-    <li><strong>Prueba gratis:</strong> para que sea una por canal, guardamos que el identificador de tu cuenta de Twitch o Google ya la usó.</li>
+    <li><strong>Verificación del canal:</strong> mientras OBS emite, la app nos avisa cada 5 minutos y consultamos en Twitch o Kick, con datos públicos, si tu canal está en directo a la vez (y, en Twitch, desde cuándo existe tu canal). Una vez por directo, la app manda solo las <em>huellas</em> (SHA-256, que no se pueden deshacer) de las claves de emisión de tus perfiles de OBS y el permiso de tu canal; con él leemos tu clave en la plataforma, calculamos su huella para compararla y no guardamos ni la clave ni el permiso. Guardamos los minutos que coincidieron, si el canal está verificado, su antigüedad y si la clave coincide.</li>
+    <li><strong>Huella del ordenador:</strong> un código calculado en tu ordenador a partir del identificador que Windows da al equipo, mezclado con un valor propio de Vodwise para que no se pueda deshacer ni relacionar con otros servicios. Guardamos hasta 5 por cuenta, solo para que la oferta de bienvenida y las invitaciones no se repitan desde el mismo ordenador.</li>
+    <li><strong>Oferta, invitaciones y contracargos:</strong> que tu canal y las huellas de tus ordenadores ya usaron la oferta de bienvenida; tu código de invitación, quién te invitó y si se dio la recompensa; y, si hubo un contracargo, la marca de bloqueo de la cuenta, del canal y de esas huellas.</li>
+    <li><strong>En tu ordenador, sin salir de él:</strong> en la versión gratuita, la IA local que elige los clips básicos y las voces de Windows del chat funcionan en tu equipo; no se envía nada a ningún proveedor.</li>
   </ul>
   <h3>Pagos</h3>
   <p>Los pagos los gestiona <strong>Paddle</strong> (Paddle.com Market Ltd), que actúa como vendedor («Merchant of Record»): cobra, emite la factura y gestiona los impuestos. Paddle trata tus datos de pago según su propia <a href="https://www.paddle.com/legal/privacy">política de privacidad</a>. Nosotros solo recibimos tu identificador de cliente en Paddle, el plan o recarga comprado y las fechas del periodo pagado. Nunca vemos los datos de tu tarjeta.</p>
@@ -98,7 +101,7 @@
   <h2>4. Base legal</h2>
   <ul>
     <li><strong>Ejecución del contrato</strong>: tu cuenta, los créditos, la IA y las conexiones, porque son el servicio que contratas.</li>
-    <li><strong>Interés legítimo</strong>: la seguridad, los límites contra abusos, la marca de «prueba usada» y, durante la beta, el resumen de cada sesión para corregir errores (puedes apagarlo cuando quieras).</li>
+    <li><strong>Interés legítimo</strong>: la seguridad, los límites contra abusos, la verificación del canal, la huella del ordenador y las marcas de oferta usada y de contracargo (para evitar fraudes) y, durante la beta, el resumen de cada sesión para corregir errores (puedes apagarlo cuando quieras).</li>
     <li><strong>Consentimiento</strong>: los avisos de cierre por error y el envío de informes a soporte. Puedes retirarlo cuando quieras.</li>
     <li><strong>Obligación legal</strong>: lo que la ley nos obligue a conservar.</li>
   </ul>
@@ -122,7 +125,8 @@
     <li>Sesiones: hasta 90 días o hasta que salgas.</li>
     <li>Autorizaciones de paso por nuestro servidor: 2 minutos. Avisos de Kick: 10 minutos.</li>
     <li>Informes de soporte: 12 meses; al borrar la cuenta se desvinculan de ella.</li>
-    <li>Marca de «prueba usada»: se conserva tras borrar la cuenta, solo para impedir pruebas repetidas.</li>
+    <li>Verificación del canal (con las huellas del ordenador) e invitaciones: mientras tengas la cuenta; se borran al borrarla.</li>
+    <li>Marcas de «oferta usada» y de contracargo (canal y huellas del ordenador): se conservan tras borrar la cuenta, solo para impedir que se repitan.</li>
     <li>Facturas: las conserva Paddle según la ley.</li>
   </ul>
 
@@ -182,10 +186,13 @@
   <h2>3. What data we process and why</h2>
   <h3>Your Vodwise account</h3>
   <ul>
-    <li><strong>When you sign in with Twitch or Google:</strong> your account ID on that platform and your display name. We never receive or store your password or your email address.</li>
+    <li><strong>When you sign in with Twitch, Kick or Google:</strong> your account ID on that platform and your display name. We never receive or store your password or your email address.</li>
     <li><strong>Session:</strong> a session key stored encrypted on your computer; on the server we only keep its fingerprint (not the key). It expires after 90 days.</li>
     <li><strong>Credits:</strong> your plan, balance and usage history (which kind of feature was used, when and how many credits it cost). It does not include the content.</li>
-    <li><strong>Free trial:</strong> so that there is one per channel, we record that your Twitch or Google account ID has already used it.</li>
+    <li><strong>Channel verification:</strong> while OBS is streaming, the app pings us every 5 minutes and we check on Twitch or Kick, with public data, whether your channel is live at the same time (and, on Twitch, how long your channel has existed). Once per stream, the app sends only the <em>fingerprints</em> (SHA-256, which cannot be reversed) of the stream keys in your OBS profiles and your channel's permission; with it we read your key on the platform, compute its fingerprint to compare and store neither the key nor the permission. We store the matching minutes, whether the channel is verified, its age and whether the key matches.</li>
+    <li><strong>Computer fingerprint:</strong> a code computed on your computer from the ID Windows gives the machine, mixed with a Vodwise-specific value so it cannot be reversed or linked to other services. We keep up to 5 per account, only so the welcome offer and invitations can't be repeated from the same computer.</li>
+    <li><strong>Offer, invitations and chargebacks:</strong> that your channel and your computers' fingerprints have used the welcome offer; your invite code, who invited you and whether the reward was given; and, if there was a chargeback, the block marker for the account, the channel and those fingerprints.</li>
+    <li><strong>On your computer, without leaving it:</strong> in the free version, the local AI that picks the basic clips and the Windows voices for the chat run on your machine; nothing is sent to any provider.</li>
   </ul>
   <h3>Payments</h3>
   <p>Payments are handled by <strong>Paddle</strong> (Paddle.com Market Ltd), acting as the seller ("Merchant of Record"): it charges you, issues the invoice and handles taxes, under its own <a href="https://www.paddle.com/legal/privacy">privacy policy</a>. We only receive your Paddle customer ID, the plan or top-up purchased and the dates of the paid period. We never see your card details.</p>
@@ -235,7 +242,7 @@
   <h2>4. Legal basis</h2>
   <ul>
     <li><strong>Performance of the contract</strong>: your account, credits, AI and connections, as they are the service you sign up for.</li>
-    <li><strong>Legitimate interest</strong>: security, abuse limits, the "trial used" record and, during the beta, the summary of each session to fix errors (you can turn it off at any time).</li>
+    <li><strong>Legitimate interest</strong>: security, abuse limits, channel verification, the computer fingerprint and the offer-used and chargeback markers (to prevent fraud) and, during the beta, the summary of each session to fix errors (you can turn it off at any time).</li>
     <li><strong>Consent</strong>: crash notices and sending support reports. You can withdraw it at any time.</li>
     <li><strong>Legal obligation</strong>: whatever the law requires us to keep.</li>
   </ul>
@@ -259,7 +266,8 @@
     <li>Sessions: up to 90 days or until you sign out.</li>
     <li>Authorizations passing through our server: 2 minutes. Kick notifications: 10 minutes.</li>
     <li>Support reports: 12 months; unlinked from your account when you delete it.</li>
-    <li>"Trial used" record: kept after deleting the account, only to prevent repeated trials.</li>
+    <li>Channel verification (with the computer fingerprints) and invitations: while you have the account; deleted when you delete it.</li>
+    <li>"Offer used" and chargeback markers (channel and computer fingerprints): kept after you delete the account, only to stop them being repeated.</li>
     <li>Invoices: kept by Paddle as required by law.</li>
   </ul>
 
@@ -318,10 +326,13 @@
   <h2>3. Quais dados tratamos e para quê</h2>
   <h3>Sua conta do Vodwise</h3>
   <ul>
-    <li><strong>Ao entrar com Twitch ou Google:</strong> o identificador da sua conta nessa plataforma e seu nome visível. Não recebemos nem guardamos sua senha nem seu e-mail.</li>
+    <li><strong>Ao entrar com Twitch, Kick ou Google:</strong> o identificador da sua conta nessa plataforma e seu nome visível. Não recebemos nem guardamos sua senha nem seu e-mail.</li>
     <li><strong>Sessão:</strong> uma chave de sessão guardada criptografada no seu computador; no servidor guardamos só a impressão digital dela (não a chave). Expira em 90 dias.</li>
     <li><strong>Créditos:</strong> seu plano, seu saldo e o histórico de uso (que tipo de função foi usada, quando e quantos créditos custou). Não inclui o conteúdo.</li>
-    <li><strong>Teste grátis:</strong> para que seja um por canal, guardamos que o identificador da sua conta da Twitch ou do Google já o usou.</li>
+    <li><strong>Verificação do canal:</strong> enquanto o OBS transmite, o app nos avisa a cada 5 minutos e consultamos na Twitch ou na Kick, com dados públicos, se seu canal está ao vivo ao mesmo tempo (e, na Twitch, desde quando o canal existe). Uma vez por live, o app envia só as <em>impressões</em> (SHA-256, que não podem ser desfeitas) das chaves de transmissão dos seus perfis do OBS e a permissão do seu canal; com ela lemos sua chave na plataforma, calculamos a impressão para comparar e não guardamos nem a chave nem a permissão. Guardamos os minutos que coincidiram, se o canal está verificado, sua antiguidade e se a chave coincide.</li>
+    <li><strong>Impressão do computador:</strong> um código calculado no seu computador a partir do identificador que o Windows dá ao equipamento, misturado com um valor próprio da Vodwise para que não possa ser desfeito nem relacionado com outros serviços. Guardamos até 5 por conta, só para que a oferta de boas-vindas e os convites não se repitam do mesmo computador.</li>
+    <li><strong>Oferta, convites e estornos:</strong> que seu canal e as impressões dos seus computadores já usaram a oferta de boas-vindas; seu código de convite, quem te convidou e se a recompensa foi dada; e, se houve um estorno, a marca de bloqueio da conta, do canal e dessas impressões.</li>
+    <li><strong>No seu computador, sem sair dele:</strong> na versão gratuita, a IA local que escolhe os clipes básicos e as vozes do Windows do chat funcionam no seu equipamento; nada é enviado a nenhum provedor.</li>
   </ul>
   <h3>Pagamentos</h3>
   <p>Os pagamentos são processados pela <strong>Paddle</strong> (Paddle.com Market Ltd), que atua como vendedora ("Merchant of Record"): cobra, emite a nota e cuida dos impostos. A Paddle trata seus dados de pagamento conforme a própria <a href="https://www.paddle.com/legal/privacy">política de privacidade</a>. Nós só recebemos seu identificador de cliente na Paddle, o plano ou a recarga comprada e as datas do período pago. Nunca vemos os dados do seu cartão.</p>
@@ -371,7 +382,7 @@
   <h2>4. Base legal</h2>
   <ul>
     <li><strong>Execução do contrato</strong>: sua conta, os créditos, a IA e as conexões, porque são o serviço que você contrata.</li>
-    <li><strong>Interesse legítimo</strong>: a segurança, os limites contra abusos, a marca de "teste usado" e, durante a beta, o resumo de cada sessão para corrigir erros (você pode desligá-lo quando quiser).</li>
+    <li><strong>Interesse legítimo</strong>: a segurança, os limites contra abusos, a verificação do canal, a impressão do computador e as marcas de oferta usada e de estorno (para evitar fraudes) e, durante a beta, o resumo de cada sessão para corrigir erros (você pode desligá-lo quando quiser).</li>
     <li><strong>Consentimento</strong>: os avisos de fechamento por erro e o envio de relatórios ao suporte. Você pode retirá-lo quando quiser.</li>
     <li><strong>Obrigação legal</strong>: o que a lei nos obrigar a guardar.</li>
   </ul>
@@ -395,7 +406,8 @@
     <li>Sessões: até 90 dias ou até você sair.</li>
     <li>Autorizações de passagem pelo nosso servidor: 2 minutos. Avisos da Kick: 10 minutos.</li>
     <li>Relatórios de suporte: 12 meses; ao excluir a conta, são desvinculados dela.</li>
-    <li>Marca de "teste usado": é mantida depois de excluir a conta, só para impedir testes repetidos.</li>
+    <li>Verificação do canal (com as impressões do computador) e convites: enquanto você tiver a conta; são apagados ao excluí-la.</li>
+    <li>Marcas de "oferta usada" e de estorno (canal e impressões do computador): são mantidas depois de excluir a conta, só para impedir que se repitam.</li>
     <li>Notas fiscais: a Paddle as guarda conforme a lei.</li>
   </ul>
 
