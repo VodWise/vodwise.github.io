@@ -189,3 +189,8 @@ h1.page-h1{font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.02
 .calc-row input{width:150px;max-width:100%;background:#0b0f17;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:inherit}
 .calc-out{margin:14px 0 4px;font-size:17px;color:var(--soft)}
 .calc-total{font-size:14px;color:var(--muted)}.calc-warn{display:inline-block;margin:6px 0 2px;font-size:14px;color:#ffb86b}.calc-out strong{color:var(--a1)}
+.who{display:grid;grid-template-columns:180px minmax(0,1fr);gap:32px;align-items:center;max-width:860px}
+.who img{width:180px;height:180px;border-radius:50%;object-fit:cover;border:3px solid var(--line);box-shadow:0 20px 50px -25px rgba(62,230,200,.5)}
+.who h2{margin-top:4px}.who p{color:var(--soft);font-size:16px;line-height:1.6}.who-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.cmp-src a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+@media (max-width:620px){.who{grid-template-columns:1fr;gap:18px;text-align:center}.who img{margin:0 auto;width:140px;height:140px}.who-links{justify-content:center}}
