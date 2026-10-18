@@ -1,15 +1,13 @@
-/* Vodwise — vídeo explicativo de la portada. No carga nada de YouTube hasta que se pulsa (sin cookies al entrar). */
+/* Vodwise — vídeo de presentación de la portada. Alojado en la web: no descarga nada hasta que se pulsa y nunca suena solo. */
 (function () {
-  var btn = document.querySelector('.ex-play');
-  if (!btn) return;
-  var id = btn.getAttribute('data-video');
-  if (!/^[A-Za-z0-9_-]{11}$/.test(id || '')) return; // sin vídeo publicado aún: se queda el cartel
+  var v = document.querySelector('.ex-video'), btn = document.querySelector('.ex-play');
+  if (!v || !btn) return;
+  btn.hidden = false; // con JS, botón grande encima del cartel; sin JS quedan los controles del navegador
+  v.controls = false;
   btn.addEventListener('click', function () {
-    var f = document.createElement('iframe');
-    f.src = 'https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1';
-    f.title = 'Qué es Vodwise';
-    f.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
-    f.allowFullscreen = true;
-    btn.replaceWith(f);
+    btn.hidden = true;
+    v.controls = true;
+    v.play();
+    v.focus();
   });
 })();

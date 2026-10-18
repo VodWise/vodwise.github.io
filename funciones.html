@@ -37,9 +37,227 @@
 .fn-tab{display:block;width:100%;text-align:left;background:transparent;border:1px solid transparent;color:var(--soft);padding:8px 10px;border-radius:10px;font:inherit;font-size:14.5px;cursor:pointer}.fn-tab:hover{background:rgba(255,255,255,.04);color:var(--text)}.fn-tab.on{background:var(--card);border-color:var(--line);color:var(--text);font-weight:650}
 .fn-panel[hidden]{display:none}.fn-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:34px;align-items:center;padding:18px 4px;position:relative}
 .fn-shot{position:relative;perspective:1600px;padding:22px 10px}.fn-shot::before{content:"";position:absolute;inset:6% 4% 0 4%;background:radial-gradient(60% 55% at 35% 45%,rgba(62,230,200,.42),transparent 70%),radial-gradient(55% 50% at 75% 65%,rgba(123,108,255,.45),transparent 72%);filter:blur(28px);z-index:0}.fn-shot img{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:14px;background:#0b0f17;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -35px rgba(0,0,0,.9),0 18px 40px -20px rgba(62,230,200,.18);transition:transform .6s cubic-bezier(.2,.7,.2,1)}.fn-shot img.fn-ui{transform:rotateY(-7deg) rotateX(3deg);-webkit-mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));mask-composite:intersect}.fn-shot img.fn-art{transform:rotateY(-5deg) rotateX(2deg);-webkit-mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%);mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%)}.fn-shot img.fn-tall{width:auto;max-width:62%;max-height:520px;margin:0 auto;transform:rotate(-3deg);border-radius:22px;box-shadow:0 0 0 6px #0b0f17,0 0 0 7px rgba(255,255,255,.12),0 40px 90px -30px rgba(0,0,0,.9)}.fn-panel:hover .fn-shot img.fn-ui,.fn-panel:hover .fn-shot img.fn-art{transform:rotateY(-2deg) rotateX(1deg)}.fn-panel:hover .fn-shot img.fn-tall{transform:rotate(-1deg)}.fn-pending{aspect-ratio:16/10;border-radius:12px;border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;background:repeating-conic-gradient(rgba(255,255,255,.03) 0 25%,transparent 0 50%) 0 0/24px 24px}
+.fn-shot video.fn-vid{position:relative;z-index:1;display:block;width:100%;height:auto;aspect-ratio:16/9;border-radius:14px;background:#0b0f17;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -35px rgba(0,0,0,.9),0 18px 40px -20px rgba(62,230,200,.18)}
 .fn-text h3{margin:6px 0 10px;font-size:24px}.fn-text p{color:var(--soft);font-size:15.5px;line-height:1.55}.fn-nav{margin-top:14px}
 @media (max-width:860px){.fn-layout{grid-template-columns:1fr}.fn-tabs{position:static;max-height:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:10px;padding-bottom:6px}.fn-group{display:flex;gap:6px;align-items:center}.fn-group h4{display:none}.fn-tab{white-space:nowrap;width:auto;border-color:var(--line)}.fn-panel{grid-template-columns:1fr}.fn-shot img.fn-ui,.fn-shot img.fn-art{transform:none}}
 @media (max-width:700px){.cmp{font-size:13px}.cmp th,.cmp td{padding:9px 8px}}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "VideoObject",
+      "name": "Tu copiloto durante el directo · Vodwise",
+      "description": "¿Y si pudieras hablarle a tu directo como a una persona? Pídele «cambia a la escena de charla» o «pon la categoría en Minecraft». Te enseña el cambio en cada plataforma y lo aplica cuando dices que sí.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f01-copiloto.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT17S",
+      "contentUrl": "https://vodwise.com/assets/videos/f01-copiloto.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Primeros pasos · Vodwise",
+      "description": "Empezar con Vodwise es una conversación. La asistente te guía: tu nombre, tus plataformas, OBS y tu estilo. Y si lo dejas a medias, sigues otro día.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f22-primeros-pasos.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f22-primeros-pasos.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Voz en directo (F8) · Vodwise",
+      "description": "Tu directo, con una compañera que habla. Escucha el directo y solo entra cuando le hablas, la nombras o el chat lo merece. Y con una tecla le pides lo que quieras, como un walkie-talkie.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f02-asistente-con-voz.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT18S",
+      "contentUrl": "https://vodwise.com/assets/videos/f02-asistente-con-voz.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Resumen y estado del directo · Vodwise",
+      "description": "«¿Cómo va el directo?» Vodwise te cuenta los raids, las subs, los momentos y la audiencia, y tu chat también puede pedirlo. Y tienes las estadísticas de cada directo, en todas tus plataformas.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f16-resumen-y-estadisticas.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f16-resumen-y-estadisticas.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Chat unificado · Vodwise",
+      "description": "¿Emites en Twitch, Kick y YouTube a la vez? Vodwise junta los tres chats en una sola ventana, con los emoticonos y las insignias de cada plataforma. Y moderas con un clic desde el nombre.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f03-chat-unificado.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT17S",
+      "contentUrl": "https://vodwise.com/assets/videos/f03-chat-unificado.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Bot multistream · Vodwise",
+      "description": "Un solo bot para Twitch, Kick y YouTube. Comandos, temporizadores, agradecimientos, puntos y niveles. Y cada comando con su interruptor y su espera.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f05-bot-multistream.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f05-bot-multistream.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Voces del chat · Vodwise",
+      "description": "Que tu chat suene en el directo. Cada viewer con su propia voz, siempre la misma, y la velocidad a tu gusto. Y el filtro de moderación pasa antes de leer nada.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f06-voces-del-chat.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f06-voces-del-chat.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Acciones · Vodwise",
+      "description": "Que tu chat haga cosas en tu directo. Recompensas de puntos, comandos, bits y KICKs que lanzan sonidos, imágenes y vídeos en OBS. Importa las que ya tienes o crea nuevas en un momento.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f07-acciones.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT18S",
+      "contentUrl": "https://vodwise.com/assets/videos/f07-acciones.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Discord · Vodwise",
+      "description": "Que tu Discord se entere de todo. Avisa cuando empiezas, de los mejores momentos y cuando terminas, como una persona. Y conversa con tu comunidad en los canales que elijas.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f15-discord.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f15-discord.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Alertas · Vodwise",
+      "description": "Alertas para follows, subs, regalos, bits y raids. Por plataforma, por tipo y con el volumen igualado. Usa las tuyas o pide un juego completo con tu logo.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f08-alertas.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f08-alertas.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Overlays a tu medida · Vodwise",
+      "description": "Monta tus overlays sin pelearte con nada. Textos, metas, último follow, chat en pantalla y espectadores, capa a capa. O describe lo que quieres y te lo monta.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f09-overlays.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT17S",
+      "contentUrl": "https://vodwise.com/assets/videos/f09-overlays.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Escenas y diseño · Vodwise",
+      "description": "Inicio, charla, juego, pausa y final. Una colección entera de escenas, con su transición y tu logo, diseñada a partir de tu estilo. Y los créditos finales, a juego.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f10-escenas-y-diseno.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f10-escenas-y-diseno.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Montar OBS · Vodwise",
+      "description": "¿Configurar OBS te da dolor de cabeza? Vodwise mira tu PC y tu conexión, propone la calidad y te monta las escenas y los perfiles. Y lo tuyo no se toca: todo va en un perfil nuevo.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f11-montar-obs.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT18S",
+      "contentUrl": "https://vodwise.com/assets/videos/f11-montar-obs.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Créditos finales · Vodwise",
+      "description": "Termina tu directo como una película. Créditos con todos los que pasaron por el chat, las subs, los raids y las donaciones. Elige un diseño, cámbialo a tu gusto o pide uno nuevo.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f12-creditos-finales.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT17S",
+      "contentUrl": "https://vodwise.com/assets/videos/f12-creditos-finales.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Avatar VTuber · Vodwise",
+      "description": "¿Sin cámara? Usa un avatar. En 2D o en 3D, con tus imágenes o creado desde una descripción o una foto. Habla con tu micro y sigue tu cara.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f13-avatar-vtuber.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f13-avatar-vtuber.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Stream Deck · Vodwise",
+      "description": "Tu Stream Deck, listo en un doble clic. Un perfil con tus escenas, tu música, las teclas de la asistente y las acciones de Twitch. Ordenado y listo para importar.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f14-stream-deck.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT15S",
+      "contentUrl": "https://vodwise.com/assets/videos/f14-stream-deck.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Vídeo completo y lo mejor · Vodwise",
+      "description": "Acabas el directo y el vídeo se monta solo. Recorta silencios, elige los momentos y saca el vídeo completo con capítulos y lo mejor del directo. Tú lo revisas y decides qué sale.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f17-video-completo.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT17S",
+      "contentUrl": "https://vodwise.com/assets/videos/f17-video-completo.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Shorts con subtítulos · Vodwise",
+      "description": "Shorts de cada directo, sin editar nada. Clips verticales con tu cámara seguida, un titular y subtítulos. Y con calendario, para publicar uno al día.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f18-shorts.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT15S",
+      "contentUrl": "https://vodwise.com/assets/videos/f18-shorts.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Títulos, descripción y miniatura · Vodwise",
+      "description": "Títulos con gancho y miniaturas con tu cara de verdad. Descripción, etiquetas y capítulos, pensados para lo que se busca ahora. Y todo a tu estilo: se lo cuentas con tus palabras.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f19-titulos-y-miniaturas.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f19-titulos-y-miniaturas.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Publicar en un clic · Vodwise",
+      "description": "Apruebas la edición y está todo listo. Títulos, descripciones y textos para YouTube, TikTok e Instagram, listos para copiar. Y nada se publica sin tu sí.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f20-publicar.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT16S",
+      "contentUrl": "https://vodwise.com/assets/videos/f20-publicar.mp4",
+      "inLanguage": "es"
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Tu PC, tus datos · Vodwise",
+      "description": "Tu directo es tuyo. La grabación se edita en tu ordenador y tus claves se guardan cifradas. Y nada se publica sin tu aprobación.",
+      "thumbnailUrl": "https://vodwise.com/assets/videos/f21-tu-pc-tus-datos.webp",
+      "uploadDate": "2026-10-20",
+      "duration": "PT14S",
+      "contentUrl": "https://vodwise.com/assets/videos/f21-tu-pc-tus-datos.mp4",
+      "inLanguage": "es"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 <header class="top">
@@ -70,87 +288,87 @@
       </nav>
       <div class="fn-panels">
       <section class="fn-panel" id="fn-conversacion" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/conversacion.webp" alt="Tu copiloto durante el directo" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f01-copiloto.webp" width="1280" height="720" aria-label="Vídeo: Tu copiloto durante el directo"><source src="assets/videos/f01-copiloto.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Directo</p><h3>Tu copiloto durante el directo</h3><p>Hablas con Vodwise como con una persona: «¿qué título tengo?», «cambia a la escena de charla», «pon la categoría en Minecraft». Prepara el cambio, te lo enseña por plataforma y lo aplica cuando dices «sí». Al lado, tus plataformas con título, categoría y espectadores, la actividad del directo y lo que hace la moderación.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-primeros-pasos" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/primeros-pasos.webp" alt="Primeros pasos" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f22-primeros-pasos.webp" width="1280" height="720" aria-label="Vídeo: Primeros pasos"><source src="assets/videos/f22-primeros-pasos.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Directo</p><h3>Primeros pasos</h3><p>La primera vez, la asistente te guía hablando o por escrito: tu nombre, tu cuenta, lo que hay que preparar, tus plataformas, OBS y tu estilo. Puedes dejarlo a medias y seguir otro día.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-voz-directo" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/voz-directo.webp" alt="Voz en directo (F8)" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f02-asistente-con-voz.webp" width="1280" height="720" aria-label="Vídeo: Voz en directo (F8)"><source src="assets/videos/f02-asistente-con-voz.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Directo</p><h3>Voz en directo (F8)</h3><p>Si quieres, la asistente escucha el directo y solo entra cuando le hablas, la nombras o el chat lo merece. Su voz va al stream, con un modo económico o uno más natural.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-hablar" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/hablar.webp" alt="Hablar con la asistente (F9)" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f02-asistente-con-voz.webp" width="1280" height="720" aria-label="Vídeo: Hablar con la asistente (F9)"><source src="assets/videos/f02-asistente-con-voz.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Directo</p><h3>Hablar con la asistente (F9)</h3><p>Pulsa una tecla, habla y suelta, como un walkie-talkie: pregunta, pide un cambio de escena o de título, o que busque algo. Te responde en la app y, si quieres, en voz alta.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-estado" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/asistente-ia.webp" alt="Resumen y estado del directo" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f16-resumen-y-estadisticas.webp" width="1280" height="720" aria-label="Vídeo: Resumen y estado del directo"><source src="assets/videos/f16-resumen-y-estadisticas.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Directo</p><h3>Resumen y estado del directo</h3><p>«¿Cómo va el directo?» te da un diario de lo que ha pasado: raids, subs, momentos, audiencia. Tus viewers pueden pedirlo en el chat. Y una página de Estado te dice qué está conectado y qué no.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-chat-unificado" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/conversacion.webp" alt="Chat unificado" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f03-chat-unificado.webp" width="1280" height="720" aria-label="Vídeo: Chat unificado"><source src="assets/videos/f03-chat-unificado.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Chat</p><h3>Chat unificado</h3><p>Twitch, Kick y YouTube en una sola ventana, con emoticonos, insignias, destacados y la moderación a un clic desde el nombre.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-bot" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/bot.webp" alt="Bot multistream" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f05-bot-multistream.webp" width="1280" height="720" aria-label="Vídeo: Bot multistream"><source src="assets/videos/f05-bot-multistream.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Chat</p><h3>Bot multistream</h3><p>Comandos, temporizadores, agradecimientos por tipo, puntos y niveles y filtros de spam. El mismo bot en las tres plataformas, con interruptores y esperas para cada comando.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-voces-chat" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/voz-hablada.webp" alt="Voces del chat" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f06-voces-del-chat.webp" width="1280" height="720" aria-label="Vídeo: Voces del chat"><source src="assets/videos/f06-voces-del-chat.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Chat</p><h3>Voces del chat</h3><p>Los mensajes del chat se leen en el directo, cada viewer con su voz fija. Velocidad y voces a tu gusto; el filtro de moderación pasa antes.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-acciones" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/acciones.webp" alt="Acciones" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f07-acciones.webp" width="1280" height="720" aria-label="Vídeo: Acciones"><source src="assets/videos/f07-acciones.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Chat</p><h3>Acciones</h3><p>Recompensas de puntos, comandos con coste, bits y KICKs que disparan sonidos, imágenes y vídeos en OBS. Importa las que ya tienes o crea nuevas.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-discord" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/discord.webp" alt="Discord" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f15-discord.webp" width="1280" height="720" aria-label="Vídeo: Discord"><source src="assets/videos/f15-discord.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Chat</p><h3>Discord</h3><p>Vodwise avisa en tu servidor como una persona: cuando empiezas, de los momentos buenos (raids, regalos, trenes de hype) y al terminar. Y conversa con tu comunidad en los canales que elijas.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-alertas" role="tabpanel">
-        <div class="fn-shot"><img class="fn-art" src="assets/funciones/alerta.webp" alt="Alertas" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f08-alertas.webp" width="1280" height="720" aria-label="Vídeo: Alertas"><source src="assets/videos/f08-alertas.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Alertas</h3><p>Follows, subs, regalos, bits, raids y canjes con alertas por plataforma y por tipo, igualadas de volumen. Usa las tuyas o pide a la IA un juego completo con tu logo.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-overlays" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/overlays.webp" alt="Overlays a tu medida" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f09-overlays.webp" width="1280" height="720" aria-label="Vídeo: Overlays a tu medida"><source src="assets/videos/f09-overlays.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Overlays a tu medida</h3><p>Un editor de capas para tus overlays: textos, formas, imágenes, último follow, metas, chat en pantalla y espectadores. O describes lo que quieres y la IA te lo monta.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-escenas" role="tabpanel">
-        <div class="fn-shot"><img class="fn-art" src="assets/funciones/escena.webp" alt="Escenas y diseño" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f10-escenas-y-diseno.webp" width="1280" height="720" aria-label="Vídeo: Escenas y diseño"><source src="assets/videos/f10-escenas-y-diseno.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Escenas y diseño</h3><p>Colecciones de escenas completas (inicio, charla, juego, pausa, final) con una transición propia y tu logo como emblema, diseñadas por la IA a partir de tu estilo, y los créditos finales a juego.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-montar-obs" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/montar-obs.webp" alt="Montar OBS" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f11-montar-obs.webp" width="1280" height="720" aria-label="Vídeo: Montar OBS"><source src="assets/videos/f11-montar-obs.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Montar OBS</h3><p>Analiza tu PC y tu conexión, propone la calidad adecuada, monta escenas, perfiles y claves de emisión, instala lo que falta y revisa tu OBS. Lo tuyo no se toca: todo va en un perfil nuevo.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-creditos-finales" role="tabpanel">
-        <div class="fn-shot"><img class="fn-art" src="assets/funciones/creditos-neon.webp" alt="Créditos finales" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f12-creditos-finales.webp" width="1280" height="720" aria-label="Vídeo: Créditos finales"><source src="assets/videos/f12-creditos-finales.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Créditos finales</h3><p>Al terminar, unos créditos con todos los que pasaron por el chat, las subs, raids y donaciones. Elige un diseño ya hecho, cámbialo a tu gusto o pide uno nuevo a la IA.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-avatar" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/avatar.webp" alt="Avatar VTuber" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f13-avatar-vtuber.webp" width="1280" height="720" aria-label="Vídeo: Avatar VTuber"><source src="assets/videos/f13-avatar-vtuber.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Avatar VTuber</h3><p>En vez de tu cámara, un avatar 2D (tus imágenes o uno creado con IA) o 3D (sube tu modelo o créalo con IA desde una descripción o una foto). Habla con tu micro y sigue tu cara.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-stream-deck" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/stream-deck.webp" alt="Stream Deck" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f14-stream-deck.webp" width="1280" height="720" aria-label="Vídeo: Stream Deck"><source src="assets/videos/f14-stream-deck.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Pantalla y OBS</p><h3>Stream Deck</h3><p>Un perfil para tu Stream Deck con tus escenas de OBS, la música, las teclas de la asistente y las acciones de Twitch, ordenado por la IA. Se importa con un doble clic.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-edicion" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/revisar.webp" alt="Vídeo completo y lo mejor" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f17-video-completo.webp" width="1280" height="720" aria-label="Vídeo: Vídeo completo y lo mejor"><source src="assets/videos/f17-video-completo.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Edición</p><h3>Vídeo completo y lo mejor</h3><p>Al terminar el directo, Vodwise lo revisa entero, recorta silencios, elige los momentos y monta el vídeo completo con capítulos y subtítulos, y «lo mejor del directo» de 8–13 minutos. Lo revisas en la app, vídeo a vídeo.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-shorts" role="tabpanel">
-        <div class="fn-shot"><img class="fn-tall" src="assets/funciones/short.webp" alt="Shorts con subtítulos" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f18-shorts.webp" width="1280" height="720" aria-label="Vídeo: Shorts con subtítulos"><source src="assets/videos/f18-shorts.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Edición</p><h3>Shorts con subtítulos</h3><p>4–6 clips verticales por directo, con tu cámara seguida, un titular y subtítulos. Con calendario de publicación (uno al día) y la opción de pedir otro momento.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-titulos" role="tabpanel">
-        <div class="fn-shot"><img class="fn-art" src="assets/funciones/miniatura.webp" alt="Títulos, descripción y miniatura" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f19-titulos-y-miniaturas.webp" width="1280" height="720" aria-label="Vídeo: Títulos, descripción y miniatura"><source src="assets/videos/f19-titulos-y-miniaturas.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Edición</p><h3>Títulos, descripción y miniatura</h3><p>Títulos con gancho y descripción pensados para lo que se busca ahora, etiquetas, capítulos y varias miniaturas con tu cara real para probar cuál funciona mejor.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-publicar" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/publicar.webp" alt="Publicar en un clic" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f20-publicar.webp" width="1280" height="720" aria-label="Vídeo: Publicar en un clic"><source src="assets/videos/f20-publicar.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Edición</p><h3>Publicar en un clic</h3><p>Cuando apruebas la edición, una página con todo listo para copiar (títulos, descripciones, textos de Shorts, TikTok e Instagram), la carpeta de los archivos y acceso directo a YouTube Studio, TikTok Studio e Instagram.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-mi-estilo" role="tabpanel">
@@ -170,15 +388,15 @@
         <div class="fn-text"><p class="eyebrow">Tu cuenta</p><h3>Donaciones propias</h3><p>Tu página de donaciones con tu nombre, cobradas en tu propia cuenta de Stripe o PayPal. Nombre y mensaje salen en el directo.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-estadisticas" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/estadisticas.webp" alt="Estadísticas" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f16-resumen-y-estadisticas.webp" width="1280" height="720" aria-label="Vídeo: Estadísticas"><source src="assets/videos/f16-resumen-y-estadisticas.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Tu cuenta</p><h3>Estadísticas</h3><p>Espectadores, follows, subs y eventos por directo y por plataforma, en la app.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-privacidad" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/seguridad.webp" alt="Tu PC, tus datos" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f21-tu-pc-tus-datos.webp" width="1280" height="720" aria-label="Vídeo: Tu PC, tus datos"><source src="assets/videos/f21-tu-pc-tus-datos.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Tu cuenta</p><h3>Tu PC, tus datos</h3><p>La grabación no sale de tu ordenador; las autorizaciones se guardan cifradas y las retiras cuando quieras; nada se publica sin tu aprobación.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-instalacion" role="tabpanel">
-        <div class="fn-shot"><img class="fn-ui" src="assets/funciones/instalacion.webp" alt="Instalación sin complicaciones" loading="lazy"></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="assets/videos/f22-primeros-pasos.webp" width="1280" height="720" aria-label="Vídeo: Instalación sin complicaciones"><source src="assets/videos/f22-primeros-pasos.mp4" type="video/mp4"></video></div>
         <div class="fn-text"><p class="eyebrow">Tu cuenta</p><h3>Instalación sin complicaciones</h3><p>Un instalador para Windows. Lo que hace falta para editar se descarga una sola vez, con comprobación de cada archivo, y las actualizaciones llegan solas.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       </div>
@@ -206,5 +424,6 @@
   </div>
 </footer>
 <script src="assets/waitlist.js" defer></script>
+<script src="assets/funciones-video.js" defer></script>
 </body>
 </html>

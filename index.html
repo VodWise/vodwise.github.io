@@ -37,11 +37,29 @@
 .fn-shot{position:relative;perspective:1600px;padding:22px 10px}.fn-shot::before{content:"";position:absolute;inset:6% 4% 0 4%;background:radial-gradient(60% 55% at 35% 45%,rgba(62,230,200,.42),transparent 70%),radial-gradient(55% 50% at 75% 65%,rgba(123,108,255,.45),transparent 72%);filter:blur(28px);z-index:0}.fn-shot img{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:14px;background:#0b0f17;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -35px rgba(0,0,0,.9),0 18px 40px -20px rgba(62,230,200,.18);transition:transform .6s cubic-bezier(.2,.7,.2,1)}.fn-shot img.fn-ui{transform:rotateY(-7deg) rotateX(3deg);-webkit-mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));mask-composite:intersect}.fn-shot img.fn-art{transform:rotateY(-5deg) rotateX(2deg);-webkit-mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%);mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%)}.fn-shot img.fn-tall{width:auto;max-width:62%;max-height:520px;margin:0 auto;transform:rotate(-3deg);border-radius:22px;box-shadow:0 0 0 6px #0b0f17,0 0 0 7px rgba(255,255,255,.12),0 40px 90px -30px rgba(0,0,0,.9)}.fn-panel:hover .fn-shot img.fn-ui,.fn-panel:hover .fn-shot img.fn-art{transform:rotateY(-2deg) rotateX(1deg)}.fn-panel:hover .fn-shot img.fn-tall{transform:rotate(-1deg)}.fn-pending{aspect-ratio:16/10;border-radius:12px;border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;background:repeating-conic-gradient(rgba(255,255,255,.03) 0 25%,transparent 0 50%) 0 0/24px 24px}
 .fn-text h3{margin:6px 0 10px;font-size:24px}.fn-text p{color:var(--soft);font-size:15.5px;line-height:1.55}.fn-nav{margin-top:14px}
 @media (max-width:860px){.fn-layout{grid-template-columns:1fr}.fn-tabs{position:static;max-height:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:10px;padding-bottom:6px}.fn-group{display:flex;gap:6px;align-items:center}.fn-group h4{display:none}.fn-tab{white-space:nowrap;width:auto;border-color:var(--line)}.fn-panel{grid-template-columns:1fr}.fn-shot img.fn-ui,.fn-shot img.fn-art{transform:none}}
-.explainer{width:100%}.ex-play{position:relative;display:block;width:100%;aspect-ratio:16/9;border:1px solid var(--line);border-radius:20px;overflow:hidden;padding:0;cursor:pointer;background:radial-gradient(70% 80% at 25% 30%,rgba(62,230,200,.28),transparent 70%),radial-gradient(70% 80% at 80% 75%,rgba(123,108,255,.34),transparent 72%),var(--card);box-shadow:0 40px 80px -40px rgba(0,0,0,.8);color:var(--text);font:inherit}
-.ex-play img.ex-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.ex-poster{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:24px}.ex-poster img{width:54px;height:54px}.ex-poster b{font-size:clamp(18px,2.4vw,26px);line-height:1.25;letter-spacing:-.01em}
-.ex-btn{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--grad);display:grid;place-items:center;box-shadow:0 12px 40px -10px rgba(62,230,200,.6);opacity:.94;transition:transform .2s}.ex-btn svg{width:34px;height:34px;fill:#0b0f17;margin-left:4px}.ex-play:hover .ex-btn,.ex-play:focus-visible .ex-btn{transform:scale(1.08)}.ex-poster{justify-content:flex-start;align-items:flex-start;flex-direction:row;gap:10px}.ex-poster img{width:30px;height:30px}.ex-poster b{font-size:18px}
-.ex-cap{position:absolute;left:14px;bottom:12px;font-size:13px;font-weight:650;background:rgba(11,15,23,.75);border:1px solid var(--line);border-radius:999px;padding:4px 12px}.explainer iframe{display:block;width:100%;aspect-ratio:16/9;border:0;border-radius:20px}.ex-note{margin:10px 2px 0;color:var(--muted);font-size:13px}
+.explainer{width:100%}.ex-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#0b0f17;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}.ex-video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0b0f17}
+.ex-play{position:absolute;inset:0;width:100%;border:0;padding:0;margin:0;background:transparent;cursor:pointer;color:var(--text);font:inherit}.ex-play[hidden]{display:none}
+.ex-btn{position:absolute;left:58%;top:62%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--grad);display:grid;place-items:center;box-shadow:0 12px 40px -10px rgba(62,230,200,.6);opacity:.94;transition:transform .2s}.ex-btn svg{width:34px;height:34px;fill:#0b0f17;margin-left:4px}.ex-play:hover .ex-btn,.ex-play:focus-visible .ex-btn{transform:scale(1.08)}
+.ex-note{margin:10px 2px 0;color:var(--muted);font-size:13px}@media (max-width:520px){.ex-btn{width:60px;height:60px;margin:-30px 0 0 -30px}.ex-btn svg{width:26px;height:26px}}@media (prefers-reduced-motion:reduce){.ex-btn{transition:none}}
 @media (max-width:700px){.cmp{font-size:13px}.cmp th,.cmp td{padding:9px 8px}}</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Qué es Vodwise",
+  "description": "Termina el directo y el vídeo se edita solo: Vodwise es el copiloto de tus directos y monta el vídeo completo, lo mejor y los Shorts en tu PC.",
+  "thumbnailUrl": "https://vodwise.com/assets/videos/presentacion.webp",
+  "uploadDate": "2026-10-20",
+  "duration": "PT1M6S",
+  "contentUrl": "https://vodwise.com/assets/videos/presentacion.mp4",
+  "inLanguage": "es",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Vodwise",
+    "url": "https://vodwise.com/"
+  }
+}
+</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -143,14 +161,17 @@
       <p class="fine">App de escritorio para Windows. No publica nada sin tu aprobación. La beta es gratis, con invitación.</p>
     </div>
     <div class="explainer">
-      <!-- Vídeo explicativo (75 s). Antes de publicar: poner el identificador del vídeo de YouTube en data-video. -->
-      <button class="ex-play" type="button" data-video="PENDIENTE_ID_YOUTUBE" aria-label="Ver el vídeo: qué es Vodwise en 75 segundos">
-        <!-- Cuando exista la miniatura del vídeo: <img class="ex-thumb" src="assets/explicativo.jpg" alt="" width="1280" height="720" loading="lazy"> -->
-        <span class="ex-poster" aria-hidden="true"><img src="assets/logo.svg" alt=""><b>Vodwise</b></span>
-        <span class="ex-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        <span class="ex-cap">Qué es Vodwise · 75 s</span>
-      </button>
-      <p class="ex-note">El vídeo se carga desde YouTube solo si pulsas para verlo.</p>
+      <!-- Presentación (66 s, versión 2). Alojada aquí: no carga nada hasta que se pulsa y nunca suena sola. -->
+      <div class="ex-frame">
+        <video class="ex-video" controls preload="none" playsinline poster="assets/videos/presentacion.webp" width="1280" height="720" aria-label="Vídeo: qué es Vodwise en 66 segundos">
+          <source src="assets/videos/presentacion.mp4" type="video/mp4">
+          <track kind="captions" src="assets/videos/presentacion-es.vtt" srclang="es" label="Español">
+        </video>
+        <button class="ex-play" type="button" aria-label="Ver el vídeo: qué es Vodwise en 66 segundos" hidden>
+          <span class="ex-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </button>
+      </div>
+      <p class="ex-note">Qué es Vodwise, en 66 segundos.</p>
     </div>
   </div>
 </section>
