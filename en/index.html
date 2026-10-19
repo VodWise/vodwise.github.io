@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vodwise — You do the stream. Vodwise does the rest.</title>
-<meta name="description" content="Unified Twitch, Kick and YouTube chat, voice copilot, AI-made OBS alerts and scenes, and automatic editing of your stream on your own PC.">
+<meta name="description" content="Windows app that helps streamers during the stream (Twitch, Kick and YouTube chat, bot, OBS alerts and scenes) and then edits the stream on their own PC: full video, highlights and Shorts.">
 <meta name="theme-color" content="#0b0f17">
 <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 <link rel="canonical" href="https://vodwise.com/en/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/">
 <link rel="alternate" hreflang="x-default" href="https://vodwise.com/">
 <meta property="og:title" content="Vodwise — You do the stream. Vodwise does the rest.">
-<meta property="og:description" content="Unified Twitch, Kick and YouTube chat, voice copilot, AI-made OBS alerts and scenes, and automatic editing of your stream on your own PC.">
+<meta property="og:description" content="Windows app that helps streamers during the stream (Twitch, Kick and YouTube chat, bot, OBS alerts and scenes) and then edits the stream on their own PC: full video, highlights and Shorts.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vodwise.com/en/">
 <meta property="og:image" content="https://vodwise.com/assets/og-en.png">
@@ -41,25 +41,109 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  "name": "Vodwise",
-  "operatingSystem": "Windows 10, Windows 11",
-  "applicationCategory": "MultimediaApplication",
-  "url": "https://vodwise.com/en/",
-  "inLanguage": "en",
-  "description": "Live-stream copilot for Twitch, Kick and YouTube and an automatic editor that builds the full video, the highlights and the Shorts on your own PC.",
-  "image": "https://vodwise.com/assets/og-en.png",
-  "offers": {
-    "@type": "Offer",
-    "name": "Free closed beta",
-    "price": "0",
-    "priceCurrency": "EUR"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Vodwise",
-    "url": "https://vodwise.com/"
-  }
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vodwise.com/#organization",
+      "name": "Vodwise",
+      "url": "https://vodwise.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://vodwise.com/assets/apple-touch-icon.png",
+        "width": 180,
+        "height": 180
+      },
+      "email": "soporte@vodwise.com",
+      "sameAs": [
+        "https://x.com/VodwiseX"
+      ],
+      "founder": {
+        "@id": "https://vodwise.com/#diego"
+      }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://vodwise.com/#diego",
+      "name": "Diego García González",
+      "alternateName": "Degolas",
+      "jobTitle": "Creator of Vodwise and streamer",
+      "image": "https://vodwise.com/assets/diego-garcia.webp",
+      "url": "https://vodwise.com/#quien",
+      "worksFor": {
+        "@id": "https://vodwise.com/#organization"
+      },
+      "sameAs": [
+        "https://www.twitch.tv/degolas",
+        "https://kick.com/degolas",
+        "https://www.youtube.com/@Degolas",
+        "https://x.com/Degolas100"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vodwise.com/#website",
+      "url": "https://vodwise.com/",
+      "name": "Vodwise",
+      "inLanguage": [
+        "es",
+        "en",
+        "pt-BR"
+      ],
+      "publisher": {
+        "@id": "https://vodwise.com/#organization"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://vodwise.com/en/#software",
+      "name": "Vodwise",
+      "url": "https://vodwise.com/en/",
+      "description": "Vodwise is a Windows app (currently in Spanish) that helps Twitch, Kick and YouTube streamers before, during and after the stream: it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and when the stream ends it builds on the streamer's own PC the full video with chapters, a highlights cut and Shorts with subtitles. It publishes nothing without the streamer's approval.",
+      "applicationCategory": "MultimediaApplication",
+      "applicationSubCategory": "Streamer tool: live-stream copilot and automatic video editor",
+      "operatingSystem": "Windows 10, Windows 11",
+      "inLanguage": "es",
+      "image": "https://vodwise.com/assets/og-en.png",
+      "screenshot": [
+        "https://vodwise.com/assets/funciones/conversacion.webp",
+        "https://vodwise.com/assets/funciones/videos.webp",
+        "https://vodwise.com/assets/funciones/short.webp"
+      ],
+      "featureList": [
+        "Unified Twitch, Kick and YouTube chat",
+        "Multistream bot with commands, points, timers and filters",
+        "Chat moderation with the streamer's confirmation",
+        "Voice copilot that changes scenes, titles and categories",
+        "AI-designed OBS alerts, overlays and scenes",
+        "Chat text-to-speech voices",
+        "Discord announcements and conversation",
+        "2D or 3D VTuber avatar",
+        "Full stream video with chapters and subtitles",
+        "Highlights cut of the stream",
+        "Vertical Shorts with subtitles",
+        "YouTube titles, descriptions and thumbnails",
+        "The recording is edited on your own PC"
+      ],
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Twitch, Kick and YouTube streamers"
+      },
+      "offers": {
+        "@type": "Offer",
+        "name": "Free closed beta, by invitation",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://vodwise.com/en/#acceso"
+      },
+      "author": {
+        "@id": "https://vodwise.com/#diego"
+      },
+      "publisher": {
+        "@id": "https://vodwise.com/#organization"
+      }
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -67,6 +151,22 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Vodwise?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vodwise is a Windows app that helps Twitch, Kick and YouTube streamers before, during and after the stream. While you are live it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and answers when you talk to it. When the stream ends, it goes through the recording on your PC and prepares the full video with chapters, a highlights cut and Shorts with subtitles, with their titles and thumbnails. It publishes nothing without your approval. It is in closed beta and the app is currently in Spanish."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is it different from Opus Clip or Streamlabs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Opus Clip turns a video you give it on its website into short clips. Streamlabs and StreamElements focus on alerts, overlays and the bot during the stream. Vodwise does both in one app: it helps you while you are live and, when you finish, it also builds the long video for YouTube, not just clips. The recording stays on your PC and nothing goes out without your «yes»."
+      }
+    },
     {
       "@type": "Question",
       "name": "What do I need?",
@@ -96,7 +196,7 @@
       "name": "How much does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nothing during the closed beta: every tester gets free credits. Later, plans from €14.99 a month with credits included and top-ups that never expire. Every feature records what it spends: you see it in the app."
+        "text": "Nothing during the closed beta: every tester gets free credits. At launch there will be a free-forever version (without the AI features) and plans from €14.99 a month with credits included and top-ups that never expire. Every feature records what it spends: you see it in the app."
       }
     },
     {
@@ -242,10 +342,12 @@
     <p class="eyebrow">FAQ</p>
     <h2>Common questions</h2>
     <div class="faq">
+      <details><summary>What is Vodwise?</summary><p>Vodwise is a Windows app that helps Twitch, Kick and YouTube streamers before, during and after the stream. While you are live it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and answers when you talk to it. When the stream ends, it goes through the recording on your PC and prepares the full video with chapters, a highlights cut and Shorts with subtitles, with their titles and thumbnails. It publishes nothing without your approval. It is in closed beta and the app is currently in Spanish.</p></details>
+      <details><summary>How is it different from Opus Clip or Streamlabs?</summary><p>Opus Clip turns a video you give it on its website into short clips. Streamlabs and StreamElements focus on alerts, overlays and the bot during the stream. Vodwise does both in one app: it helps you while you are live and, when you finish, it also builds the long video for YouTube, not just clips. The recording stays on your PC and nothing goes out without your «yes».</p></details>
       <details><summary>What do I need?</summary><p>A Windows PC, OBS to stream and record, and disk space for the recording. No special computer needed.</p></details>
       <details><summary>Which platforms?</summary><p>Twitch, Kick and YouTube for the stream, and YouTube, TikTok, Instagram and X for publishing. One-click connection from the app.</p></details>
       <details><summary>Does it publish anything without me seeing it?</summary><p>No. It prepares videos and texts and you decide what goes out. During the stream, changing the title or moderating also goes through your confirmation.</p></details>
-      <details><summary>How much does it cost?</summary><p>Nothing during the closed beta: every tester gets free credits. Later, plans from €14.99 a month with credits included and top-ups that never expire. Every feature records what it spends: you see it in the app.</p></details>
+      <details><summary>How much does it cost?</summary><p>Nothing during the closed beta: every tester gets free credits. At launch there will be a free-forever version (without the AI features) and plans from €14.99 a month with credits included and top-ups that never expire. Every feature records what it spends: you see it in the app.</p></details>
       <details><summary>Is it safe to install?</summary><p>The beta is not code-signed yet: Windows shows «Windows protected your PC»; click «More info» → «Run anyway». The app never touches OBS or your platforms without your permission.</p></details>
     </div>
   </div>

@@ -1,0 +1,43 @@
+# Vodwise
+
+> Vodwise is a Windows desktop app for Twitch, Kick and YouTube streamers that helps before, during and after the stream. During the stream it unifies the chat of the three platforms, moderates, runs a multistream bot, alerts and OBS scenes, and answers when the streamer talks to it. When the stream ends it goes through the recording on the streamer's own PC and prepares the full video with chapters, a highlights cut and vertical Shorts with subtitles, together with titles, descriptions and thumbnails. Nothing is published without the streamer's approval.
+
+Key facts:
+
+- Made by Diego García González («Degolas»), a Spanish streamer on Twitch, Kick and YouTube who uses it on his own streams.
+- Status (October 2026): closed beta, free for invited testers. The app is currently in Spanish; the website is in Spanish, English and Portuguese.
+- Works on Windows 10 and 11 with OBS. Platforms: Twitch, Kick and YouTube for the stream; YouTube, TikTok, Instagram and X for publishing.
+- The recording is edited on the streamer's PC; it is not uploaded to a cloud editor.
+- How it differs: clip tools such as Opus Clip turn a video you give them into short clips; stream tools such as Streamlabs or StreamElements focus on alerts, overlays and the bot. Vodwise does both in one app and also builds the long video for YouTube.
+- Pricing: planned free-forever version (without the AI features) and paid plans; current details on the pricing page.
+- Contact: soporte@vodwise.com · X: @VodwiseX
+
+## Main pages
+
+- [Home (Spanish)](https://vodwise.com/): what Vodwise is, how it works before, during and after the stream, FAQ
+- [Home (English)](https://vodwise.com/en/)
+- [Home (Portuguese)](https://vodwise.com/pt/)
+- [Features (Spanish)](https://vodwise.com/funciones.html): every feature, grouped by stream, chat, OBS, editing and account
+- [Features (English)](https://vodwise.com/en/features/)
+- [Comparison (Spanish)](https://vodwise.com/comparativa.html): Vodwise vs StreamElements, Streamlabs, Botrix, Nightbot, Opus Clip and Eklipse, with sources
+- [Comparison (English)](https://vodwise.com/en/compare/)
+- [Pricing (Spanish)](https://vodwise.com/precios.html)
+- [Pricing (English)](https://vodwise.com/en/pricing/)
+- [Closed beta (English)](https://vodwise.com/en/beta/)
+
+## Comparisons and guides (Spanish)
+
+- [Alternatives to Opus Clip for streamers](https://vodwise.com/alternativa-opus-clip/)
+- [Vodwise vs Eklipse](https://vodwise.com/vodwise-vs-eklipse/)
+- [Vodwise vs StreamLadder](https://vodwise.com/vodwise-vs-streamladder/)
+- [Automatic Kick clips](https://vodwise.com/clips-automaticos-kick/)
+- [Automatic Twitch clips](https://vodwise.com/clips-automaticos-twitch/)
+- [Twitch clips for TikTok](https://vodwise.com/clips-de-twitch-para-tiktok/)
+- [Uploading a Twitch stream to YouTube](https://vodwise.com/subir-directo-twitch-a-youtube/)
+- [All guides](https://vodwise.com/guias/)
+
+## Optional
+
+- [Privacy policy (Spanish)](https://vodwise.com/privacidad.html)
+- [Terms (Spanish)](https://vodwise.com/condiciones.html)
+- [Legal notice (Spanish)](https://vodwise.com/aviso-legal.html)
