@@ -5,7 +5,7 @@
 Key facts:
 
 - Made by Diego García González («Degolas»), a Spanish streamer on Twitch, Kick and YouTube who uses it on his own streams.
-- Status (October 2026): closed beta, free for invited testers. The app is currently in Spanish; the website is in Spanish, English and Portuguese.
+- Status (October 2026): closed beta, free for invited testers. The app and the website are in English, Spanish and Portuguese.
 - Works on Windows 10 and 11 with OBS. Platforms: Twitch, Kick and YouTube for the stream; YouTube, TikTok, Instagram and X for publishing.
 - The recording is edited on the streamer's PC; it is not uploaded to a cloud editor.
 - How it differs: clip tools such as Opus Clip turn a video you give them into short clips; stream tools such as Streamlabs or StreamElements focus on alerts, overlays and the bot. Vodwise does both in one app and also builds the long video for YouTube.
