@@ -194,3 +194,25 @@ h1.page-h1{font-size:clamp(28px,3.4vw,40px);line-height:1.15;letter-spacing:-.02
 .who h2{margin-top:4px}.who p{color:var(--soft);font-size:16px;line-height:1.6}.who-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
 .cmp-src a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 @media (max-width:620px){.who{grid-template-columns:1fr;gap:18px;text-align:center}.who img{margin:0 auto;width:140px;height:140px}.who-links{justify-content:center}}
+
+/* Redes y Discord (24-10): bloque «Comunidad» de la portada y fila de iconos del pie */
+.social{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0;max-width:400px}
+footer.site .social a{display:inline-grid;place-items:center;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.02);color:var(--soft)}
+footer.site .social a:hover{color:var(--bg);background:var(--a1);border-color:var(--a1);text-decoration:none}
+footer.site .social a:focus-visible,.btn-discord:focus-visible,.cgrid a:focus-visible{outline:2px solid var(--a1);outline-offset:3px}
+.social svg,.cgrid svg{width:22px;height:22px;fill:currentColor}
+svg.st{fill:none!important;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.follow{margin:18px 0 10px;color:var(--text);font-weight:700;font-size:14.5px;display:block}
+.btn-discord{background:#5865f2;color:#fff;box-shadow:0 8px 28px -12px rgba(88,101,242,.8)}
+.btn-discord:hover{background:#4752c4;color:#fff}
+.btn-discord svg{width:22px;height:22px;fill:currentColor}
+.community{background:var(--bg2);padding:60px 0;border-top:1px solid rgba(36,48,73,.6)}
+.cbox{border:1px solid var(--line);border-radius:24px;padding:38px 30px;text-align:center;background:radial-gradient(120% 140% at 50% 0%,rgba(88,101,242,.18),transparent 60%),var(--card)}
+.cbox h2{font-size:clamp(22px,4vw,30px);line-height:1.2;margin:0 0 10px;letter-spacing:-.01em}
+.cbox p.t{color:var(--soft);font-size:17px;margin:0 auto 22px;max-width:520px}
+.cbox .btn{height:50px;font-size:16.5px}
+.cgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;list-style:none;margin:26px auto 0;padding:0;max-width:640px}
+.cgrid a{display:flex;align-items:center;gap:10px;min-height:48px;padding:0 14px;border:1px solid var(--line);border-radius:12px;background:rgba(255,255,255,.02);color:var(--soft);font-size:14.5px;font-weight:600}
+.cgrid a:hover{border-color:var(--a1);color:var(--text);text-decoration:none}
+.cgrid svg{width:20px;height:20px;flex:none}
+@media (max-width:600px){footer.site .social a{width:48px;height:48px}.social{gap:10px}.cgrid{grid-template-columns:repeat(2,1fr)}.cbox{padding:30px 18px}.community{padding:40px 0}.cbox .btn{width:100%}}
