@@ -56,7 +56,7 @@
     <li><strong>En tu ordenador, sin salir de él:</strong> en la versión gratuita, la IA local que elige los clips básicos y las voces de Windows del chat funcionan en tu equipo; no se envía nada a ningún proveedor.</li>
   </ul>
   <h3>Pagos</h3>
-  <p>Los pagos los gestiona <strong>Paddle</strong> (Paddle.com Market Ltd), que actúa como vendedor («Merchant of Record»): cobra, emite la factura y gestiona los impuestos. Paddle trata tus datos de pago según su propia <a href="https://www.paddle.com/legal/privacy">política de privacidad</a>. Nosotros solo recibimos tu identificador de cliente en Paddle, el plan o recarga comprado y las fechas del periodo pagado. Nunca vemos los datos de tu tarjeta.</p>
+  <p>Las compras las vende y cobra <strong>Stripe</strong> a través de <strong>Link</strong> («Sold through Link»), que actúa como vendedor registrado («Merchant of Record») y es responsable independiente de tus datos de pago: cobra, emite el recibo y la factura y gestiona los impuestos, según la <a href="https://link.com/privacy">política de privacidad de Link</a> (más información en el <a href="https://stripe.com/legal/privacy-center">Centro de privacidad de Stripe</a>; su delegado de protección de datos: <a href="mailto:dpo@stripe.com">dpo@stripe.com</a>). Nosotros solo recibimos lo necesario para darte tu plan o tus créditos: el identificador de la compra, el plan o la recarga y las fechas del periodo pagado. Nunca vemos los datos de tu tarjeta. Si pides a Link que borre tus datos de compra, Stripe cancela tus suscripciones. En tu extracto el cargo aparece como «LINK.COM* …».</p>
   <h3>Inteligencia artificial</h3>
   <p>Para funciones como títulos, miniaturas, la voz de la asistente, la transcripción de tus directos o la edición de vídeo, se envía al proveedor solo lo necesario de <strong>tu propio contenido</strong> (texto, audio, imágenes o vídeo). Pasa por nuestro servidor para medir el consumo y descontar créditos; <strong>no se guarda</strong> en él.</p>
   <ul>
@@ -117,7 +117,7 @@
     <li>Mientras está en pruebas, lo que el asistente decidiría se copia al canal privado del equipo para revisarlo. Esas copias se borran al terminar las pruebas y, como mucho, a los 30 días.</li>
   </ul>
   <h3>Esta web</h3>
-  <p>No usa cookies propias ni herramientas de seguimiento. La página de pago carga Paddle, que puede usar sus propias cookies necesarias para el pago.</p>
+  <p>No usa cookies propias ni herramientas de seguimiento. La página de pago carga Stripe/Link, que puede usar sus propias cookies (<a href="https://stripe.com/legal/cookies-policy">política de cookies de Stripe</a>).</p>
 
   <h2>4. Base legal</h2>
   <ul>
@@ -134,8 +134,8 @@
     <li><strong>OpenAI</strong> y <strong>Google</strong>: inteligencia artificial, como se explica arriba. Encargados del tratamiento.</li>
     <li><strong>Google (YouTube)</strong>: el servicio de YouTube es responsabilidad de Google, que trata sus datos según su propia política. Es un responsable independiente de esos datos.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., Estados Unidos): registro de errores de la app y del servidor. Es nuestro encargado del tratamiento: los datos se guardan en Fráncfort (Alemania). Algunos datos de la cuenta de Sentry y su soporte pueden tratarse en Estados Unidos. Lista de subencargados: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
-    <li><strong>Paddle</strong>: pagos y facturación. Responsable independiente, como vendedor.</li>
-    <li><strong>Stripe y PayPal</strong>: el cobro de las donaciones, en la cuenta del streamer. Responsables independientes.</li>
+    <li><strong>Stripe (Link)</strong>: cobro, facturación e impuestos de las compras. Responsable independiente, como vendedor registrado.</li>
+    <li><strong>Stripe y PayPal</strong>: el cobro de las donaciones, en la cuenta del streamer. Responsables independientes. Aquí Stripe cobra para el streamer, aparte de las compras de Vodwise.</li>
     <li><strong>OpenAI</strong> (además): la revisión automática de contenido de la página de enlaces al publicarla.</li>
     <li><strong>Brevo</strong> (Sendinblue SAS, Francia, UE): los correos que enviamos desde soporte@vodwise.com, como los acuses de recibo y las decisiones de las denuncias, y la lista de acceso anticipado. Encargado del tratamiento.</li>
     <li><strong>Microsoft</strong>: voces de Edge, solo si eliges ese motor para las voces del chat. Es un servicio de Microsoft sin contrato con Vodwise: recibe el texto que se lee y lo trata según sus propias condiciones.</li>
@@ -159,7 +159,7 @@
     <li>Contador de uso del bot y de la cuota de YouTube en el servidor: 7 días.</li>
     <li>Datos leídos de YouTube (historial, estadísticas, chat, minutos de tus directos): en tu ordenador, como mucho 30 días sin refrescarlos; después se borran o se vuelven a pedir a YouTube. Mientras la conexión siga activa. Ver apartado 8.</li>
     <li>Peticiones de borrado de datos de YouTube: se borran en 7 días como máximo.</li>
-    <li>Facturas: las conserva Paddle según la ley.</li>
+    <li>Facturas y datos de pago: los conserva Stripe/Link según la ley.</li>
     <li>Página de enlaces: mientras la tengas publicada; se borra al retirarla o al borrar la cuenta (la dirección queda reservada 30 días, sin tus datos). Si la retiramos por incumplir las normas, el motivo y el bloqueo se conservan mientras dure el bloqueo.</li>
     <li>Denuncias: 12 meses desde que se reciben, para atender recursos y peticiones de las autoridades.</li>
   </ul>
@@ -170,6 +170,7 @@
     <li><strong>Ajustes → Ayuda → «Borrar mis datos»</strong>: borra de tu ordenador tus ajustes, conexiones, claves, registros y la memoria de la asistente. Tus vídeos no se tocan.</li>
     <li><strong>Ajustes → Cuenta → «Borrar mi cuenta»</strong>: cancela tu suscripción y borra en nuestro servidor tu cuenta, saldo e historial.</li>
     <li>Las autorizaciones de cada plataforma también se pueden retirar desde la configuración de seguridad de esa plataforma.</li>
+    <li><strong>Datos de pago:</strong> los trata Stripe/Link como responsable. Para ejercer tus derechos sobre ellos, dirígete a Link (<a href="https://link.com/privacy">link.com/privacy</a>) o al delegado de protección de datos de Stripe (<a href="mailto:dpo@stripe.com">dpo@stripe.com</a>).</li>
   </ul>
   <p>Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es">aepd.es</a>).</p>
 
@@ -237,7 +238,7 @@
     <li><strong>On your computer, without leaving it:</strong> in the free version, the local AI that picks the basic clips and the Windows voices for the chat run on your machine; nothing is sent to any provider.</li>
   </ul>
   <h3>Payments</h3>
-  <p>Payments are handled by <strong>Paddle</strong> (Paddle.com Market Ltd), acting as the seller ("Merchant of Record"): it charges you, issues the invoice and handles taxes, under its own <a href="https://www.paddle.com/legal/privacy">privacy policy</a>. We only receive your Paddle customer ID, the plan or top-up purchased and the dates of the paid period. We never see your card details.</p>
+  <p>Purchases are sold and charged by <strong>Stripe</strong> through <strong>Link</strong> ("Sold through Link"), acting as the merchant of record and as an independent controller of your payment data: it charges you, issues the receipt and invoice and handles taxes, under <a href="https://link.com/privacy">Link's privacy policy</a> (more in the <a href="https://stripe.com/legal/privacy-center">Stripe Privacy Center</a>; its data protection officer: <a href="mailto:dpo@stripe.com">dpo@stripe.com</a>). We only receive what we need to give you your plan or credits: the purchase ID, the plan or top-up and the dates of the paid period. We never see your card details. If you ask Link to delete your purchase data, Stripe cancels your subscriptions. On your statement the charge appears as "LINK.COM* …".</p>
   <h3>Artificial intelligence</h3>
   <p>For features such as titles, thumbnails, the assistant's voice, transcription of your streams or video editing, only the necessary part of <strong>your own content</strong> (text, audio, images or video) is sent to the provider. It passes through our server to measure usage and deduct credits; <strong>it is not stored</strong> there.</p>
   <ul>
@@ -298,7 +299,7 @@
     <li>While it is being tested, what the assistant would decide is copied to the team's private channel for review. Those copies are deleted when testing ends and, at the latest, after 30 days.</li>
   </ul>
   <h3>This website</h3>
-  <p>It uses no first-party cookies or tracking tools. The checkout page loads Paddle, which may use its own cookies needed for payment.</p>
+  <p>It uses no first-party cookies or tracking tools. The checkout page loads Stripe/Link, which may use its own cookies (<a href="https://stripe.com/legal/cookies-policy">Stripe cookie policy</a>).</p>
 
   <h2>4. Legal basis</h2>
   <ul>
@@ -315,8 +316,8 @@
     <li><strong>OpenAI</strong> and <strong>Google</strong>: artificial intelligence, as explained above. Processors.</li>
     <li><strong>Google (YouTube)</strong>: the YouTube service is Google's responsibility, which processes its data under its own policy. It is an independent controller of that data.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., United States): error tracking for the app and the server. It is our processor: the data is stored in Frankfurt (Germany). Some Sentry account data and its support may be handled in the United States. Its list of sub-processors: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
-    <li><strong>Paddle</strong>: payments and invoicing. Independent controller, as the seller.</li>
-    <li><strong>Stripe and PayPal</strong>: collecting donations, into the streamer's account. Independent controllers.</li>
+    <li><strong>Stripe (Link)</strong>: charging, invoicing and taxes for purchases. Independent controller, as the merchant of record.</li>
+    <li><strong>Stripe and PayPal</strong>: collecting donations, into the streamer's account. Independent controllers. Here Stripe collects for the streamer, separately from Vodwise purchases.</li>
     <li><strong>OpenAI</strong> (also): the automatic content review of the link page when it is published.</li>
     <li><strong>Brevo</strong> (Sendinblue SAS, France, EU): the emails we send from soporte@vodwise.com, such as report acknowledgements and decisions, and the early-access list. Processor.</li>
     <li><strong>Microsoft</strong>: Edge voices, only if you choose that engine for chat voices. It is a Microsoft service with no contract with Vodwise: it receives the text being read and handles it under its own terms.</li>
@@ -340,7 +341,7 @@
     <li>Bot usage counter and YouTube quota counter on the server: 7 days.</li>
     <li>YouTube data read (history, statistics, chat, minutes of your streams): on your computer, for no more than 30 days without being refreshed; after that it is deleted or requested from YouTube again. While your connection stays active. See section 8.</li>
     <li>Requests to delete YouTube data: deleted within 7 days at most.</li>
-    <li>Invoices: kept by Paddle as required by law.</li>
+    <li>Invoices and payment data: kept by Stripe/Link as required by law.</li>
     <li>Link page: while it is published; it is deleted when you take it down or delete your account (the address stays reserved for 30 days, without your data). If we take it down for breaking the rules, the reason and the block are kept while the block lasts.</li>
     <li>Reports: 12 months from receipt, to handle appeals and requests from the authorities.</li>
   </ul>
@@ -351,6 +352,7 @@
     <li><strong>Settings → Help → "Delete my data"</strong>: deletes your settings, connections, keys, logs and the assistant's memory from your computer. Your videos are not touched.</li>
     <li><strong>Settings → Account → "Delete my account"</strong>: cancels your subscription and deletes your account, balance and history on our server.</li>
     <li>Each platform's authorization can also be revoked from that platform's security settings.</li>
+    <li><strong>Payment data:</strong> Stripe/Link processes it as controller. To exercise your rights over it, contact Link (<a href="https://link.com/privacy">link.com/privacy</a>) or Stripe's data protection officer (<a href="mailto:dpo@stripe.com">dpo@stripe.com</a>).</li>
   </ul>
   <p>If you think we have not handled your data properly, you can complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es">aepd.es</a>) or your local authority.</p>
 
@@ -417,7 +419,7 @@
     <li><strong>No seu computador, sem sair dele:</strong> na versão gratuita, a IA local que escolhe os clipes básicos e as vozes do Windows do chat funcionam no seu equipamento; nada é enviado a nenhum provedor.</li>
   </ul>
   <h3>Pagamentos</h3>
-  <p>Os pagamentos são processados pela <strong>Paddle</strong> (Paddle.com Market Ltd), que atua como vendedora ("Merchant of Record"): cobra, emite a nota e cuida dos impostos. A Paddle trata seus dados de pagamento conforme a própria <a href="https://www.paddle.com/legal/privacy">política de privacidade</a>. Nós só recebemos seu identificador de cliente na Paddle, o plano ou a recarga comprada e as datas do período pago. Nunca vemos os dados do seu cartão.</p>
+  <p>As compras são vendidas e cobradas pela <strong>Stripe</strong> por meio do <strong>Link</strong> ("Sold through Link"), que atua como vendedor registrado ("Merchant of Record") e controlador independente dos seus dados de pagamento: cobra, emite o recibo e a nota e cuida dos impostos, conforme a <a href="https://link.com/privacy">política de privacidade do Link</a> (mais informações no <a href="https://stripe.com/legal/privacy-center">Centro de privacidade da Stripe</a>; encarregado de proteção de dados: <a href="mailto:dpo@stripe.com">dpo@stripe.com</a>). Nós só recebemos o necessário para liberar seu plano ou seus créditos: o identificador da compra, o plano ou a recarga e as datas do período pago. Nunca vemos os dados do seu cartão. Se você pedir ao Link que apague seus dados de compra, a Stripe cancela suas assinaturas. No extrato, a cobrança aparece como «LINK.COM* …».</p>
   <h3>Inteligência artificial</h3>
   <p>Para funções como títulos, miniaturas, a voz da assistente, a transcrição das suas lives ou a edição de vídeo, enviamos ao provedor só o necessário do <strong>seu próprio conteúdo</strong> (texto, áudio, imagens ou vídeo). Passa pelo nosso servidor para medir o consumo e descontar créditos; <strong>não é guardado</strong> nele.</p>
   <ul>
@@ -478,7 +480,7 @@
     <li>Enquanto está em testes, o que o assistente decidiria é copiado para o canal privado da equipe para revisão. Essas cópias são apagadas ao fim dos testes e, no máximo, após 30 dias.</li>
   </ul>
   <h3>Este site</h3>
-  <p>Não usa cookies próprios nem ferramentas de rastreamento. A página de pagamento carrega a Paddle, que pode usar os próprios cookies necessários para o pagamento.</p>
+  <p>Não usa cookies próprios nem ferramentas de rastreamento. A página de pagamento carrega a Stripe/o Link, que pode usar os próprios cookies (<a href="https://stripe.com/legal/cookies-policy">política de cookies da Stripe</a>).</p>
 
   <h2>4. Base legal</h2>
   <ul>
@@ -495,8 +497,8 @@
     <li><strong>OpenAI</strong> e <strong>Google</strong>: inteligência artificial, como explicado acima. Operadores.</li>
     <li><strong>Google (YouTube)</strong>: o serviço do YouTube é responsabilidade do Google, que trata seus dados conforme a própria política. É um controlador independente desses dados.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., Estados Unidos): registro de erros do app e do servidor. É nosso operador: os dados ficam guardados em Frankfurt (Alemanha). Alguns dados da conta do Sentry e o suporte podem ser tratados nos Estados Unidos. Lista de subprocessadores: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
-    <li><strong>Paddle</strong>: pagamentos e faturamento. Controlador independente, como vendedor.</li>
-    <li><strong>Stripe e PayPal</strong>: a cobrança das doações, na conta do streamer. Controladores independentes.</li>
+    <li><strong>Stripe (Link)</strong>: cobrança, faturamento e impostos das compras. Controlador independente, como vendedor registrado.</li>
+    <li><strong>Stripe e PayPal</strong>: a cobrança das doações, na conta do streamer. Controladores independentes. Aqui a Stripe cobra para o streamer, à parte das compras do Vodwise.</li>
     <li><strong>OpenAI</strong> (também): a revisão automática de conteúdo da página de links ao publicá-la.</li>
     <li><strong>Brevo</strong> (Sendinblue SAS, França, UE): os e-mails que enviamos de soporte@vodwise.com, como os avisos de recebimento e as decisões das denúncias, e a lista de acesso antecipado. Operador.</li>
     <li><strong>Microsoft</strong>: vozes do Edge, só se você escolher esse motor para as vozes do chat. É um serviço da Microsoft sem contrato com o Vodwise: recebe o texto lido e o trata segundo seus próprios termos.</li>
@@ -520,7 +522,7 @@
     <li>Contador do bot e contador da cota do YouTube no servidor: 7 dias.</li>
     <li>Dados lidos do YouTube (histórico, estatísticas, chat, minutos das suas lives): no seu computador, por no máximo 30 dias sem serem atualizados; depois são apagados ou pedidos de novo ao YouTube. Enquanto a conexão continuar ativa. Ver apartado 8.</li>
     <li>Pedidos de exclusão de dados do YouTube: apagados em 7 dias no máximo.</li>
-    <li>Notas fiscais: a Paddle as guarda conforme a lei.</li>
+    <li>Notas fiscais e dados de pagamento: a Stripe/o Link os guarda conforme a lei.</li>
     <li>Página de links: enquanto estiver publicada; é apagada ao tirá-la do ar ou ao excluir a conta (o endereço fica reservado por 30 dias, sem seus dados). Se a tirarmos do ar por descumprir as regras, o motivo e o bloqueio são guardados enquanto durar o bloqueio.</li>
     <li>Denúncias: 12 meses a partir do recebimento, para atender recursos e pedidos das autoridades.</li>
   </ul>
@@ -531,6 +533,7 @@
     <li><strong>Configurações → Ajuda → "Apagar meus dados"</strong>: apaga do seu computador suas configurações, conexões, chaves, registros e a memória da assistente. Seus vídeos não são tocados.</li>
     <li><strong>Configurações → Conta → "Excluir minha conta"</strong>: cancela sua assinatura e apaga no nosso servidor sua conta, saldo e histórico.</li>
     <li>As autorizações de cada plataforma também podem ser retiradas nas configurações de segurança dessa plataforma.</li>
+    <li><strong>Dados de pagamento:</strong> a Stripe/o Link os trata como controlador. Para exercer seus direitos sobre eles, fale com o Link (<a href="https://link.com/privacy">link.com/privacy</a>) ou com o encarregado de proteção de dados da Stripe (<a href="mailto:dpo@stripe.com">dpo@stripe.com</a>).</li>
   </ul>
   <p>Se achar que não tratamos bem os seus dados, você pode reclamar à Agência Espanhola de Proteção de Dados (<a href="https://www.aepd.es">aepd.es</a>) ou à autoridade do seu país (no Brasil, a ANPD).</p>
 
