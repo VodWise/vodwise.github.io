@@ -216,3 +216,7 @@ svg.st{fill:none!important;stroke:currentColor;stroke-width:1.9;stroke-linecap:r
 .cgrid a:hover{border-color:var(--a1);color:var(--text);text-decoration:none}
 .cgrid svg{width:20px;height:20px;flex:none}
 @media (max-width:600px){footer.site .social a{width:48px;height:48px}.social{gap:10px}.cgrid{grid-template-columns:repeat(2,1fr)}.cbox{padding:30px 18px}.community{padding:40px 0}.cbox .btn{width:100%}}
+footer.site .inception{display:flex;align-items:center;gap:18px;margin-top:28px;padding-top:24px;border-top:1px solid rgba(36,48,73,.6)}
+footer.site .inception img{display:block;width:104px;height:auto;flex:none}
+footer.site .inception p{margin:0;color:var(--soft);font-size:14.5px;max-width:46ch}
+@media (max-width:600px){footer.site .inception{flex-direction:column;align-items:flex-start;gap:12px}}
