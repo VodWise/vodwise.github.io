@@ -38,7 +38,7 @@
   <ul>
     <li>Vodwise es una aplicación de escritorio para streamers. <strong>Casi todo pasa en tu ordenador</strong>: tus grabaciones, tu chat, tus conexiones y tus ajustes se quedan ahí.</li>
     <li>En nuestros servidores guardamos lo mínimo para darte el servicio: tu cuenta, tu saldo de créditos y su historial, la verificación de tu canal de Twitch o Kick, la memoria compartida de canciones y algunos contadores (límites del bot y cuota de YouTube). Lo que guardamos de cada cosa está explicado abajo.</li>
-    <li>Para la inteligencia artificial, lo necesario de tu contenido pasa por nuestro servidor hacia el proveedor (OpenAI o Google) y <strong>no lo guardamos</strong>.</li>
+    <li>Para la inteligencia artificial, lo necesario de tu contenido pasa por nuestro servidor hacia el proveedor (OpenAI, Anthropic o Google) y <strong>no lo guardamos</strong>.</li>
     <li>No vendemos tus datos, no hay publicidad ni seguimiento, y no entrenamos modelos con tu contenido.</li>
     <li>Puedes borrar los datos de tu ordenador y tu cuenta entera desde la propia app.</li>
   </ul>
@@ -61,6 +61,7 @@
   <p>Para funciones como títulos, miniaturas, la voz de la asistente, la transcripción de tus directos o la edición de vídeo, se envía al proveedor solo lo necesario de <strong>tu propio contenido</strong> (texto, audio, imágenes o vídeo). Pasa por nuestro servidor para medir el consumo y descontar créditos; <strong>no se guarda</strong> en él.</p>
   <ul>
     <li><strong>OpenAI</strong> (texto, voz, transcripción, imágenes y moderación). Con la opción de compartir datos desactivada y sin almacenamiento de las respuestas. OpenAI puede conservar los datos hasta 30 días para vigilar abusos, según sus <a href="https://openai.com/policies/privacy-policy">condiciones</a>, y no los usa para entrenar sus modelos.</li>
+    <li><strong>Anthropic</strong> (Claude; solo texto: mensajes del chat, transcripciones, textos de la edición y órdenes; nunca imágenes, voz ni vídeo). Anthropic actúa como encargado según su <a href="https://www.anthropic.com/legal/data-processing-addendum">contrato de tratamiento de datos</a> y sus <a href="https://www.anthropic.com/legal/commercial-terms">condiciones comerciales</a>, que le prohíben entrenar sus modelos con estos datos. Borra lo enviado a su API en un máximo de 30 días, salvo que lo marque su sistema de seguridad (hasta 2 años) o la ley obligue a guardarlo. Se procesa en EE. UU. y las transferencias desde la UE se amparan en las cláusulas contractuales tipo.</li>
     <li><strong>Google (Gemini)</strong>, para «ver» tus directos al editarlos. Se envía la grabación de tu directo, que es tu contenido, no los datos de YouTube (ver apartado 8). Cuando esta función esté activa en tu cuenta, se usa el servicio de pago de Google Cloud, en el que Google no usa los datos para entrenar sus modelos.</li>
   </ul>
   <h3>Tus conexiones (Twitch, YouTube, Kick, X, Instagram, TikTok, OBS)</h3>
@@ -131,7 +132,7 @@
   <p>Solo con quienes necesitamos para prestarte el servicio, que actúan como encargados del tratamiento o como responsables independientes:</p>
   <ul>
     <li><strong>Cloudflare</strong>: aloja nuestro servidor y su base de datos. Encargado del tratamiento.</li>
-    <li><strong>OpenAI</strong> y <strong>Google</strong>: inteligencia artificial, como se explica arriba. Encargados del tratamiento.</li>
+    <li><strong>OpenAI</strong>, <strong>Anthropic</strong> y <strong>Google</strong>: inteligencia artificial, como se explica arriba. Encargados del tratamiento.</li>
     <li><strong>Google (YouTube)</strong>: el servicio de YouTube es responsabilidad de Google, que trata sus datos según su propia política. Es un responsable independiente de esos datos.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., Estados Unidos): registro de errores de la app y del servidor. Es nuestro encargado del tratamiento: los datos se guardan en Fráncfort (Alemania). Algunos datos de la cuenta de Sentry y su soporte pueden tratarse en Estados Unidos. Lista de subencargados: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
     <li><strong>Stripe (Link)</strong>: cobro, facturación e impuestos de las compras. Responsable independiente, como vendedor registrado.</li>
@@ -222,7 +223,7 @@
   <ul>
     <li>Vodwise is a desktop app for streamers. <strong>Almost everything happens on your computer</strong>: your recordings, chat, connections and settings stay there.</li>
     <li>On our servers we keep the minimum needed to provide the service: your account, your credit balance and its history, the verification of your Twitch or Kick channel, the shared song memory and some counters (bot limits and YouTube quota). Each item is explained below.</li>
-    <li>For artificial intelligence, the necessary part of your content passes through our server to the provider (OpenAI or Google) and <strong>we do not store it</strong>.</li>
+    <li>For artificial intelligence, the necessary part of your content passes through our server to the provider (OpenAI, Anthropic or Google) and <strong>we do not store it</strong>.</li>
     <li>We do not sell your data, there are no ads or tracking, and we do not train models on your content.</li>
     <li>You can delete the data on your computer and your whole account from within the app.</li>
   </ul>
@@ -245,6 +246,7 @@
   <p>For features such as titles, thumbnails, the assistant's voice, transcription of your streams or video editing, only the necessary part of <strong>your own content</strong> (text, audio, images or video) is sent to the provider. It passes through our server to measure usage and deduct credits; <strong>it is not stored</strong> there.</p>
   <ul>
     <li><strong>OpenAI</strong> (text, voice, transcription, images and moderation), with data sharing disabled and response storage off. OpenAI may keep data for up to 30 days to monitor abuse, under its <a href="https://openai.com/policies/privacy-policy">terms</a>, and does not use it to train its models.</li>
+    <li><strong>Anthropic</strong> (Claude; text only: chat messages, transcripts, editing texts and commands; never images, voice or video). Anthropic acts as a processor under its <a href="https://www.anthropic.com/legal/data-processing-addendum">data processing addendum</a> and <a href="https://www.anthropic.com/legal/commercial-terms">commercial terms</a>, which forbid it to train its models on this data. It deletes what is sent to its API within 30 days, unless its safety systems flag it (up to 2 years) or the law requires keeping it. It is processed in the United States and transfers from the EU rely on the standard contractual clauses.</li>
     <li><strong>Google (Gemini)</strong>, to "watch" your streams when editing them. What is sent is the recording of your stream, which is your content, not YouTube data (see section 8). When this feature is active in your account, the paid Google Cloud service is used, in which Google does not use the data to train its models.</li>
   </ul>
   <h3>Your connections (Twitch, YouTube, Kick, X, Instagram, TikTok, OBS)</h3>
@@ -315,7 +317,7 @@
   <p>Only those we need to provide the service, acting as processors or as independent controllers:</p>
   <ul>
     <li><strong>Cloudflare</strong>: hosts our server and its database. Processor.</li>
-    <li><strong>OpenAI</strong> and <strong>Google</strong>: artificial intelligence, as explained above. Processors.</li>
+    <li><strong>OpenAI</strong>, <strong>Anthropic</strong> and <strong>Google</strong>: artificial intelligence, as explained above. Processors.</li>
     <li><strong>Google (YouTube)</strong>: the YouTube service is Google's responsibility, which processes its data under its own policy. It is an independent controller of that data.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., United States): error tracking for the app and the server. It is our processor: the data is stored in Frankfurt (Germany). Some Sentry account data and its support may be handled in the United States. Its list of sub-processors: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
     <li><strong>Stripe (Link)</strong>: charging, invoicing and taxes for purchases. Independent controller, as the merchant of record.</li>
@@ -405,7 +407,7 @@
   <ul>
     <li>O Vodwise é um app de desktop para streamers. <strong>Quase tudo acontece no seu computador</strong>: suas gravações, seu chat, suas conexões e suas configurações ficam lá.</li>
     <li>Nos nossos servidores guardamos o mínimo para prestar o serviço: sua conta, seu saldo de créditos e o histórico, a verificação do seu canal da Twitch ou da Kick, a memória compartilhada de músicas e alguns contadores (limites do bot e cota do YouTube). Cada item está explicado abaixo.</li>
-    <li>Para a inteligência artificial, o necessário do seu conteúdo passa pelo nosso servidor até o provedor (OpenAI ou Google) e <strong>não o guardamos</strong>.</li>
+    <li>Para a inteligência artificial, o necessário do seu conteúdo passa pelo nosso servidor até o provedor (OpenAI, Anthropic ou Google) e <strong>não o guardamos</strong>.</li>
     <li>Não vendemos seus dados, não há publicidade nem rastreamento, e não treinamos modelos com o seu conteúdo.</li>
     <li>Você pode apagar os dados do seu computador e a sua conta inteira pelo próprio app.</li>
   </ul>
@@ -428,6 +430,7 @@
   <p>Para funções como títulos, miniaturas, a voz da assistente, a transcrição das suas lives ou a edição de vídeo, enviamos ao provedor só o necessário do <strong>seu próprio conteúdo</strong> (texto, áudio, imagens ou vídeo). Passa pelo nosso servidor para medir o consumo e descontar créditos; <strong>não é guardado</strong> nele.</p>
   <ul>
     <li><strong>OpenAI</strong> (texto, voz, transcrição, imagens e moderação). Com o compartilhamento de dados desativado e sem armazenamento das respostas. A OpenAI pode manter os dados por até 30 dias para monitorar abusos, conforme os seus <a href="https://openai.com/policies/privacy-policy">termos</a>, e não os usa para treinar seus modelos.</li>
+    <li><strong>Anthropic</strong> (Claude; só texto: mensagens do chat, transcrições, textos da edição e comandos; nunca imagens, voz nem vídeo). A Anthropic atua como operadora conforme o seu <a href="https://www.anthropic.com/legal/data-processing-addendum">contrato de tratamento de dados</a> e os seus <a href="https://www.anthropic.com/legal/commercial-terms">termos comerciais</a>, que a proíbem de treinar seus modelos com esses dados. Apaga o que é enviado à sua API em até 30 dias, salvo se o seu sistema de segurança o marcar (até 2 anos) ou a lei obrigar a guardá-lo. É processado nos EUA e as transferências desde a UE se amparam nas cláusulas contratuais padrão.</li>
     <li><strong>Google (Gemini)</strong>, para "assistir" às suas lives ao editá-las. O que é enviado é a gravação da sua live, que é o seu conteúdo, não os dados do YouTube (ver apartado 8). Quando este recurso estiver ativo na sua conta, é usado o serviço pago do Google Cloud, no qual o Google não usa os dados para treinar seus modelos.</li>
   </ul>
   <h3>Suas conexões (Twitch, YouTube, Kick, X, Instagram, TikTok, OBS)</h3>
@@ -498,7 +501,7 @@
   <p>Só com quem precisamos para prestar o serviço, que atuam como operadores ou como controladores independentes:</p>
   <ul>
     <li><strong>Cloudflare</strong>: hospeda nosso servidor e o banco de dados. Operador (encarregado do tratamento).</li>
-    <li><strong>OpenAI</strong> e <strong>Google</strong>: inteligência artificial, como explicado acima. Operadores.</li>
+    <li><strong>OpenAI</strong>, <strong>Anthropic</strong> e <strong>Google</strong>: inteligência artificial, como explicado acima. Operadores.</li>
     <li><strong>Google (YouTube)</strong>: o serviço do YouTube é responsabilidade do Google, que trata seus dados conforme a própria política. É um controlador independente desses dados.</li>
     <li><strong>Sentry</strong> (Functional Software, Inc., Estados Unidos): registro de erros do app e do servidor. É nosso operador: os dados ficam guardados em Frankfurt (Alemanha). Alguns dados da conta do Sentry e o suporte podem ser tratados nos Estados Unidos. Lista de subprocessadores: <a href="https://sentry.io/legal/subprocessors/">sentry.io/legal/subprocessors</a>.</li>
     <li><strong>Stripe (Link)</strong>: cobrança, faturamento e impostos das compras. Controlador independente, como vendedor registrado.</li>
