@@ -233,3 +233,5 @@ footer.site .inception p{margin:0;color:var(--soft);font-size:14.5px;max-width:4
 @media (prefers-reduced-motion:reduce){.deco-b{animation:none}}
 /* 0063 · Precios: «Todos los planes incluyen» */
 .incl{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:22px 0}.incl h3{margin:0 0 12px}.incl .checks{grid-template-columns:1fr 1fr;gap:12px 28px}@media (max-width:760px){.incl .checks{grid-template-columns:1fr}}
+/* 0063 · Tarjeta Gratis: lo que NO incluye va sin ✓, con candado y en color apagado */
+.plan li.no-incl{color:var(--muted)}.plan li.no-incl::before{content:"🔒 ";color:var(--muted);filter:grayscale(1);opacity:.75}
