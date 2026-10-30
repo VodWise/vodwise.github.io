@@ -176,12 +176,13 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./"><img src="assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu" aria-label="Principal">
+    <nav class="menu con-pie" aria-label="Principal">
       <a class="hide-sm" href="funciones.html">Funciones</a>
       <a class="hide-sm" href="comparativa.html">Comparativa</a>
       <a class="hide-sm" href="precios.html">Precios</a>
       <a class="lang-switch" href="en/" hreflang="en" lang="en">EN</a>
       <a class="lang-switch" href="pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a class="btn btn-ghost btn-sm entrar" href="/cuenta/">Entrar</a>
       <a class="btn btn-primary btn-sm" href="descargar.html">Pedir invitación</a>
     </nav>
   </div>
@@ -200,15 +201,29 @@
       <ul><li>Chat de Twitch y Kick en una sola ventana, VodwiseBot, alertas y acciones</li><li>Pantallas para OBS y montaje de OBS</li><li>Voces del chat con las voces de Windows</li><li>Clips básicos de cada directo, hechos en tu PC</li><li>La IA, la edición completa, YouTube, TikTok, Instagram y X van con los planes</li></ul></div>
     <div class="plans">
       <div class="plan"><h3>Ligera</h3><div class="price">14,99 € <small>/ mes</small></div>
-        <ul><li>1.800 créditos al mes</li><li>≈ 32 h de directo al mes (4 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 12 h</small></li><li>Todas las funciones</li></ul></div>
+        <ul><li>1.800 créditos al mes</li><li>≈ 32 h de directo al mes (4 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 12 h</small></li><li>Copiloto, editor, Shorts, miniaturas y diseños con IA (lista completa abajo)</li></ul></div>
       <div class="plan best"><span class="tag">Recomendado</span><h3>Estándar</h3><div class="price">29,99 € <small>/ mes</small></div>
-        <ul><li>3.600 créditos al mes</li><li>≈ 64 h de directo al mes (8 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 24 h</small></li><li>Todas las funciones</li></ul></div>
+        <ul><li>3.600 créditos al mes</li><li>≈ 64 h de directo al mes (8 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 24 h</small></li><li>Lo mismo que Ligera, con el doble de créditos</li></ul></div>
       <div class="plan"><h3>Premium</h3><div class="price">59,99 € <small>/ mes</small></div>
         <ul><li>7.200 créditos al mes</li><li>≈ 136 h de directo al mes (17 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 52 h</small></li><li>Lo que no gastes se guarda hasta 2 meses</li></ul></div>
       <div class="plan"><span class="tag">Exclusivo</span><h3>Estudio</h3><div class="price">159,99 € <small>/ mes</small></div>
         <ul><li>20.000 créditos al mes</li><li>≈ 384 h de directo al mes (48 directos de 8 h)<br><small>Con la configuración de serie y directos de 4 h: ≈ 152 h</small></li><li>Lo que no gastes se guarda hasta 3 meses</li><li>Soporte prioritario</li></ul></div>
     </div>
     <p class="fine">Precios con IVA incluido. Cancela cuando quieras: sigues hasta el final del mes pagado. Las horas son aproximadas, con copiloto y edición básica en directos de 8 h, y dependen de lo que actives; la app te muestra siempre tu saldo real.</p>
+    <div class="incl">
+      <h3>Todos los planes incluyen</h3>
+      <ul class="checks">
+        <li><span><strong>Copiloto por voz</strong> en directo (F8) y para hablar con él (F9).</span></li>
+        <li><span><strong>Edición completa</strong> de tus directos y de cualquier vídeo de tu PC.</span></li>
+        <li><span><strong>Editor con línea de tiempo</strong>, zooms, textos y más de 120 efectos.</span></li>
+        <li><span><strong>Shorts</strong>, hasta 8 por directo, con 6 estilos de subtítulos.</span></li>
+        <li><span><strong>Títulos, descripción y miniaturas</strong> para tus vídeos.</span></li>
+        <li><span><strong>Diseños con IA:</strong> alertas, overlays y escenas con tu logo.</span></li>
+        <li><span><strong>Montar OBS</strong> a partir de tus escenas, con copia para volver atrás.</span></li>
+        <li><span><strong>Publicar</strong> en YouTube (en privado de inicio), Reels de Instagram y borradores de TikTok.</span></li>
+        <li><span><strong>Sin marca de agua</strong> en tus vídeos.</span></li>
+      </ul>
+    </div>
     <div class="calc" id="calculadora">
       <h3>Calcula tu precio por hora</h3>
       <div class="calc-row"><label>Horas por directo<input type="number" id="calc-h" min="1" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Directos al mes<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
@@ -225,7 +240,7 @@
     <p class="req">Los créditos de las recargas <strong>no caducan nunca</strong> y se usan después de los de tu plan.</p>
     <div class="topups"><span>10 € · 1.000 créditos</span><span>25 € · 2.750 créditos (+10 %)</span><span>50 € · 5.750 créditos (+15 %)</span><span>O la cantidad que quieras, desde 10 € (mismos regalos: +10 % desde 25 €, +15 % desde 50 €)</span></div>
     <h3 style="margin-top:36px">Oferta de bienvenida</h3>
-    <p class="req">Cuando Vodwise comprueba que emites desde tu canal (60 minutos de directo con la app abierta), tienes <strong>7 días</strong> para tu primera compra con precio de bienvenida: <strong>el primer mes de Ligera a 9,99 €</strong> o <strong>850 créditos por 5 €</strong>. Y si invitas a un amigo, cuando pague un mes completo os llevaréis 300 créditos cada uno.</p>
+    <p class="req">Cuando Vodwise comprueba que emites desde tu canal (60 minutos de directo con la app abierta), tienes <strong>7 días</strong> para tu primera compra con precio de bienvenida: <strong>el primer mes de Ligera a 9,99 €</strong> o <strong>850 créditos por 5 €</strong>.</p>
     <p class="fine">Los pagos llegan próximamente, con factura. Durante la beta no se cobra nada.</p>
   </div>
 </section>
@@ -275,6 +290,7 @@
       <div><strong style="color:var(--text)">Guías</strong><br><a href="clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="privacidad.html">Política de privacidad</a><br><a href="condiciones.html">Condiciones del servicio</a><br><a href="aviso-legal.html">Aviso legal</a></div>
     </div>
+    <nav class="foot-lang" aria-label="Idioma"><a href="en/" hreflang="en" lang="en">English</a> · <a href="pt/" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
     <p class="legal">Vodwise usa los <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Servicios de la API de YouTube</a>: <a href="https://www.youtube.com/t/terms">Condiciones del Servicio de YouTube</a> y <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads y Discord son marcas de sus respectivos propietarios; Vodwise no está afiliado a ellos.<br>© 2026 Vodwise.</p>
   </div>
 </footer>

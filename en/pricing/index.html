@@ -176,12 +176,13 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu" aria-label="Principal">
+    <nav class="menu con-pie" aria-label="Principal">
       <a class="hide-sm" href="../features/">Features</a>
       <a class="hide-sm" href="../compare/">Compare</a>
       <a class="hide-sm" href="./">Pricing</a>
       <a class="lang-switch" href="../../" hreflang="es" lang="es">ES</a>
       <a class="lang-switch" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a class="btn btn-ghost btn-sm entrar" href="/cuenta/">Sign in</a>
       <a class="btn btn-primary btn-sm" href="../beta/">Request an invite</a>
     </nav>
   </div>
@@ -200,15 +201,29 @@
       <ul><li>Twitch and Kick chat in one window, VodwiseBot, alerts and actions</li><li>OBS overlays and OBS setup</li><li>Chat voices with Windows' voices</li><li>Basic clips of every stream, made on your PC</li><li>AI, full editing, YouTube, TikTok, Instagram and X come with the plans</li></ul></div>
     <div class="plans">
       <div class="plan"><h3>Light</h3><div class="price">€14.99 <small>/ month</small></div>
-        <ul><li>1,800 credits a month</li><li>≈ 32 h of streaming a month (4 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 12 h</small></li><li>Every feature</li></ul></div>
+        <ul><li>1,800 credits a month</li><li>≈ 32 h of streaming a month (4 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 12 h</small></li><li>Copilot, editor, Shorts, thumbnails and AI designs (full list below)</li></ul></div>
       <div class="plan best"><span class="tag">Recommended</span><h3>Standard</h3><div class="price">€29.99 <small>/ month</small></div>
-        <ul><li>3,600 credits a month</li><li>≈ 64 h of streaming a month (8 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 24 h</small></li><li>Every feature</li></ul></div>
+        <ul><li>3,600 credits a month</li><li>≈ 64 h of streaming a month (8 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 24 h</small></li><li>Same as Light, with twice the credits</li></ul></div>
       <div class="plan"><h3>Premium</h3><div class="price">€59.99 <small>/ month</small></div>
         <ul><li>7,200 credits a month</li><li>≈ 136 h of streaming a month (17 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 52 h</small></li><li>Unused credits roll over up to 2 months</li></ul></div>
       <div class="plan"><span class="tag">Exclusive</span><h3>Studio</h3><div class="price">€159.99 <small>/ month</small></div>
         <ul><li>20,000 credits a month</li><li>≈ 384 h of streaming a month (48 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 152 h</small></li><li>Unused credits roll over up to 3 months</li><li>Priority support</li></ul></div>
     </div>
     <p class="fine">Prices include VAT. Cancel anytime: you keep your plan until the end of the paid month. Hours are approximate, with copilot and basic editing on 8-hour streams, and depend on what you turn on; the app always shows your real balance.</p>
+    <div class="incl">
+      <h3>Every plan includes</h3>
+      <ul class="checks">
+        <li><span><strong>Voice copilot</strong> live (F8) and to talk to it (F9).</span></li>
+        <li><span><strong>Full editing</strong> of your streams and of any video on your PC.</span></li>
+        <li><span><strong>Timeline editor</strong>, zooms, texts and over 120 effects.</span></li>
+        <li><span><strong>Shorts</strong>, up to 8 per stream, with 6 subtitle styles.</span></li>
+        <li><span><strong>Titles, description and thumbnails</strong> for your videos.</span></li>
+        <li><span><strong>AI designs:</strong> alerts, overlays and scenes with your logo.</span></li>
+        <li><span><strong>OBS setup</strong> from your scenes, with a backup to go back.</span></li>
+        <li><span><strong>Publishing</strong> to YouTube (private first), Instagram Reels and TikTok drafts.</span></li>
+        <li><span><strong>No watermark</strong> on your videos.</span></li>
+      </ul>
+    </div>
     <div class="calc" id="calculadora">
       <h3>Work out your price per hour</h3>
       <div class="calc-row"><label>Hours per stream<input type="number" id="calc-h" min="1" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Streams per month<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
@@ -225,7 +240,7 @@
     <p class="req">Top-up credits <strong>never expire</strong> and are used after your plan's credits.</p>
     <div class="topups"><span>€10 · 1,000 credits</span><span>€25 · 2,750 credits (+10%)</span><span>€50 · 5,750 credits (+15%)</span><span>Or any amount from €10 (same bonuses: +10% from €25, +15% from €50)</span></div>
     <h3 style="margin-top:36px">Welcome offer</h3>
-    <p class="req">Once Vodwise checks that you stream from your channel (60 minutes live with the app open), you have <strong>7 days</strong> for your first purchase at a welcome price: <strong>the first month of Light for €9.99</strong> or <strong>850 credits for €5</strong>. And if you invite a friend, when they pay a full month you each get 300 credits.</p>
+    <p class="req">Once Vodwise checks that you stream from your channel (60 minutes live with the app open), you have <strong>7 days</strong> for your first purchase at a welcome price: <strong>the first month of Light for €9.99</strong> or <strong>850 credits for €5</strong>.</p>
     <p class="fine">Payments are coming soon, with an invoice. Nothing is charged during the beta.</p>
   </div>
 </section>
@@ -275,6 +290,7 @@
       <div><strong style="color:var(--text)">Guides (Spanish)</strong><br><a href="../../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Privacy policy</a><br><a href="../../condiciones.html">Terms of service</a><br><a href="../aviso-legal.html">Legal notice</a></div>
     </div>
+    <nav class="foot-lang" aria-label="Language"><a href="../../" hreflang="es" lang="es">Español</a> · <a href="../../pt/" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
     <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them.<br>© 2026 Vodwise.</p>
   </div>
 </footer>

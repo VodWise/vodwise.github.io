@@ -208,7 +208,7 @@
     {
       "@type": "VideoObject",
       "name": "OBS setup · Vodwise",
-      "description": "Does setting up OBS give you a headache? Vodwise checks your PC and connection, suggests the quality and sets up your scenes and profiles. And your setup stays untouched: everything goes in a new profile.",
+      "description": "Does setting up OBS give you a headache? Vodwise checks your PC and connection, suggests the quality and sets up your scenes and profiles. It starts from your scenes or swaps them for Vodwise’s, and makes a backup so you can get your setup back.",
       "thumbnailUrl": "https://vodwise.com/assets/videos/en/f11-montar-obs.webp",
       "uploadDate": "2026-10-20",
       "duration": "PT20S",
@@ -237,8 +237,8 @@
     },
     {
       "@type": "VideoObject",
-      "name": "Stream Deck · Vodwise",
-      "description": "Your Stream Deck, ready in a double-click. A profile with your scenes, your music, the assistant keys and Twitch actions. Sorted and ready to import.",
+      "name": "Stream Deck and button deck · Vodwise",
+      "description": "Button deck for Stream Deck, Companion and Touch Portal: your scenes, mic, clips and stream actions, one button away.",
       "thumbnailUrl": "https://vodwise.com/assets/videos/en/f14-stream-deck.webp",
       "uploadDate": "2026-10-20",
       "duration": "PT14S",
@@ -303,12 +303,13 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu" aria-label="Principal">
+    <nav class="menu con-pie" aria-label="Principal">
       <a class="hide-sm" href="./">Features</a>
       <a class="hide-sm" href="../compare/">Compare</a>
       <a class="hide-sm" href="../pricing/">Pricing</a>
       <a class="lang-switch" href="../../" hreflang="es" lang="es">ES</a>
       <a class="lang-switch" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a class="btn btn-ghost btn-sm entrar" href="/cuenta/">Sign in</a>
       <a class="btn btn-primary btn-sm" href="../beta/">Request an invite</a>
     </nav>
   </div>
@@ -320,11 +321,11 @@
     <p class="intro">Vodwise brings together in one Windows app what a streamer uses before, during and after the stream: a copilot you can talk to, the Twitch, Kick and YouTube chat and bot, OBS alerts and scenes, and editing of the stream on your own PC. What used to take five programs and a night of editing.</p>
     <div class="fn-layout">
       <nav class="fn-tabs" role="tablist" aria-label="Features">
-      <div class="fn-group"><h4>Live</h4><button type="button" class="fn-tab" data-tab="conversacion" role="tab" aria-controls="fn-conversacion">Your copilot during the stream</button><button type="button" class="fn-tab" data-tab="primeros-pasos" role="tab" aria-controls="fn-primeros-pasos">First steps</button><button type="button" class="fn-tab" data-tab="voz-directo" role="tab" aria-controls="fn-voz-directo">Live voice (F8)</button><button type="button" class="fn-tab" data-tab="hablar" role="tab" aria-controls="fn-hablar">Talk to the assistant (F9)</button><button type="button" class="fn-tab" data-tab="estado" role="tab" aria-controls="fn-estado">Stream summary and status</button></div>
+      <div class="fn-group"><h4>Live</h4><button type="button" class="fn-tab" data-tab="conversacion" role="tab" aria-controls="fn-conversacion">Your copilot during the stream</button><button type="button" class="fn-tab" data-tab="primeros-pasos" role="tab" aria-controls="fn-primeros-pasos">First steps</button><button type="button" class="fn-tab" data-tab="preparar" role="tab" aria-controls="fn-preparar">Get the stream ready</button><button type="button" class="fn-tab" data-tab="voz-directo" role="tab" aria-controls="fn-voz-directo">Live voice (F8)</button><button type="button" class="fn-tab" data-tab="hablar" role="tab" aria-controls="fn-hablar">Talk to the assistant (F9)</button><button type="button" class="fn-tab" data-tab="estado" role="tab" aria-controls="fn-estado">Stream summary and status</button><button type="button" class="fn-tab" data-tab="cambio-juego" role="tab" aria-controls="fn-cambio-juego">Game switch with one «yes»</button></div>
       <div class="fn-group"><h4>Chat</h4><button type="button" class="fn-tab" data-tab="chat-unificado" role="tab" aria-controls="fn-chat-unificado">Unified chat</button><button type="button" class="fn-tab" data-tab="bot" role="tab" aria-controls="fn-bot">Multistream bot</button><button type="button" class="fn-tab" data-tab="voces-chat" role="tab" aria-controls="fn-voces-chat">Chat voices</button><button type="button" class="fn-tab" data-tab="acciones" role="tab" aria-controls="fn-acciones">Actions</button><button type="button" class="fn-tab" data-tab="discord" role="tab" aria-controls="fn-discord">Discord</button></div>
-      <div class="fn-group"><h4>Screen and OBS</h4><button type="button" class="fn-tab" data-tab="alertas" role="tab" aria-controls="fn-alertas">Alerts</button><button type="button" class="fn-tab" data-tab="overlays" role="tab" aria-controls="fn-overlays">Overlays your way</button><button type="button" class="fn-tab" data-tab="escenas" role="tab" aria-controls="fn-escenas">Scenes and design</button><button type="button" class="fn-tab" data-tab="montar-obs" role="tab" aria-controls="fn-montar-obs">OBS setup</button><button type="button" class="fn-tab" data-tab="creditos-finales" role="tab" aria-controls="fn-creditos-finales">End credits</button><button type="button" class="fn-tab" data-tab="avatar" role="tab" aria-controls="fn-avatar">VTuber avatar</button><button type="button" class="fn-tab" data-tab="stream-deck" role="tab" aria-controls="fn-stream-deck">Stream Deck</button></div>
-      <div class="fn-group"><h4>Editing</h4><button type="button" class="fn-tab" data-tab="edicion" role="tab" aria-controls="fn-edicion">Full video and best-of</button><button type="button" class="fn-tab" data-tab="shorts" role="tab" aria-controls="fn-shorts">Subtitled Shorts</button><button type="button" class="fn-tab" data-tab="titulos" role="tab" aria-controls="fn-titulos">Titles, description and thumbnail</button><button type="button" class="fn-tab" data-tab="publicar" role="tab" aria-controls="fn-publicar">Publish in one click</button><button type="button" class="fn-tab" data-tab="mi-estilo" role="tab" aria-controls="fn-mi-estilo">My style</button></div>
-      <div class="fn-group"><h4>Your account</h4><button type="button" class="fn-tab" data-tab="cuenta" role="tab" aria-controls="fn-cuenta">Credits for real use</button><button type="button" class="fn-tab" data-tab="gasto" role="tab" aria-controls="fn-gasto">Features and spending</button><button type="button" class="fn-tab" data-tab="donaciones" role="tab" aria-controls="fn-donaciones">Your own donations</button><button type="button" class="fn-tab" data-tab="estadisticas" role="tab" aria-controls="fn-estadisticas">Statistics</button><button type="button" class="fn-tab" data-tab="privacidad" role="tab" aria-controls="fn-privacidad">Your PC, your data</button><button type="button" class="fn-tab" data-tab="instalacion" role="tab" aria-controls="fn-instalacion">Hassle-free install</button></div>
+      <div class="fn-group"><h4>Screen and OBS</h4><button type="button" class="fn-tab" data-tab="alertas" role="tab" aria-controls="fn-alertas">Alerts</button><button type="button" class="fn-tab" data-tab="overlays" role="tab" aria-controls="fn-overlays">Overlays your way</button><button type="button" class="fn-tab" data-tab="escenas" role="tab" aria-controls="fn-escenas">Scenes and design</button><button type="button" class="fn-tab" data-tab="montar-obs" role="tab" aria-controls="fn-montar-obs">OBS setup</button><button type="button" class="fn-tab" data-tab="creditos-finales" role="tab" aria-controls="fn-creditos-finales">End credits</button><button type="button" class="fn-tab" data-tab="avatar" role="tab" aria-controls="fn-avatar">VTuber avatar</button><button type="button" class="fn-tab" data-tab="stream-deck" role="tab" aria-controls="fn-stream-deck">Stream Deck and button deck</button><button type="button" class="fn-tab" data-tab="subathon" role="tab" aria-controls="fn-subathon">Subathon and music</button></div>
+      <div class="fn-group"><h4>Editing</h4><button type="button" class="fn-tab" data-tab="edicion" role="tab" aria-controls="fn-edicion">Full video and best-of</button><button type="button" class="fn-tab" data-tab="editor" role="tab" aria-controls="fn-editor">Timeline editor</button><button type="button" class="fn-tab" data-tab="cualquier-video" role="tab" aria-controls="fn-cualquier-video">Edit any video</button><button type="button" class="fn-tab" data-tab="shorts" role="tab" aria-controls="fn-shorts">Subtitled Shorts</button><button type="button" class="fn-tab" data-tab="subtitulos" role="tab" aria-controls="fn-subtitulos">6 subtitle styles</button><button type="button" class="fn-tab" data-tab="titulos" role="tab" aria-controls="fn-titulos">Titles, description and thumbnail</button><button type="button" class="fn-tab" data-tab="publicar" role="tab" aria-controls="fn-publicar">Publish in one click</button><button type="button" class="fn-tab" data-tab="mi-estilo" role="tab" aria-controls="fn-mi-estilo">My style</button></div>
+      <div class="fn-group"><h4>Your account</h4><button type="button" class="fn-tab" data-tab="cuenta" role="tab" aria-controls="fn-cuenta">Credits for real use</button><button type="button" class="fn-tab" data-tab="gasto" role="tab" aria-controls="fn-gasto">Features and spending</button><button type="button" class="fn-tab" data-tab="donaciones" role="tab" aria-controls="fn-donaciones">Your own donations</button><button type="button" class="fn-tab" data-tab="estadisticas" role="tab" aria-controls="fn-estadisticas">Statistics</button><button type="button" class="fn-tab" data-tab="privacidad" role="tab" aria-controls="fn-privacidad">Your PC, your data</button><button type="button" class="fn-tab" data-tab="instalacion" role="tab" aria-controls="fn-instalacion">Hassle-free install</button><button type="button" class="fn-tab" data-tab="paneles" role="tab" aria-controls="fn-paneles">Channel panels and link page</button><button type="button" class="fn-tab" data-tab="temas" role="tab" aria-controls="fn-temas">Themes, menu and «Guide me»</button></div>
       </nav>
       <div class="fn-panels">
       <section class="fn-panel" id="fn-conversacion" role="tabpanel">
@@ -349,7 +350,7 @@
       </section>
       <section class="fn-panel" id="fn-chat-unificado" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f03-chat-unificado.webp" width="1280" height="720" aria-label="Video: Unified chat"><source src="../../assets/videos/en/f03-chat-unificado.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Chat</p><h3>Unified chat</h3><p>Twitch, Kick and YouTube in one window, with emotes, badges, highlights and one-click moderation from the name.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Chat</p><h3>Unified chat</h3><p>Twitch, Kick and YouTube in one window, with emotes, badges, highlights and one-click moderation from the name. And you write in the Twitch, Kick and YouTube chat with your account, right from the app.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-bot" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f05-bot-multistream.webp" width="1280" height="720" aria-label="Video: Multistream bot"><source src="../../assets/videos/en/f05-bot-multistream.mp4" type="video/mp4"></video></div>
@@ -369,19 +370,19 @@
       </section>
       <section class="fn-panel" id="fn-alertas" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f08-alertas.webp" width="1280" height="720" aria-label="Video: Alerts"><source src="../../assets/videos/en/f08-alertas.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Alerts</h3><p>Follows, subs, gifts, bits, raids and redemptions with alerts per platform and type, volume-matched. Use yours or ask the AI for a full set with your logo.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Alerts</h3><p>Follows, subs, gifts, bits, raids and redemptions with alerts per platform and type, volume-matched. Use yours or ask the AI for a full set with your logo. Vodwise’s own alerts are animated, with the name and amount, and you tweak them in your own words or by hand; also for members, TikTok gifts and hype trains.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-overlays" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f09-overlays.webp" width="1280" height="720" aria-label="Video: Overlays your way"><source src="../../assets/videos/en/f09-overlays.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Overlays your way</h3><p>A layer editor for your overlays: texts, shapes, images, latest follow, goals, on-screen chat and viewers. Or describe what you want and the AI builds it.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Overlays your way</h3><p>A layer editor for your overlays: texts, shapes, images, latest follow, goals, on-screen chat and viewers. Or describe what you want and the AI builds it. Plus an «Overlays» screen with 6 styles and animation you can turn off.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-escenas" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f10-escenas-y-diseno.webp" width="1280" height="720" aria-label="Video: Scenes and design"><source src="../../assets/videos/en/f10-escenas-y-diseno.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Scenes and design</h3><p>Full scene collections (start, chat, game, break, end) with their own transition and your logo as the emblem, designed by the AI from your style, with matching end credits.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Scenes and design</h3><p>Full scene collections (start, chat, game, break, end) with their own transition and your logo as the emblem, designed by the AI from your style, with matching end credits. Then you fine-tune them: move, resize and recolor, or ask the AI, without rebuilding everything.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-montar-obs" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f11-montar-obs.webp" width="1280" height="720" aria-label="Video: OBS setup"><source src="../../assets/videos/en/f11-montar-obs.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>OBS setup</h3><p>Analyzes your PC and connection, proposes the right quality, builds scenes, profiles and stream keys, installs what is missing and reviews your OBS. Yours is untouched: everything goes into a new profile.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>OBS setup</h3><p>Analyzes your PC and connection, proposes the right quality, builds scenes, profiles and stream keys, installs what is missing and reviews your OBS. It starts from your scenes or swaps them for Vodwise’s, brings your alerts and makes a backup so you can get your setup back. If you use SE.Live, it helps you move to Aitum Vertical, and you can record camera and game separately.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-creditos-finales" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f12-creditos-finales.webp" width="1280" height="720" aria-label="Video: End credits"><source src="../../assets/videos/en/f12-creditos-finales.mp4" type="video/mp4"></video></div>
@@ -392,16 +393,16 @@
         <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>VTuber avatar</h3><p>Instead of your camera, a 2D avatar, made from your own images or created with AI. It speaks with your mic and blinks on its own. If you turn on “Follow my face”, it also follows your mouth with your webcam. Your camera image never leaves your PC.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-stream-deck" role="tabpanel">
-        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f14-stream-deck.webp" width="1280" height="720" aria-label="Video: Stream Deck"><source src="../../assets/videos/en/f14-stream-deck.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Stream Deck</h3><p>A profile for your Stream Deck with your OBS scenes, the music, the assistant keys and the Twitch actions, arranged by the AI. Imported with a double click.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f14-stream-deck.webp" width="1280" height="720" aria-label="Video: Stream Deck and button deck"><source src="../../assets/videos/en/f14-stream-deck.mp4" type="video/mp4"></video></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Stream Deck and button deck</h3><p>Button deck for Stream Deck, Companion and Touch Portal, with scenes, mic, clips and more. With Stream Deck you can also delete the last message and start or end the stream.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-edicion" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f17-video-completo.webp" width="1280" height="720" aria-label="Video: Full video and best-of"><source src="../../assets/videos/en/f17-video-completo.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Full video and best-of</h3><p>When the stream ends, Vodwise reviews the whole thing, trims silences, picks the moments and builds the full video with chapters and subtitles, plus an 8–13 minute «best of». You review it in the app, video by video.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Full video and best-of</h3><p>When the stream ends, Vodwise reviews the whole thing, trims silences, picks the moments and builds the full video with chapters and subtitles, plus an 8–13 minute «best of». You review it in the app, video by video. No watermark.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-shorts" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f18-shorts.webp" width="1280" height="720" aria-label="Video: Subtitled Shorts"><source src="../../assets/videos/en/f18-shorts.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Subtitled Shorts</h3><p>4–6 vertical clips per stream, with your camera tracked, a headline and subtitles. With a publishing calendar (one a day) and the option to ask for another moment.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Subtitled Shorts</h3><p>Up to 8 vertical clips per stream, depending on the quality you choose, with your camera tracked, a headline and 6 subtitle styles. And you can ask for another moment.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-titulos" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f19-titulos-y-miniaturas.webp" width="1280" height="720" aria-label="Video: Titles, description and thumbnail"><source src="../../assets/videos/en/f19-titulos-y-miniaturas.mp4" type="video/mp4"></video></div>
@@ -409,7 +410,7 @@
       </section>
       <section class="fn-panel" id="fn-publicar" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f20-publicar.webp" width="1280" height="720" aria-label="Video: Publish in one click"><source src="../../assets/videos/en/f20-publicar.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Publish in one click</h3><p>Once you approve the edit, a page with everything ready to copy (titles, descriptions, Shorts, TikTok and Instagram texts), the files folder and direct access to YouTube Studio, TikTok Studio and Instagram.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Publish in one click</h3><p>«Publish everything now»: uploads to YouTube (private first) and spaces out the Instagram Reels. You review every video and its texts first.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-mi-estilo" role="tabpanel">
         <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/mi-estilo.webp" alt="My style" loading="lazy"></div>
@@ -421,7 +422,7 @@
       </section>
       <section class="fn-panel" id="fn-gasto" role="tabpanel">
         <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/gasto.webp" alt="Features and spending" loading="lazy"></div>
-        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Features and spending</h3><p>Choose how much Vodwise does with each stream (saving, balanced or maximum) or switch each feature separately, with an estimate of what it will spend.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Features and spending</h3><p>Choose how much Vodwise does with each stream (saving, balanced or maximum) or switch each feature separately, with an estimate of what it will spend. By default, a 4-hour stream spends 524 credits, and Settings shows you before you start.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       <section class="fn-panel" id="fn-donaciones" role="tabpanel">
         <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/donar.webp" alt="Your own donations" loading="lazy"></div>
@@ -437,7 +438,39 @@
       </section>
       <section class="fn-panel" id="fn-instalacion" role="tabpanel">
         <div class="fn-shot"><video class="fn-vid" muted loop playsinline preload="none" data-poster="../../assets/videos/en/f22-primeros-pasos.webp" width="1280" height="720" aria-label="Video: Hassle-free install"><source src="../../assets/videos/en/f22-primeros-pasos.mp4" type="video/mp4"></video></div>
-        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Hassle-free install</h3><p>One installer for Windows. What editing needs is downloaded once, every file verified, and updates arrive by themselves.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Hassle-free install</h3><p>One installer for Windows. What editing needs is downloaded once, every file verified, and it checks for updates when it opens and every 30 minutes; you decide when to restart.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-preparar" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/miniatura.webp" alt="Get the stream ready" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Live</p><h3>Get the stream ready</h3><p>Title, category and a thumbnail from a photo of your OBS camera, YouTube broadcasts, Instagram story and tweet. And «Shall we start now?» launches it all with one «yes».</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-cambio-juego" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/conversacion.webp" alt="Game switch with one «yes»" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Live</p><h3>Game switch with one «yes»</h3><p>Say «I’m switching to X» and Vodwise updates the title and category on every platform with a single «yes». When you finish, you can get one video per game.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-subathon" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/overlays.webp" alt="Subathon and music" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Screen and OBS</p><h3>Subathon and music</h3><p>Classic or interactive subathon, with time rules, stream controls and designs. Plus an OBS widget with the song that’s playing, its cover art and a progress bar.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-editor" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/revisar.webp" alt="Timeline editor" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Timeline editor</h3><p>Cut, move, add zooms and texts, and use over 120 effects. You can also ask the AI for changes in your own words («Ask the AI»). Before publishing you see every video and fine-tune it here.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-cualquier-video" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/videos.webp" alt="Edit any video" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>Edit any video</h3><p>Not just your streams: a video on your PC, or one from Twitch or YouTube via its link. Add your logo to the intro and outro, and sound effects no longer drown out your voice.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-subtitulos" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/short.webp" alt="6 subtitle styles" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Editing</p><h3>6 subtitle styles</h3><p>Classic, Karaoke, Pop, Box, Keyword and Subtle. The AI picks one for each Short or you set yours in «My style». Ask for 4 Shorts and you get 4 (up to 8).</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-paneles" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/cuenta.webp" alt="Channel panels and link page" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Channel panels and link page</h3><p>Builds the Twitch and Kick «About» panels (schedule, socials, Discord, rules, commands) to match your channel, and a link page for your bio at vodwise.com/u/your-name.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
+      </section>
+      <section class="fn-panel" id="fn-temas" role="tabpanel">
+        <div class="fn-shot"><img class="fn-ui" src="../../assets/funciones/primeros-pasos.webp" alt="Themes, menu and «Guide me»" loading="lazy"></div>
+        <div class="fn-text"><p class="eyebrow">Your account</p><h3>Themes, menu and «Guide me»</h3><p>8 themes to choose from, a Simple or Full menu, search with Ctrl+K, «? Help» in every section and «Guide me» to walk you through it.</p><p class="fn-nav"><button type="button" class="btn btn-ghost btn-sm fn-prev">←</button> <button type="button" class="btn btn-ghost btn-sm fn-next">→</button></p></div>
       </section>
       </div>
     </div>
@@ -468,6 +501,7 @@
       <div><strong style="color:var(--text)">Guides (Spanish)</strong><br><a href="../../clips-automaticos-twitch/" hreflang="es">Clips automáticos de Twitch</a><br><a href="../../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a><br><a href="../../guias/" hreflang="es">All guides</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Privacy policy</a><br><a href="../../condiciones.html">Terms of service</a><br><a href="../aviso-legal.html">Legal notice</a></div>
     </div>
+    <nav class="foot-lang" aria-label="Language"><a href="../../" hreflang="es" lang="es">Español</a> · <a href="../../pt/" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
     <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them.<br>© 2026 Vodwise.</p>
   </div>
 </footer>

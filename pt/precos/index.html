@@ -176,12 +176,13 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu" aria-label="Principal">
+    <nav class="menu con-pie" aria-label="Principal">
       <a class="hide-sm" href="../funcionalidades/">Funções</a>
       <a class="hide-sm" href="../comparativo/">Comparativo</a>
       <a class="hide-sm" href="./">Preços</a>
       <a class="lang-switch" href="../../" hreflang="es" lang="es">ES</a>
       <a class="lang-switch" href="../../en/" hreflang="en" lang="en">EN</a>
+      <a class="btn btn-ghost btn-sm entrar" href="/cuenta/">Entrar</a>
       <a class="btn btn-primary btn-sm" href="../beta/">Pedir convite</a>
     </nav>
   </div>
@@ -200,15 +201,29 @@
       <ul><li>Chat da Twitch e da Kick numa só janela, VodwiseBot, alertas e ações</li><li>Telas para o OBS e montagem do OBS</li><li>Vozes do chat com as vozes do Windows</li><li>Clipes básicos de cada live, feitos no seu PC</li><li>A IA, a edição completa, YouTube, TikTok, Instagram e X vêm com os planos</li></ul></div>
     <div class="plans">
       <div class="plan"><h3>Leve</h3><div class="price">€ 14,99 <small>/ mês</small></div>
-        <ul><li>1.800 créditos por mês</li><li>≈ 32 h de live por mês (4 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 12 h</small></li><li>Todas as funções</li></ul></div>
+        <ul><li>1.800 créditos por mês</li><li>≈ 32 h de live por mês (4 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 12 h</small></li><li>Copiloto, editor, Shorts, miniaturas e designs com IA (lista completa abaixo)</li></ul></div>
       <div class="plan best"><span class="tag">Recomendado</span><h3>Padrão</h3><div class="price">€ 29,99 <small>/ mês</small></div>
-        <ul><li>3.600 créditos por mês</li><li>≈ 64 h de live por mês (8 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 24 h</small></li><li>Todas as funções</li></ul></div>
+        <ul><li>3.600 créditos por mês</li><li>≈ 64 h de live por mês (8 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 24 h</small></li><li>O mesmo que o Leve, com o dobro de créditos</li></ul></div>
       <div class="plan"><h3>Premium</h3><div class="price">€ 59,99 <small>/ mês</small></div>
         <ul><li>7.200 créditos por mês</li><li>≈ 136 h de live por mês (17 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 52 h</small></li><li>O que você não gastar fica guardado até 2 meses</li></ul></div>
       <div class="plan"><span class="tag">Exclusivo</span><h3>Estúdio</h3><div class="price">€ 159,99 <small>/ mês</small></div>
         <ul><li>20.000 créditos por mês</li><li>≈ 384 h de live por mês (48 lives de 8 h)<br><small>Com a configuração de série e lives de 4 h: ≈ 152 h</small></li><li>O que você não gastar fica guardado até 3 meses</li><li>Suporte prioritário</li></ul></div>
     </div>
     <p class="fine">Preços com impostos incluídos. Cancele quando quiser: você continua até o fim do mês pago. As horas são aproximadas, com copiloto e edição básica em lives de 8 h, e dependem do que você ativar; o app sempre mostra o seu saldo real.</p>
+    <div class="incl">
+      <h3>Todos os planos incluem</h3>
+      <ul class="checks">
+        <li><span><strong>Copiloto por voz</strong> na live (F8) e para conversar com ele (F9).</span></li>
+        <li><span><strong>Edição completa</strong> das suas lives e de qualquer vídeo do seu PC.</span></li>
+        <li><span><strong>Editor com linha do tempo</strong>, zooms, textos e mais de 120 efeitos.</span></li>
+        <li><span><strong>Shorts</strong>, até 8 por live, com 6 estilos de legenda.</span></li>
+        <li><span><strong>Títulos, descrição e miniaturas</strong> para os seus vídeos.</span></li>
+        <li><span><strong>Designs com IA:</strong> alertas, overlays e cenas com o seu logo.</span></li>
+        <li><span><strong>Montar o OBS</strong> a partir das suas cenas, com cópia para voltar atrás.</span></li>
+        <li><span><strong>Publicar</strong> no YouTube (privado de início), Reels do Instagram e rascunhos do TikTok.</span></li>
+        <li><span><strong>Sem marca d’água</strong> nos seus vídeos.</span></li>
+      </ul>
+    </div>
     <div class="calc" id="calculadora">
       <h3>Calcule o seu preço por hora</h3>
       <div class="calc-row"><label>Horas por live<input type="number" id="calc-h" min="1" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Lives por mês<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
@@ -225,7 +240,7 @@
     <p class="req">Os créditos das recargas <strong>nunca expiram</strong> e são usados depois dos do seu plano.</p>
     <div class="topups"><span>€ 10 · 1.000 créditos</span><span>€ 25 · 2.750 créditos (+10%)</span><span>€ 50 · 5.750 créditos (+15%)</span><span>Ou o valor que quiser, a partir de € 10 (mesmos bônus: +10% a partir de € 25, +15% a partir de € 50)</span></div>
     <h3 style="margin-top:36px">Oferta de boas-vindas</h3>
-    <p class="req">Quando a Vodwise verifica que você transmite do seu canal (60 minutos ao vivo com o app aberto), você tem <strong>7 dias</strong> para a sua primeira compra com preço de boas-vindas: <strong>o primeiro mês do Leve por 9,99 €</strong> ou <strong>850 créditos por 5 €</strong>. E se você convidar um amigo, quando ele pagar um mês completo, cada um recebe 300 créditos.</p>
+    <p class="req">Quando a Vodwise verifica que você transmite do seu canal (60 minutos ao vivo com o app aberto), você tem <strong>7 dias</strong> para a sua primeira compra com preço de boas-vindas: <strong>o primeiro mês do Leve por 9,99 €</strong> ou <strong>850 créditos por 5 €</strong>.</p>
     <p class="fine">Os pagamentos chegam em breve, com nota fiscal. Durante o beta nada é cobrado.</p>
   </div>
 </section>
@@ -275,6 +290,7 @@
       <div><strong style="color:var(--text)">Guias (em espanhol)</strong><br><a href="../../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Política de privacidade</a><br><a href="../../condiciones.html">Termos do serviço</a><br><a href="../aviso-legal.html">Aviso legal</a></div>
     </div>
+    <nav class="foot-lang" aria-label="Idioma"><a href="../../" hreflang="es" lang="es">Español</a> · <a href="../../en/" hreflang="en" lang="en">English</a></nav>
     <p class="legal">O Vodwise usa os <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">Serviços da API do YouTube</a>: <a href="https://www.youtube.com/t/terms">Termos de Serviço do YouTube</a> e <a href="https://policies.google.com/privacy">Política de Privacidade do Google</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads e Discord são marcas dos seus respectivos proprietários; o Vodwise não é afiliado a eles.<br>© 2026 Vodwise.</p>
   </div>
 </footer>

@@ -220,3 +220,16 @@ footer.site .inception{display:flex;align-items:center;gap:18px;margin-top:28px;
 footer.site .inception img{display:block;width:104px;height:auto;flex:none}
 footer.site .inception p{margin:0;color:var(--soft);font-size:14.5px;max-width:46ch}
 @media (max-width:600px){footer.site .inception{flex-direction:column;align-items:flex-start;gap:12px}}
+/* 0063 · «Entrar» está APAGADO hasta que exista el área de cuenta (encargo 0035). Para encenderlo, borra la línea siguiente. */
+.menu .entrar{display:none!important}
+/* 0063 · En móvil, las páginas con .con-pie llevan los idiomas al pie y dejan sitio al botón */
+.foot-lang{margin:22px 0 0;font-size:14px}.foot-lang a{margin:0 2px}
+@media (max-width:520px){.menu.con-pie{gap:8px}.menu.con-pie .lang-switch{display:none}.menu.con-pie .btn-sm{display:inline-flex;height:36px;padding:0 12px;font-size:14px}}
+/* 0063 · Logo 3D decorativo de la portada (variante B) */
+.deco3d{position:absolute;pointer-events:none;z-index:0}.deco3d video{width:100%;height:100%;object-fit:contain;display:block}.deco3d video.mp4{mix-blend-mode:lighten}
+.deco-b{right:-150px;bottom:-150px;width:470px;aspect-ratio:1;animation:flota 7s ease-in-out infinite}
+@keyframes flota{0%,100%{transform:translateY(0) rotate(-3deg)}50%{transform:translateY(-14px) rotate(2deg)}}
+@media (max-width:700px){.deco-b{right:-90px;top:-40px;bottom:auto;width:240px;opacity:.38}}
+@media (prefers-reduced-motion:reduce){.deco-b{animation:none}}
+/* 0063 · Precios: «Todos los planes incluyen» */
+.incl{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;margin:22px 0}.incl h3{margin:0 0 12px}.incl .checks{grid-template-columns:1fr 1fr;gap:12px 28px}@media (max-width:760px){.incl .checks{grid-template-columns:1fr}}
