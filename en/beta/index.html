@@ -48,6 +48,7 @@
 .cols2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}.card h3{margin:0 0 6px;font-size:19px}.card p{color:var(--soft);margin:4px 0;font-size:15px}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.grid3 a.card{color:var(--text);display:block;text-decoration:none}.grid3 a.card:hover{border-color:var(--a1)}
 [hidden]{display:none!important}
+.btn[aria-disabled="true"]{opacity:.45;filter:grayscale(.6);cursor:not-allowed;box-shadow:none}
 @media (max-width:760px){.req,.cols2,.grid3{grid-template-columns:1fr}.dlbox .btn{width:100%;justify-content:center}}</style>
 <script type="application/ld+json">
 {
@@ -119,9 +120,10 @@
     <h1 class="page-h1">Download Vodwise</h1>
     <p class="intro">Twitch, Kick and YouTube chat in one place and automatic editing of your streams. Free to start.</p>
     <div class="dlbox" id="dl-ok">
-      <div><a class="btn btn-primary" id="dl-btn" href="#" data-instalador="">Download for Windows</a><small>Installer for Windows · spots left today</small></div>
+      <div><a class="btn btn-primary" id="dl-btn" href="#" data-instalador="">Download for Windows</a><small id="dl-note" data-plazas="spots left today" data-pronto="Available very soon">Installer for Windows</small></div>
       <div style="color:var(--soft);max-width:420px">To sign in you need a Twitch or Kick account. AI features are paid with credits; everything else is free.</div>
     </div>
+    <noscript><p class="dl-fine">Want us to let you know? Join the <a href="#waitlist">email list</a>.</p><style>#dl-full{display:block!important;margin-top:18px}#dl-full [data-motivo],#dl-full .dl-tag{display:none!important}</style></noscript>
     <div class="dl-full" id="dl-full" hidden>
       <span class="dl-tag">Full today</span>
       <h2 data-motivo="full">All of today’s spots are taken</h2><h2 data-motivo="closed" hidden>No spots for new accounts right now</h2>
