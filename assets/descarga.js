@@ -35,6 +35,16 @@
     if (ready) setNote(spotsLeft ? note && note.getAttribute('data-plazas') : '');
   }
 
+  // Sin instalador público (antes del día D) no se consultan plazas: botón apagado y, debajo, solo «¿Prefieres que te
+  // avisemos?» con la lista de aviso por correo (como sin JavaScript), para que nadie se quede sin poder apuntarse.
+  if (!ready) {
+    full.hidden = false;
+    var sueltos = full.querySelectorAll('[data-motivo], .dl-tag');
+    for (var j = 0; j < sueltos.length; j++) sueltos[j].hidden = true;
+    full.style.marginTop = '18px';
+    return;
+  }
+
   // Solo en el ordenador (localhost), para ver los estados: ?cupo=lleno | ?cupo=cerrado | ?cupo=libre.
   var m = /[?&]cupo=(lleno|cerrado|libre)\b/.exec(location.search);
   if (m && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) {
