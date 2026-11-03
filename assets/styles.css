@@ -220,8 +220,8 @@ footer.site .inception{display:flex;align-items:center;gap:18px;margin-top:28px;
 footer.site .inception img{display:block;width:104px;height:auto;flex:none}
 footer.site .inception p{margin:0;color:var(--soft);font-size:14.5px;max-width:46ch}
 @media (max-width:600px){footer.site .inception{flex-direction:column;align-items:flex-start;gap:12px}}
-/* 0063 · «Entrar» está APAGADO hasta que exista el área de cuenta (encargo 0035). Para encenderlo, borra la línea siguiente. */
-.menu .entrar{display:none!important}
+/* 03-11 · «Entrar» encendido: lleva a la cuenta web (vodwise.com/cuenta), que sin sesión se puede mirar. En el móvil sigue a la vista. */
+@media (max-width:520px){.menu .entrar{display:inline-flex;height:36px;padding:0 12px;font-size:14px}}
 /* 0063 · En móvil, las páginas con .con-pie llevan los idiomas al pie y dejan sitio al botón */
 .foot-lang{margin:22px 0 0;font-size:14px}.foot-lang a{margin:0 2px}
 @media (max-width:520px){.menu.con-pie{gap:8px}.menu.con-pie .lang-switch{display:none}.menu.con-pie .btn-sm{display:inline-flex;height:36px;padding:0 12px;font-size:14px}}
