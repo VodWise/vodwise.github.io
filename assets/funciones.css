@@ -1,0 +1,39 @@
+/* Página de funciones (encargo 0097): ocho grupos, una imagen y dos líneas por grupo.
+   Reutiliza .wrap, .eyebrow, .page-h1, .intro, .btn, .btn-off y .wip de styles.css. */
+
+.fx-page .intro{max-width:760px}
+
+/* Botón principal apagado + etiqueta + nota (un solo estado en toda la web) */
+.fx-dl{display:flex;flex-direction:column;align-items:flex-start;gap:10px;margin:26px 0 0}
+.fx-dl-row{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px}
+.fx-dl .btn{height:52px;padding:0 28px;font-size:16.5px;font-family:inherit}
+.fx-dl p.wip-note{margin:0}
+
+/* Cuadrícula de grupos */
+.fx-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin:40px 0 0;padding:0;list-style:none}
+.fx-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+.fx-card .fx-img{display:block;background:#0b0f17;border-bottom:1px solid var(--line)}
+.fx-card img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover}
+.fx-body{display:flex;flex-direction:column;flex:1;padding:20px 22px 22px}
+.fx-body h2{margin:0 0 10px;font-size:22px;line-height:1.25;letter-spacing:-.01em;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.fx-body p{margin:0;color:var(--soft);font-size:15.5px;line-height:1.55}
+.fx-body p+p{margin-top:8px}
+.fx-more{margin-top:auto!important;padding-top:14px;font-size:14.5px!important}
+.fx-more a{color:var(--a1);font-weight:650;text-decoration:none}
+.fx-more a:hover,.fx-more a:focus-visible{text-decoration:underline}
+
+/* Cierre */
+.fx-end{margin-top:48px;padding:30px 30px 32px;background:var(--card);border:1px solid var(--line);border-radius:20px}
+.fx-end h2{margin:0 0 8px;font-size:clamp(22px,2.6vw,28px)}
+.fx-end p{margin:0 0 4px;color:var(--soft)}
+.fx-end .fx-dl{margin-top:18px}
+.fx-help{margin:18px 0 0;color:var(--soft);font-size:15px}
+.fx-help a{color:var(--a1);font-weight:650}
+
+@media (max-width:760px){
+  .fx-grid{grid-template-columns:1fr;gap:18px;margin-top:30px}
+  .fx-body{padding:18px 18px 20px}
+  .fx-body h2{font-size:20px}
+  .fx-dl .btn{width:100%}
+  .fx-end{padding:22px 18px 24px}
+}
