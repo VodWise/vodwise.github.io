@@ -1,0 +1,24 @@
+/* Menú único de vodwise.com: la parte de móvil funciona sin JavaScript (<details>).
+   Lo enlaza y lo rellena scripts/web/nav.mjs; no se edita el menú a mano. */
+.menu a[aria-current="page"]{color:var(--text);box-shadow:0 2px 0 var(--a1);padding-bottom:3px}
+.menu .btn[aria-current="page"]{box-shadow:none;padding-bottom:0}
+.menu-m{display:none;position:relative}
+.menu-m summary{list-style:none;cursor:pointer;width:40px;height:40px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.02)}
+.menu-m summary::-webkit-details-marker{display:none}
+.menu-m summary:focus-visible{outline:2px solid var(--a1);outline-offset:3px}
+.menu-m[open] summary{border-color:var(--a1)}
+.menu-m-icono,.menu-m-icono::before,.menu-m-icono::after{display:block;width:18px;height:2px;border-radius:2px;background:var(--soft);content:"";position:relative}
+.menu-m-icono::before{position:absolute;top:-6px;left:0}
+.menu-m-icono::after{position:absolute;top:6px;left:0}
+.menu-m-panel{position:absolute;right:0;top:calc(100% + 14px);min-width:230px;display:flex;flex-direction:column;gap:2px;padding:8px;background:var(--card,#121a29);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px rgba(0,0,0,.45)}
+.menu-m-panel a{padding:11px 12px;border-radius:9px;color:var(--text);font-size:16px}
+.menu-m-panel a:hover,.menu-m-panel a:focus-visible{background:rgba(255,255,255,.06);text-decoration:none}
+.menu-m-panel a[aria-current="page"]{color:var(--a1);box-shadow:none;padding-bottom:11px}
+.menu-m-panel .menu-m-idioma{color:var(--soft);font-size:14px;border-top:1px solid rgba(36,48,73,.6);border-radius:0}
+@media (max-width:820px){
+  .menu-m{display:block}
+  .menu .lang-switch,.menu a.entrar{display:none}
+  .menu .btn-sm.descargar{display:inline-flex;height:38px;padding:0 14px;font-size:14px}
+  .top .wrap{gap:12px}
+  .menu{gap:12px}
+}
