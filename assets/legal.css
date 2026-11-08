@@ -1,0 +1,26 @@
+/* Páginas legales (privacidad, condiciones y devoluciones): salto de idioma, resumen, índice y tablas. Solo estilo. */
+.doc a{overflow-wrap:anywhere}
+.doc section,.doc h2{scroll-margin-top:84px}
+
+.doc table{display:block;max-width:100%;overflow-x:auto;border-collapse:collapse;margin:.5em 0 1em}
+.doc td,.doc th{border:1px solid var(--line);padding:.35em .7em;text-align:left}
+
+.legal-idiomas{margin:-14px 0 22px;color:var(--muted);font-size:14.5px}
+.legal-idiomas a{color:var(--a1);text-decoration:none;border-bottom:1px solid transparent}
+.legal-idiomas a:hover{border-bottom-color:var(--a1)}
+
+.legal-tit{margin:0 0 8px;font-size:12.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.legal-resumen{background:var(--bg);border:1px solid var(--line);border-left:3px solid var(--a1);border-radius:12px;padding:14px 18px 12px;margin:10px 0 16px}
+.legal-resumen ul{margin:0;padding-left:18px}
+.legal-resumen li{margin:0 0 6px}
+.legal-resumen .legal-nota{margin:8px 0 0;font-size:13px;color:var(--muted)}
+
+.legal-indice{margin:0 0 18px}
+.legal-indice ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.legal-indice a{display:inline-block;padding:4px 12px;border:1px solid var(--line);border-radius:999px;font-size:13.5px;line-height:1.4;color:var(--soft);text-decoration:none}
+.legal-indice a:hover,.legal-indice a:focus-visible{border-color:var(--a1);color:var(--text)}
+
+@media (max-width:560px){
+  .doc section{padding:20px 16px}
+  .legal-resumen{padding:12px 14px 10px}
+}
