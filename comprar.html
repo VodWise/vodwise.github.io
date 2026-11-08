@@ -6,24 +6,11 @@
 <meta name="robots" content="noindex">
 <meta name="referrer" content="no-referrer">
 <title>Comprar · Vodwise</title>
-<!-- Página de pago (10-10, Vodwise fase 1; 26-10: Stripe Managed Payments, Link es el vendedor).
-     La app la abre con #permiso=… (un permiso de compra firmado por el
-     servidor, 10 minutos, que dice la cuenta y el producto; en el fragmento no llega a ningún registro); la página pide al
-     servidor el pago (POST /v1/payments/stripe/checkout, texto plano: sin consulta previa del navegador) y lleva a la
-     página de pago de Stripe; Stripe avisa al servidor y el servidor suma los créditos. En español, inglés o portugués
-     (&idioma=, o el del navegador). La recarga con cantidad elegida aún no va con Stripe. 03-11: la oferta de
-     bienvenida (ofertaBasico, ofertaRecarga) va con Stripe como lo demás; el precio de oferta lo pone el servidor. -->
-<style>
-  :root{--bg:#0d1117;--card:#161b26;--text:#e8eaf0;--muted:#9aa3b5;--accent:#6c63ff}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-  main{max-width:34rem;margin:0 auto;padding:4rem 16px;text-align:center}
-  .card{background:var(--card);border-radius:14px;padding:2rem 1.5rem;margin-top:1.5rem}
-  h1{font-size:1.8rem;margin:0}
-  .price{font-size:2.2rem;font-weight:700;margin:.5rem 0}
-  p{color:var(--muted);line-height:1.5}
-  button{background:var(--accent);color:#fff;border:0;border-radius:10px;font-size:1.05rem;padding:.9rem 1.6rem;cursor:pointer}
-  button[disabled]{opacity:.5;cursor:default}
-</style>
+<meta name="description" content="Pago seguro de tu plan o recarga de créditos de Vodwise con Link (Stripe).">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<!-- Página de pago: la app la abre con un permiso de compra de 10 minutos y esta página lleva a la página de pago de Stripe. En español, inglés o portugués. -->
+<link rel="stylesheet" href="assets/pago.css">
 </head>
 <body>
 <main>
