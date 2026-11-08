@@ -1,0 +1,27 @@
+/* Página de Ayuda (encargo 0097): primeros pasos, preguntas, guías y contacto. Usa las variables de styles.css. */
+
+.ay-sec{margin-top:48px}
+.ay-sec.ay-first{margin-top:30px}
+.ay-sec h2{font-size:clamp(22px,2.6vw,28px);margin:0 0 16px;letter-spacing:-.01em}
+.ay-fine{margin:-6px 0 14px;color:var(--muted);font-size:13.5px}
+
+/* Primeros pasos: cuatro líneas numeradas */
+.ay-steps{display:grid;gap:10px;margin:0;padding:0;list-style:none;counter-reset:ay;max-width:820px}
+.ay-steps li{counter-increment:ay;position:relative;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;min-height:58px;padding:14px 18px 14px 62px;background:var(--card);border:1px solid var(--line);border-radius:14px;color:var(--soft)}
+.ay-steps li::before{content:counter(ay);position:absolute;left:18px;top:50%;transform:translateY(-50%);width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--a1);color:#0b0f17;font-weight:800;font-size:14px}
+.ay-steps .wip{margin-left:6px}
+.ay-steps a{color:var(--text);font-weight:650;text-decoration:underline;text-decoration-color:var(--a1);text-underline-offset:3px}
+
+/* Guías */
+.ay-guides{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ay-guides a{display:block;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:16px;color:var(--text);font-weight:650;font-size:16px;line-height:1.35;text-decoration:none;transition:border-color .15s}
+.ay-guides a:hover{border-color:var(--a1)}
+
+/* Contacto */
+.ay-contact{max-width:620px;padding:22px 24px;background:var(--card);border:1px solid var(--line);border-radius:16px}
+.ay-contact h3{margin:0 0 6px;font-size:19px}
+.ay-contact p{margin:4px 0;color:var(--soft);font-size:15px}
+.ay-contact .btn{margin-top:10px}
+
+@media (max-width:860px){.ay-guides{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.ay-sec{margin-top:40px}.ay-guides{grid-template-columns:1fr}.ay-contact .btn{width:100%;justify-content:center}.ay-steps li{padding:12px 14px 12px 56px}.ay-steps li::before{left:14px}}
