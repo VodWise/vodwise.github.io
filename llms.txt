@@ -12,7 +12,7 @@ Current status (November 2026):
 Key facts:
 
 - Runs on Windows 10 and 11 together with OBS.
-- The recording is edited on the streamer's own PC; it is not uploaded to a cloud editor.
+- The recording is edited on the streamer's own PC, not on a web editor. To analyse it, the recording is processed by AI providers as the privacy policy explains.
 - Clip tools turn a video you give them into short clips; stream tools focus on alerts, overlays and the bot. Vodwise covers both in one app and also builds the long video for YouTube.
 - Made by Vodwise Labs, S.L.U. Contact: soporte@vodwise.com. X: @VodwiseX
 
@@ -37,16 +37,12 @@ Key facts:
 - [Alternatives (English)](https://vodwise.com/en/compare/)
 - [Alternatives (Portuguese)](https://vodwise.com/pt/comparativo/)
 
-## Comparisons and guides (Spanish)
+## Guides (Spanish)
 
-- [Alternatives to Opus Clip for streamers](https://vodwise.com/alternativa-opus-clip/)
-- [Alternatives to StreamElements and Streamlabs](https://vodwise.com/alternativa-streamelements-streamlabs/)
-- [Vodwise vs Eklipse](https://vodwise.com/vodwise-vs-eklipse/)
-- [Vodwise vs StreamLadder](https://vodwise.com/vodwise-vs-streamladder/)
-- [Automatic Kick clips](https://vodwise.com/clips-automaticos-kick/)
-- [Automatic Twitch clips](https://vodwise.com/clips-automaticos-twitch/)
-- [Twitch clips for TikTok](https://vodwise.com/clips-de-twitch-para-tiktok/)
-- [Uploading a Twitch stream to YouTube](https://vodwise.com/subir-directo-twitch-a-youtube/)
+- [Automatic clips for Twitch and Kick](https://vodwise.com/guias/clips-automaticos-twitch-kick/)
+- [Uploading a Twitch stream to YouTube](https://vodwise.com/guias/subir-directo-twitch-a-youtube/)
+- [Streaming to Twitch, Kick and YouTube at once](https://vodwise.com/guias/emitir-en-twitch-kick-y-youtube-a-la-vez/)
+- [From horizontal to vertical and Shorts](https://vodwise.com/guias/directo-horizontal-a-vertical/)
 - [All guides](https://vodwise.com/guias/)
 
 ## Optional
