@@ -12,8 +12,8 @@
   ];
   // Recargas que se pueden comprar: [euros, créditos]
   const RECARGAS = [[10, 1000], [25, 2750], [50, 5750]];
-  // Gasto estimado por directo = A × horas + B créditos, según la calidad elegida.
-  const CALIDAD = { b: [29, 184], s: [37.5, 374], m: [102.5, 839] };
+  // Gasto estimado por directo = A × horas + B créditos, según la calidad elegida (lo mismo que enseña la app).
+  const CALIDAD = { b: [51.03, 46.84], s: [65.55, 185.9], m: [65.55, 363.01] };
   const MAX_HORAS = 24;
   const MAX_DIRECTOS = 62;
 
