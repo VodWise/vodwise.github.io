@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-hashes' 'sha256-sT0CMEn6HNO6l4QB8iktLc9YOxKk2iWkcoaYx9yAYPA=' 'sha256-JZOPkz2v+7VKbsqQgyWHBoKtnxd7DcdzCPwatkV9ZkI=' 'sha256-bEGJjLRfkOU98uRaqMnKlJMX0drq4qpkBADNTQ0Je9s=' 'sha256-/3kWSXHts8LrwfemLzY9W0tOv5I4eLIhrf0pT8cU0WI='; img-src 'self'; base-uri 'none'; form-action 'none'; media-src 'self'">
+<meta name="referrer" content="same-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vodwise — You do the stream. Vodwise does the rest.</title>
-<meta name="description" content="Windows app that helps streamers during the stream (Twitch, Kick and YouTube chat, bot, OBS alerts and scenes) and then edits the stream on their own PC: full video, highlights and Shorts.">
+<title>Vodwise — Your livestream copilot and automatic editor</title>
+<meta name="description" content="Windows app: copilot for your Twitch, Kick and YouTube streams and automatic editor that builds the full video, the highlights and Shorts on your PC.">
 <meta name="theme-color" content="#0b0f17">
 <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
 <link rel="canonical" href="https://vodwise.com/en/">
@@ -12,36 +14,19 @@
 <link rel="alternate" hreflang="en" href="https://vodwise.com/en/">
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/">
 <link rel="alternate" hreflang="x-default" href="https://vodwise.com/">
-<meta property="og:title" content="Vodwise — You do the stream. Vodwise does the rest.">
-<meta property="og:description" content="Windows app that helps streamers during the stream (Twitch, Kick and YouTube chat, bot, OBS alerts and scenes) and then edits the stream on their own PC: full video, highlights and Shorts.">
+<meta property="og:title" content="Vodwise — Your livestream copilot and automatic editor">
+<meta property="og:description" content="Windows app: copilot for your Twitch, Kick and YouTube streams and automatic editor that builds the full video, the highlights and Shorts on your PC.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vodwise.com/en/">
-<meta property="og:image" content="https://vodwise.com/assets/og-en.png">
+<meta property="og:image" content="https://vodwise.com/assets/og/inicio-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Vodwise: your livestream copilot and automatic editor">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../assets/styles.css">
-<style>
-.features-page .group{margin:34px 0 0}a.feat{text-decoration:none;color:inherit;display:block}a.feat:hover{border-color:var(--a1)}.features-page .group .features{grid-template-columns:repeat(4,1fr)}@media (max-width:960px){.features-page .group .features{grid-template-columns:repeat(2,1fr)}}@media (max-width:620px){.features-page .group .features{grid-template-columns:1fr}}.features-page .group h3{margin:0 0 14px;font-size:22px}
-.cmp{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;font-size:15px}
-.cmp th,.cmp td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.cmp th{background:rgba(255,255,255,.04);font-weight:700}
-.cmp td:nth-child(2){color:var(--a1);font-weight:700}.cmp tr:last-child td{border-bottom:0}.cmp .ok{color:var(--a1);font-weight:700}
-.cmp-note{color:var(--muted);font-size:13px;margin-top:12px}.cmp-wrap{overflow-x:auto}
-.dl-steps{display:grid;gap:12px;margin:18px 0;padding:0;list-style:none;counter-reset:s}.dl-steps li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 56px;position:relative;color:var(--soft)}
-.dl-steps li::before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--a1);color:#0b0f17;font-weight:800;display:grid;place-items:center}
-.dl-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}.dl-fine{color:var(--muted);font-size:13px}
-.deco{position:absolute;inset:0;pointer-events:none;z-index:0}.deco svg{position:absolute;fill:var(--text);opacity:.06;filter:blur(2.5px);transform:rotate(-8deg)}.deco svg:nth-child(even){transform:rotate(9deg);fill:var(--a1)}.hero .wrap{position:relative;z-index:1}@media (max-width:920px){.deco{display:none}}
-.fn-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:26px;margin-top:22px;align-items:start}
-.fn-tabs{position:sticky;top:84px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 110px);overflow:auto;padding-right:6px}.fn-group h4{margin:0 0 6px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.fn-tab{display:block;width:100%;text-align:left;background:transparent;border:1px solid transparent;color:var(--soft);padding:8px 10px;border-radius:10px;font:inherit;font-size:14.5px;cursor:pointer}.fn-tab:hover{background:rgba(255,255,255,.04);color:var(--text)}.fn-tab.on{background:var(--card);border-color:var(--line);color:var(--text);font-weight:650}
-.fn-panel[hidden]{display:none}.fn-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:34px;align-items:center;padding:18px 4px;position:relative}
-.fn-shot{position:relative;perspective:1600px;padding:22px 10px}.fn-shot::before{content:"";position:absolute;inset:6% 4% 0 4%;background:radial-gradient(60% 55% at 35% 45%,rgba(62,230,200,.42),transparent 70%),radial-gradient(55% 50% at 75% 65%,rgba(123,108,255,.45),transparent 72%);filter:blur(28px);z-index:0}.fn-shot img{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:14px;background:#0b0f17;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -35px rgba(0,0,0,.9),0 18px 40px -20px rgba(62,230,200,.18);transition:transform .6s cubic-bezier(.2,.7,.2,1)}.fn-shot img.fn-ui{transform:rotateY(-7deg) rotateX(3deg);-webkit-mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));mask-composite:intersect}.fn-shot img.fn-art{transform:rotateY(-5deg) rotateX(2deg);-webkit-mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%);mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%)}.fn-shot img.fn-tall{width:auto;max-width:62%;max-height:520px;margin:0 auto;transform:rotate(-3deg);border-radius:22px;box-shadow:0 0 0 6px #0b0f17,0 0 0 7px rgba(255,255,255,.12),0 40px 90px -30px rgba(0,0,0,.9)}.fn-panel:hover .fn-shot img.fn-ui,.fn-panel:hover .fn-shot img.fn-art{transform:rotateY(-2deg) rotateX(1deg)}.fn-panel:hover .fn-shot img.fn-tall{transform:rotate(-1deg)}.fn-pending{aspect-ratio:16/10;border-radius:12px;border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;background:repeating-conic-gradient(rgba(255,255,255,.03) 0 25%,transparent 0 50%) 0 0/24px 24px}
-.fn-text h3{margin:6px 0 10px;font-size:24px}.fn-text p{color:var(--soft);font-size:15.5px;line-height:1.55}.fn-nav{margin-top:14px}
-@media (max-width:860px){.fn-layout{grid-template-columns:1fr}.fn-tabs{position:static;max-height:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:10px;padding-bottom:6px}.fn-group{display:flex;gap:6px;align-items:center}.fn-group h4{display:none}.fn-tab{white-space:nowrap;width:auto;border-color:var(--line)}.fn-panel{grid-template-columns:1fr}.fn-shot img.fn-ui,.fn-shot img.fn-art{transform:none}}
-.explainer{width:100%}.ex-frame{position:relative;border-radius:20px;overflow:hidden;border:1px solid var(--line);background:#0b0f17;box-shadow:0 40px 80px -40px rgba(0,0,0,.8)}.ex-video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#0b0f17}
-.ex-play{position:absolute;inset:0;width:100%;border:0;padding:0;margin:0;background:transparent;cursor:pointer;color:var(--text);font:inherit}.ex-play[hidden]{display:none}
-.ex-btn{position:absolute;left:58%;top:62%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:var(--grad);display:grid;place-items:center;box-shadow:0 12px 40px -10px rgba(62,230,200,.6);opacity:.94;transition:transform .2s}.ex-btn svg{width:34px;height:34px;fill:#0b0f17;margin-left:4px}.ex-play:hover .ex-btn,.ex-play:focus-visible .ex-btn{transform:scale(1.08)}
-.ex-note{margin:10px 2px 0;color:var(--muted);font-size:13px}@media (max-width:520px){.ex-btn{width:60px;height:60px;margin:-30px 0 0 -30px}.ex-btn svg{width:26px;height:26px}}@media (prefers-reduced-motion:reduce){.ex-btn{transition:none}}
-@media (max-width:700px){.cmp{font-size:13px}.cmp th,.cmp td{padding:9px 8px}}</style>
+<link rel="stylesheet" href="../assets/nav.css">
+<link rel="stylesheet" href="../assets/portada.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -50,7 +35,7 @@
       "@type": "Organization",
       "@id": "https://vodwise.com/#organization",
       "name": "Vodwise",
-      "legalName": "Vodwise Labs, S.L.",
+      "legalName": "Vodwise Labs, S.L.U.",
       "url": "https://vodwise.com/",
       "logo": {
         "@type": "ImageObject",
@@ -60,28 +45,12 @@
       },
       "email": "soporte@vodwise.com",
       "sameAs": [
-        "https://x.com/VodwiseX"
-      ],
-      "founder": {
-        "@id": "https://vodwise.com/#diego"
-      }
-    },
-    {
-      "@type": "Person",
-      "@id": "https://vodwise.com/#diego",
-      "name": "Diego García González",
-      "alternateName": "Degolas",
-      "jobTitle": "Creator of Vodwise and streamer",
-      "image": "https://vodwise.com/assets/diego-garcia.webp",
-      "url": "https://vodwise.com/#quien",
-      "worksFor": {
-        "@id": "https://vodwise.com/#organization"
-      },
-      "sameAs": [
-        "https://www.twitch.tv/degolas",
-        "https://kick.com/degolas",
-        "https://www.youtube.com/@Degolas",
-        "https://x.com/Degolas100"
+        "https://x.com/VodwiseX",
+        "https://www.instagram.com/vodwise/",
+        "https://www.tiktok.com/@vodwise",
+        "https://www.youtube.com/@VodwiseBot",
+        "https://www.facebook.com/profile.php?id=61595230036153",
+        "https://www.threads.net/@vodwise"
       ]
     },
     {
@@ -100,57 +69,32 @@
     },
     {
       "@type": "SoftwareApplication",
-      "@id": "https://vodwise.com/en/#software",
+      "@id": "https://vodwise.com/#software",
       "name": "Vodwise",
       "url": "https://vodwise.com/en/",
-      "description": "Vodwise is a Windows app (in English, Spanish and Portuguese) that helps Twitch, Kick and YouTube streamers before, during and after the stream: it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and when the stream ends it builds on the streamer's own PC the full video with chapters, a highlights cut and Shorts with subtitles. It publishes nothing without the streamer's approval.",
+      "description": "Vodwise is a Windows 10 and 11 app that helps Twitch, Kick and YouTube streamers during the stream (unified chat, moderation, alerts, OBS scenes and voice control) and, when it ends, builds the full video, the stream highlights and subtitled Shorts on their own PC. It never publishes anything without the streamer’s approval. The public download is under construction.",
       "applicationCategory": "MultimediaApplication",
-      "applicationSubCategory": "Streamer tool: live-stream copilot and automatic video editor",
+      "applicationSubCategory": "Live-stream copilot and automatic video editor",
       "operatingSystem": "Windows 10, Windows 11",
       "inLanguage": [
-        "en",
         "es",
+        "en",
         "pt-BR"
       ],
-      "image": "https://vodwise.com/assets/og-en.png",
-      "screenshot": [
-        "https://vodwise.com/assets/funciones/conversacion.webp",
-        "https://vodwise.com/assets/funciones/videos.webp",
-        "https://vodwise.com/assets/funciones/short.webp"
-      ],
+      "image": "https://vodwise.com/assets/og/inicio-en.jpg",
       "featureList": [
-        "Timeline video editor with zooms, texts and over 120 effects",
-        "Editing of any video, not just streams",
-        "Shorts with 6 subtitle styles",
-        "No watermark",
         "Unified Twitch, Kick and YouTube chat",
-        "Multistream bot with commands, points, timers and filters",
-        "Chat moderation with the streamer's confirmation",
+        "Chat moderation with the streamer’s confirmation",
+        "Alerts, overlays and OBS scenes designed with AI",
         "Voice copilot that changes scenes, titles and categories",
-        "AI-designed OBS alerts, overlays and scenes",
-        "Chat text-to-speech voices",
-        "Discord announcements and conversation",
-        "2D VTuber avatar",
         "Full stream video with chapters and subtitles",
-        "Highlights cut of the stream",
+        "Highlights summary of the stream",
         "Vertical Shorts with subtitles",
-        "YouTube titles, descriptions and thumbnails",
-        "The recording is edited on your own PC"
+        "Editing happens on your own PC and nothing is published without approval"
       ],
       "audience": {
         "@type": "Audience",
         "audienceType": "Twitch, Kick and YouTube streamers"
-      },
-      "offers": {
-        "@type": "Offer",
-        "name": "Free closed beta, by invitation",
-        "price": "0",
-        "priceCurrency": "EUR",
-        "availability": "https://schema.org/LimitedAvailability",
-        "url": "https://vodwise.com/en/#acceso"
-      },
-      "author": {
-        "@id": "https://vodwise.com/#diego"
       },
       "publisher": {
         "@id": "https://vodwise.com/#organization"
@@ -166,18 +110,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What is Vodwise?",
+      "name": "When can I download it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Vodwise is a Windows app that helps Twitch, Kick and YouTube streamers before, during and after the stream. While you are live it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and answers when you talk to it. When the stream ends, it goes through the recording on your PC and prepares the full video with chapters, a highlights cut and Shorts with subtitles, with their titles and thumbnails. It publishes nothing without your approval. It is in closed beta and the app is available in English, Spanish and Portuguese. Now with a timeline video editor, editing of any video and 6 subtitle styles."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is it different from Opus Clip or Streamlabs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Opus Clip turns a video you give it on its website into short clips. Streamlabs and StreamElements focus on alerts, overlays and the bot during the stream. Vodwise does both in one app: it helps you while you are live and, when you finish, it also builds the long video for YouTube, not just clips. The recording stays on your PC and nothing goes out without your «yes»."
+        "text": "Not yet: the public download is under construction. When it’s ready, it will appear here and we’ll announce it in the community."
       }
     },
     {
@@ -185,15 +121,7 @@
       "name": "What do I need?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A Windows PC, OBS to stream and record, and disk space for the recording. No special computer needed."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which platforms?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Twitch, Kick and YouTube for the stream, and YouTube, TikTok, Instagram (under construction) and X for publishing. One-click connection from the app."
+        "text": "A PC with Windows 10 or 11, OBS to stream and record, and disk space for the recordings. No special computer needed."
       }
     },
     {
@@ -201,7 +129,7 @@
       "name": "Does it publish anything without me seeing it?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. It prepares videos and texts and you decide what goes out. During the stream, changing the title or moderating also goes through your confirmation."
+        "text": "No. It prepares the videos and texts and you decide what goes out. Changing the title or moderating during the stream also needs your confirmation."
       }
     },
     {
@@ -209,15 +137,7 @@
       "name": "How much does it cost?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It’s a closed beta right now, by invitation and free for testers. AI plans start at €14.99 a month (from €0.47 per hour of streaming, with 8-hour streams). All the details are on Pricing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it safe to install?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The beta is not code-signed yet: Windows shows «Windows protected your PC»; click «More info» → «Run anyway». The app never touches OBS or your platforms without your permission."
+        "text": "You pay with credits: there are monthly plans and top-ups that never expire, and you can cancel any time. The amounts are on Pricing."
       }
     }
   ]
@@ -227,167 +147,136 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./"><img src="../assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu con-pie" aria-label="Principal">
+    <a class="brand" href="../"><img src="../assets/logo.svg" alt="">Vodwise</a>
+    <nav class="menu" aria-label="Main">
       <a class="hide-sm" href="features/">Features</a>
-      <a class="hide-sm" href="compare/">Compare</a>
       <a class="hide-sm" href="pricing/">Pricing</a>
+      <a class="hide-sm" href="help/">Help</a>
       <a class="lang-switch" href="../" hreflang="es" lang="es">ES</a>
       <a class="lang-switch" href="../pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
       <a class="btn btn-ghost btn-sm entrar" href="/cuenta">Sign in</a>
-      <a class="btn btn-primary btn-sm" href="beta/">Request an invite</a>
+      <a class="btn btn-primary btn-sm descargar" href="descargar.html">Download</a>
+      <details class="menu-m">
+        <summary aria-label="Open the menu"><span class="menu-m-icono" aria-hidden="true"></span></summary>
+        <div class="menu-m-panel">
+          <a href="features/">Features</a>
+          <a href="pricing/">Pricing</a>
+          <a href="help/">Help</a>
+          <a href="/cuenta">Sign in</a>
+          <a class="menu-m-idioma" href="../" hreflang="es" lang="es">Español</a>
+          <a class="menu-m-idioma" href="../pt/" hreflang="pt-BR" lang="pt-BR">Português</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
-<main><section class="hero">
-<div class="deco" aria-hidden="true"><svg viewBox="0 0 24 24" style="left:6%;top:12%;width:150px"><path d="M4 2 2 6v14h5v3h3l3-3h4l5-5V2Zm16 12-3 3h-5l-3 3v-3H5V4h15Zm-3-6h-2v5h2Zm-5 0h-2v5h2Z"/></svg><svg viewBox="0 0 24 24" style="left:18%;top:70%;width:110px"><path d="M3 2h5v6h2V6h2V4h2V2h6v6h-2v2h-2v4h2v2h2v6h-6v-2h-2v-2h-2v2H8v6H3Z"/></svg><svg viewBox="0 0 24 24" style="left:30%;top:5%;width:120px"><path d="M23 7.2c-.3-1.1-1.1-1.9-2.2-2.2C18.9 4.5 12 4.5 12 4.5s-6.9 0-8.8.5C2.1 5.3 1.3 6.1 1 7.2.5 9.1.5 12 .5 12s0 2.9.5 4.8c.3 1.1 1.1 1.9 2.2 2.2 1.9.5 8.8.5 8.8.5s6.9 0 8.8-.5c1.1-.3 1.9-1.1 2.2-2.2.5-1.9.5-4.8.5-4.8s0-2.9-.5-4.8ZM9.7 15.5v-7l6 3.5Z"/></svg><svg viewBox="0 0 24 24" style="left:45%;top:78%;width:130px"><path d="M13 2h3.2c.3 2.2 1.7 3.8 3.8 4.1v3.2a7.6 7.6 0 0 1-3.8-1.2V15a6 6 0 1 1-6-6h.8v3.3a2.8 2.8 0 1 0 2 2.7Z"/></svg><svg viewBox="0 0 24 24" style="left:58%;top:8%;width:140px"><path d="M19.5 5.3A17 17 0 0 0 15.3 4l-.5 1a16 16 0 0 0-5.6 0L8.7 4a17 17 0 0 0-4.2 1.3C1.8 9.3 1.1 13.2 1.4 17a17 17 0 0 0 5.2 2.6l1.1-1.8a11 11 0 0 1-1.7-.8l.4-.3a12 12 0 0 0 11.2 0l.4.3-1.7.8 1.1 1.8a17 17 0 0 0 5.2-2.6c.4-4.4-.7-8.3-3.1-11.7ZM8.7 14.7c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1Zm6.6 0c-1 0-1.9-1-1.9-2.1s.8-2.1 1.9-2.1 1.9 1 1.9 2.1-.8 2.1-1.9 2.1Z"/></svg><svg viewBox="0 0 24 24" style="left:72%;top:66%;width:120px"><path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.3-3.5a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z"/></svg><svg viewBox="0 0 24 24" style="left:88%;top:20%;width:100px"><path d="M3 2h5l5 7 6-7h3l-7.5 8.7L22 22h-5l-5.4-7.5L5 22H2l8.2-9.4Z"/></svg></div>
-<div class="deco3d deco-b" aria-hidden="true"><video class="v3d" muted loop playsinline preload="none" tabindex="-1" aria-hidden="true" poster="../assets/logo-3d/vodwise-logo-3d.webp" data-src="../assets/logo-3d/vodwise-logo-3d.webm" data-mp4="../assets/logo-3d/vodwise-logo-3d.mp4"></video></div>
+<main>
+<section class="home-hero">
   <div class="wrap">
     <div>
-      <span class="badge"><span class="dot"></span>Closed beta · Windows</span>
-      <h1>You do the stream.<br><span class="grad">Vodwise does the rest.</span></h1>
-      <p class="lead">A copilot that works with you <strong>during</strong> the stream (multistream chat, voice, alerts, scenes, Discord) and a video editor of its own, with a timeline, that works <strong>after</strong> —or whenever you want, with any video—: full video, best moments and Shorts, rendered on your own PC.</p>
-      <div class="cta-row">
-        <a class="btn btn-primary" href="#early-access">Request a beta invite</a>
-        <a class="btn btn-ghost" href="features/">See every feature</a>
+      <h1>Your livestream copilot<br><span class="grad">and automatic editor</span></h1>
+      <p class="lead">Vodwise helps you during the stream and, when it ends, builds the full video, the highlights and the Shorts on your own PC.</p>
+      <div class="home-dl">
+        <div class="home-dl-row">
+          <button class="btn btn-off" type="button" aria-disabled="true" aria-describedby="dl-hero"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5.4 10.2 4.4v7H3zM11.2 4.3 21 3v8.4h-9.8zM3 12.6h7.2v7L3 18.6zM11.2 12.6H21V21l-9.8-1.3z"/></svg>Download for Windows</button>
+          <span class="wip">Under construction</span>
+        </div>
+        <p class="wip-note" id="dl-hero">Not available yet. Coming later.</p>
       </div>
-      <p class="fine">Desktop app for Windows. Nothing is published without your approval. The beta is free, by invitation. No watermark.</p>
+      <p class="fine">For Windows 10 and 11. Nothing is published without your “yes”.</p>
     </div>
-    <div class="explainer">
-      <!-- Presentación (66 s, versión 2), la misma de la portada en español: narración en español con subtítulos de este idioma y cartel traducido. -->
-      <div class="ex-frame">
-        <video class="ex-video" controls preload="none" playsinline poster="../assets/videos/en/presentacion.webp" width="1280" height="720" aria-label="Video: what Vodwise is in 66 seconds">
-          <source src="../assets/videos/presentacion.mp4" type="video/mp4">
-          <track kind="subtitles" src="../assets/videos/presentacion-en.vtt" srclang="en" label="English" default>
-        </video>
-        <button class="ex-play" type="button" aria-label="Watch the video: what Vodwise is in 66 seconds" hidden>
-          <span class="ex-btn" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
-        </button>
+    <figure class="home-app" role="img" aria-label="Illustration of the app showing a stream by Marta, an example streamer: the Twitch, Kick and YouTube chat in a single window, an alert, a voice question and the full video, highlights and Shorts already built.">
+      <div class="app-bar"><i></i><i></i><i></i><span>Marta’s stream · example</span></div>
+      <div class="app-grid">
+        <div class="app-panel">
+          <p class="app-title">Chat</p>
+            <p class="chat-line"><i class="tw"></i><span><b>luna</b> What a play!</span></p>
+            <p class="chat-line"><i class="ki"></i><span><b>pixel</b> haha</span></p>
+            <p class="chat-line"><i class="yt"></i><span><b>nube</b> Hi, Marta!</span></p>
+            <p class="chat-line"><i class="tw"></i><span><b>sol</b> GG!</span></p>
+        </div>
+        <div class="app-side">
+          <div class="app-panel app-alert"><p class="app-title">Alert</p><p>Aurora just followed you</p></div>
+          <div class="app-panel app-ask"><p class="app-title">By voice</p><p>Change the title?</p><div class="app-chips"><span class="app-chip">Yes</span><span class="app-chip no">No</span></div></div>
+        </div>
       </div>
-      <p class="ex-note">What Vodwise is, in 66 seconds. Spanish narration with English subtitles.</p>
-    </div>
+      <div class="app-out">
+        <div><div class="thumb"></div><strong>Full video</strong></div>
+        <div><div class="thumb"></div><strong>Highlights</strong></div>
+        <div><div class="thumb v"></div><strong>Shorts</strong></div>
+      </div>
+    </figure>
   </div>
 </section>
-<div class="wrap platforms" aria-label="Platforms"><span>Twitch</span><span>Kick</span><span>YouTube</span><span>TikTok</span><span>Instagram <span class="wip wip-sm">Under construction</span></span><span>X</span><span>Discord</span><span>OBS</span></div>
-<section class="proof" aria-label="In a test edit"><div class="wrap"><p class="proof-lead">In a test edit:</p><div class="proof-stats"><span><b>7 h 46 min</b> stream</span><span class="proof-arrow" aria-hidden="true">→</span><span><b>59 min</b> video</span><span><b>19</b> chapters</span><span><b>10 min</b> highlights</span><span><b>6</b> clips</span></div><p class="proof-link"><a href="../clips-automaticos-kick/" hreflang="es">See how (guide in Spanish)</a></p></div></section>
-<section class="block alt" id="como-funciona">
+<section class="block alt home-steps" id="como-funciona">
   <div class="wrap">
     <p class="eyebrow">How it works</p>
-    <h2>Before, during and after the stream</h2>
-    <p class="intro">Vodwise installs on your PC, connects your accounts with one click and works with you through the whole stream.</p>
+    <h2>Before, during and after</h2>
     <div class="steps">
-      <div class="step"><h3>Before</h3><p>Gets the stream ready: title, category, a thumbnail from a photo of your OBS camera, YouTube broadcasts, Instagram story and tweet, and «Shall we start now?» with one «yes». Plus a button deck for Stream Deck, Companion or Touch Portal.</p><p class="wip-note"><span class="wip">Under construction</span> The Instagram story isn’t available yet. Coming later.</p></div>
-      <div class="step"><h3>During</h3><p>Unified chat, bot with commands and points, chat voices, OBS alerts and actions, voice moderation, Discord notices. Always with your confirmation when something is written to a platform.</p></div>
-      <div class="step"><h3>After</h3><p>Goes through your stream and lets Vodwise build the full video with chapters, the «best of» and 4 to 6 Shorts with 6 subtitle styles. You fine-tune it in a timeline editor and publish everything in one click (on YouTube, private first).</p></div>
+      <div class="step"><h3>Before</h3><p>Set the title, category and thumbnail, and go live with one “yes”.</p></div>
+      <div class="step"><h3>During</h3><p>Merges the chat, moderates, fires alerts and switches OBS scenes by voice.</p></div>
+      <div class="step"><h3>After</h3><p>Builds the full video, the highlights and subtitled Shorts. You approve them.</p></div>
     </div>
   </div>
 </section>
-<section class="block" id="funciones">
+<section class="block home-feats" id="funciones">
   <div class="wrap">
     <p class="eyebrow">Features</p>
-    <h2>Everything a stream needs, in one place</h2>
-    <p class="intro">What used to take five programs and a night of editing.</p>
+    <h2>Everything your stream needs</h2>
     <div class="features">
-      <a class="feat" href="features/#chat-unificado"><h3>Unified chat</h3><p>Twitch, Kick and YouTube in one window, with emotes, badges, highlights and moderation from the name.</p></a>
-      <a class="feat" href="features/#bot"><h3>Multistream bot</h3><p>Commands, timers, thanks, points and levels, spam filters; the same bot on Twitch, Kick and YouTube.</p></a>
-      <a class="feat" href="features/#alertas"><h3>AI alerts and overlays</h3><p>Alerts for follows, subs, gifts and raids; overlays and scenes designed by the AI with your logo, and editable by hand.</p></a>
-      <a class="feat" href="features/#editor"><h3>A video editor of its own</h3><p>Timeline, cuts, zooms, texts and over 120 effects. And you ask the AI for changes in your own words.</p></a>
-      <a class="feat" href="features/#cualquier-video"><h3>Edit any video</h3><p>Not just your streams: any video on your PC, with your logo in the intro and outro.</p></a>
-      <a class="feat" href="features/#edicion"><h3>Full video with chapters</h3><p>Silences trimmed, subtitles and chapters; plus an 8–13 minute «best of». No watermark.</p></a>
-      <a class="feat" href="features/#shorts"><h3>Subtitled Shorts</h3><p>4 to 6 Shorts per stream, with face tracking, a headline and 6 subtitle styles.</p></a>
-      <a class="feat" href="features/#montar-obs"><h3>OBS setup and button deck</h3><p>Starts from your scenes, brings your alerts and keeps a backup. Button deck for Stream Deck, Companion and Touch Portal.</p></a>
-      <a class="feat" href="features/#avatar"><h3>VTuber avatar</h3><p>2D avatar: upload your images or create it with AI; it talks with your voice and blinks on its own.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3.5 20l1.2-4.6A8.5 8.5 0 1 1 21 11.5Z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg></span><h3>Unified chat</h3><p>Twitch, Kick and YouTube in a single window.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M12 3 4.5 6v5.3c0 4.6 3 8.3 7.5 9.7 4.5-1.4 7.5-5.1 7.5-9.7V6Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg></span><h3>Moderation</h3><p>It suggests the action and you say “yes”.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M6 16.5V11a6 6 0 1 1 12 0v5.5l1.5 2h-15Z"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></span><h3>Alerts and OBS</h3><p>Alerts, overlays and scenes designed with AI.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0M12 17.5V21"/></svg></span><h3>Voice</h3><p>Talk to Vodwise to change scene, title or category.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M8 5v14M16 5v14M3 10h5M3 14h5M16 10h5M16 14h5"/></svg></span><h3>Automatic editing</h3><p>Full video, highlights and Shorts, on your PC.</p></a>
+      <a class="feat" href="features/"><span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M14.8 9.4a3.6 3.6 0 1 0 0 5.2"/></svg></span><h3>Credits, no lock-in</h3><p>Plans with credits and top-ups that never expire.</p></a>
     </div>
-    <p style="margin-top:22px"><a class="btn btn-ghost" href="features/">See every feature</a></p>
+    <p class="home-more"><a class="btn btn-ghost" href="features/">See all features</a></p>
   </div>
 </section>
-<section class="block alt" id="comparativa">
+<section class="home-plat" aria-label="Works with">
   <div class="wrap">
-    <p class="eyebrow">Compare</p>
-    <h2>What Vodwise does that the rest does not</h2>
-    <p class="intro">What really sets us apart from the tools streamers use today.</p>
-    <div class="cmp-wrap"><table class="cmp">
-      <thead><tr><th></th><th>Vodwise</th><th>StreamElements / Streamlabs</th><th>Botrix / Nightbot</th><th>Opus Clip / Eklipse</th></tr></thead>
-      <tbody>
-        <tr><td>Unified Twitch + Kick + YouTube chat</td><td class="ok">✔</td><td>partial</td><td>partial</td><td>—</td></tr>
-        <tr><td>Chat bot (commands, points, timers, moderation) multistream</td><td class="ok">✔</td><td class="ok">✔</td><td class="ok">✔</td><td>—</td></tr>
-        <tr><td>Voice copilot that switches scenes, titles and categories</td><td class="ok">✔</td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td>OBS alerts, overlays and scenes made with AI</td><td class="ok">✔</td><td>templates</td><td>—</td><td>—</td></tr>
-        <tr><td>Automatic editing of the whole stream (full + best + Shorts, subtitles)</td><td class="ok">✔</td><td>AI highlights (some games only)</td><td>—</td><td>clips (you upload the video to their cloud)</td></tr>
-        <tr><td>The video never leaves your PC</td><td class="ok">✔</td><td>partial</td><td>—</td><td>—</td></tr>
-        <tr><td>Title, description and thumbnail for YouTube and TikTok drafts</td><td class="ok">✔</td><td>partial</td><td>—</td><td>partial</td></tr>
-        <tr><td>Instagram Reels</td><td><span class="wip">Under construction</span><span class="wip-note">Coming later</span></td><td>—</td><td>—</td><td>partial</td></tr>
-        <tr><td>2D VTuber avatar (upload images or create with AI)</td><td class="ok">✔</td><td>—</td><td>—</td><td>—</td></tr>
-        <tr><td>Discord: notices and conversation with your community</td><td class="ok">✔</td><td>notices</td><td>—</td><td>—</td></tr>
-        <tr><td>Donations into your own account (Stripe or PayPal), name and message on stream</td><td><span class="wip">Under construction</span></td><td>✔ (with fee)</td><td>—</td><td>—</td></tr>
-        <tr><td>Price</td><td>from €14.99/month (≈ €0.47/h with 8-hour streams)</td><td>free + extras</td><td>free / pro</td><td>$15–30/month</td></tr>
-      </tbody>
-    </table></div>
-    <p class="cmp-note">Based on each product's public website in October 2026. If something changed, write to us and we will fix it.</p>
-    <p class="cmp-note cmp-src">Sources: <a href="https://streamelements.com/features" rel="nofollow noopener" target="_blank">StreamElements</a> · <a href="https://streamlabs.com/pricing" rel="nofollow noopener" target="_blank">Streamlabs</a> · <a href="https://streamlabs.com/multistream" rel="nofollow noopener" target="_blank">Streamlabs Multistream</a> · <a href="https://support.streamlabs.com/hc/en-us/articles/39938192759451-Introducing-Streamlabs-AI-Game-Highlighter-An-Easy-Way-to-Capture-Your-Best-Gaming-Moments" rel="nofollow noopener" target="_blank">Streamlabs AI Highlighter</a> · <a href="https://botrix.live/" rel="nofollow noopener" target="_blank">Botrix</a> · <a href="https://nightbot.tv/" rel="nofollow noopener" target="_blank">Nightbot</a> · <a href="https://www.opus.pro/pricing" rel="nofollow noopener" target="_blank">Opus Clip</a> · <a href="https://eklipse.gg/" rel="nofollow noopener" target="_blank">Eklipse</a></p>
+    <span class="lbl">Works with</span>
+    <span class="plat tw"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 2 2 6v14h5v3h3l3-3h4l5-5V2Zm16 12-3 3h-5l-3 3v-3H5V4h15Zm-3-6h-2v5h2Zm-5 0h-2v5h2Z"/></svg>Twitch</span>
+    <span class="plat ki"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 2h5v6h2V6h2V4h2V2h6v6h-2v2h-2v4h2v2h2v6h-6v-2h-2v-2h-2v-2h-2v6H3Z"/></svg>Kick</span>
+    <span class="plat yt"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg>YouTube</span>
+    <span class="plat soon"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg>TikTok <span class="wip wip-sm">Under construction</span></span>
+    <span class="plat soon"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg>Instagram <span class="wip wip-sm">Under construction</span></span>
   </div>
 </section>
-<section class="block" id="privacidad">
-  <div class="wrap split">
+<section class="block home-faqs" id="preguntas">
+  <div class="wrap home-faq">
     <div>
-      <p class="eyebrow">Your PC, your data</p>
-      <h2>Your recordings never leave your computer</h2>
-      <ul class="checks">
-        <li><span><strong>Local editing.</strong> The video is processed on your own PC.</span></li>
-        <li><span><strong>Nothing is published without your approval.</strong> You review every video and every change before it goes out.</span></li>
-        <li><span><strong>Only your accounts.</strong> Vodwise acts solely on your own channels.</span></li>
-        <li><span><strong>Encrypted access.</strong> Authorizations are stored encrypted on your computer and you can revoke them any time.</span></li>
-        <li><span><strong>No ads, no tracking.</strong> Neither the app nor this site uses cookies.</span></li>
-      </ul>
+      <p class="eyebrow">Frequently asked questions</p>
+      <h2>The essentials</h2>
+      <p class="home-faq-more">More questions? <a href="help/">Visit the Help page</a>.</p>
     </div>
-    <div class="panel"><h3>What is sent out?</h3><p>To write titles, pick moments, talk and create thumbnails, Vodwise sends an AI provider only what is needed: the text of what you say and a few single frames; never the whole recording. Details in the <a href="../privacidad.html">privacy policy</a>.</p></div>
-  </div>
-</section>
-<section class="block alt" id="quien">
-  <div class="wrap who">
-    <img src="../assets/diego-garcia.webp" alt="Diego García González (Degolas)" width="180" height="180" loading="lazy">
-    <div>
-      <p class="eyebrow">Who makes Vodwise</p>
-      <h2>Made by a streamer, for streamers</h2>
-      <p>I’m Diego García González, «Degolas» on Twitch, Kick and YouTube, streaming from Galicia, Spain. I started Vodwise for my own streams: I wanted to stop spending the night editing and have someone give me a hand while I’m live.</p>
-      <p>I use it on every stream I do and improve it with what beta testers tell me. If you have a question or an idea, write to me at <a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a> or on X.</p>
-      <p class="who-links"><a class="btn btn-ghost btn-sm" href="https://www.twitch.tv/degolas" rel="me noopener" target="_blank">Twitch</a> <a class="btn btn-ghost btn-sm" href="https://kick.com/degolas" rel="me noopener" target="_blank">Kick</a> <a class="btn btn-ghost btn-sm" href="https://www.youtube.com/@Degolas" rel="me noopener" target="_blank">YouTube</a> <a class="btn btn-ghost btn-sm" href="https://x.com/Degolas100" rel="me noopener" target="_blank">X @Degolas100</a></p>
-    </div>
-  </div>
-</section>
-<section class="block" id="preguntas">
-  <div class="wrap">
-    <p class="eyebrow">FAQ</p>
-    <h2>Common questions</h2>
     <div class="faq">
-      <details><summary>What is Vodwise?</summary><p>Vodwise is a Windows app that helps Twitch, Kick and YouTube streamers before, during and after the stream. While you are live it unifies the chat of the three platforms, moderates, runs the bot, alerts and OBS scenes, and answers when you talk to it. When the stream ends, it goes through the recording on your PC and prepares the full video with chapters, a highlights cut and Shorts with subtitles, with their titles and thumbnails. It publishes nothing without your approval. It is in closed beta and the app is available in English, Spanish and Portuguese. Now with a timeline video editor, editing of any video and 6 subtitle styles.</p></details>
-      <details><summary>How is it different from Opus Clip or Streamlabs?</summary><p>Opus Clip turns a video you give it on its website into short clips. Streamlabs and StreamElements focus on alerts, overlays and the bot during the stream. Vodwise does both in one app: it helps you while you are live and, when you finish, it also builds the long video for YouTube, not just clips. The recording stays on your PC and nothing goes out without your «yes».</p></details>
-      <details><summary>What do I need?</summary><p>A Windows PC, OBS to stream and record, and disk space for the recording. No special computer needed.</p></details>
-      <details><summary>Which platforms?</summary><p>Twitch, Kick and YouTube for the stream, and YouTube, TikTok, Instagram <span class="wip">Under construction</span> and X for publishing. One-click connection from the app.</p></details>
-      <details><summary>Does it publish anything without me seeing it?</summary><p>No. It prepares videos and texts and you decide what goes out. During the stream, changing the title or moderating also goes through your confirmation.</p></details>
-      <details><summary>How much does it cost?</summary><p>It’s a closed beta right now, by invitation and free for testers. AI plans start at €14.99 a month (from €0.47 per hour of streaming, with 8-hour streams). All the details are on <a href="pricing/">Pricing</a>.</p></details>
-      <details><summary>Is it safe to install?</summary><p>The beta is not code-signed yet: Windows shows «Windows protected your PC»; click «More info» → «Run anyway». The app never touches OBS or your platforms without your permission.</p></details>
+        <details><summary>When can I download it?</summary><p>Not yet: the public download is under construction. When it’s ready, it will appear here and we’ll announce it in the community.</p></details>
+        <details><summary>What do I need?</summary><p>A PC with Windows 10 or 11, OBS to stream and record, and disk space for the recordings. No special computer needed.</p></details>
+        <details><summary>Does it publish anything without me seeing it?</summary><p>No. It prepares the videos and texts and you decide what goes out. Changing the title or moderating during the stream also needs your confirmation.</p></details>
+        <details><summary>How much does it cost?</summary><p>You pay with credits: there are monthly plans and top-ups that never expire, and you can cancel any time. The amounts are on <a href="pricing/">Pricing</a>.</p></details>
     </div>
   </div>
 </section>
-<section class="cta-final" id="early-access">
+<section class="home-privacy">
+  <div class="wrap">
+    <p><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3 4.5 6v5.3c0 4.6 3 8.3 7.5 9.7 4.5-1.4 7.5-5.1 7.5-9.7V6Z"/><path d="m9 12 2.2 2.2L15.5 10"/></svg><span>Editing happens on your PC and nothing is published without your “yes”. Details in the <a href="../privacidad.html">privacy policy</a>.</span></p>
+  </div>
+</section>
+<section class="cta-final home-final" id="descarga">
   <div class="wrap"><div class="box">
-    <h2>Join early access</h2>
-    <p>Vodwise is in a closed beta with limited spots. Leave your email and confirm it: when a spot opens, you get your personal invite.</p>
-    <form class="waitlist" id="waitlist" action="https://b66e339b.sibforms.com/serve/MUIFAOWdr-9OKKLn5rO713mSKUxn0snLRlIuHkZA_ng_0GzOEXy6z0Aa9nJC7H29FY2TIuIcZuEZH-xS-gVWRbg4DdQUGRnmLFYLPce0Ot4BknlyhStb42ryQ6h0BHH7Vq2-XmkvDRmne6jR8wj3nn660p2Si0frxNn8kAVgjxraXUiBpWdhdaWNJCL9sKrt-s74fn2dSCJ19aSnAA==" method="post" data-sending="Sending…" data-ok="Almost there! We have sent you an email: click the link to confirm (check spam too)." data-err="It could not be sent. Try again or write to soporte@vodwise.com.">
-      <div class="wl-row">
-        <input type="email" id="wl-email" name="EMAIL" required autocomplete="email" placeholder="you@email.com" aria-label="Your email address">
-        <button class="btn btn-primary" type="submit">Join the list</button>
+    <h2>Your next stream, with a copilot</h2>
+    <div class="home-dl">
+        <div class="home-dl-row">
+          <button class="btn btn-off" type="button" aria-disabled="true" aria-describedby="dl-final"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 5.4 10.2 4.4v7H3zM11.2 4.3 21 3v8.4h-9.8zM3 12.6h7.2v7L3 18.6zM11.2 12.6H21V21l-9.8-1.3z"/></svg>Download for Windows</button>
+          <span class="wip">Under construction</span>
+        </div>
+        <p class="wip-note" id="dl-final">Not available yet. Coming later.</p>
       </div>
-      <label class="wl-consent"><input type="checkbox" name="OPT_IN" value="1" required><span>I agree to receive emails from Vodwise about early access and product news. I can unsubscribe at any time. More in the <a href="../privacidad.html#lista">privacy policy</a>.</span></label>
-      <input type="text" name="email_address_check" value="" class="wl-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
-      <input type="hidden" name="locale" value="en">
-      <p class="wl-msg" role="status" aria-live="polite"></p>
-    </form>
-    <p class="wl-alt">Prefer to write? <a href="mailto:soporte@vodwise.com?subject=Vodwise%20early%20access">soporte@vodwise.com</a></p>
   </div></div>
 </section>
-<section class="community" aria-labelledby="comunidad-titulo"><div class="wrap"><div class="cbox"><p class="eyebrow">Community</p><h2 id="comunidad-titulo">Join the Vodwise community</h2><p class="t">Ask questions, share ideas and catch the latest news.</p><a class="btn btn-discord" href="https://discord.gg/N5NMCtFK9y" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false"><use href="#i-dc"/></svg>Join our Discord</a>
+<section class="community" aria-labelledby="comunidad-titulo"><div class="wrap"><div class="cbox"><p class="eyebrow">Community</p><h2 id="comunidad-titulo">Join the Vodwise community</h2><p class="t">Ask questions, share ideas and catch the news.</p><a class="btn btn-discord" href="https://discord.gg/N5NMCtFK9y" rel="noopener" target="_blank"><svg aria-hidden="true" focusable="false"><use href="#i-dc"/></svg>Join the Discord</a>
 <ul class="cgrid" aria-label="Vodwise social media"><li><a href="https://x.com/VodwiseX" rel="noopener" target="_blank" aria-label="Vodwise on X"><svg aria-hidden="true" focusable="false"><use href="#i-x"/></svg>X</a></li><li><a href="https://www.instagram.com/vodwise/" rel="noopener" target="_blank" aria-label="Vodwise on Instagram"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg>Instagram</a></li><li><a href="https://www.tiktok.com/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on TikTok"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg>TikTok</a></li><li><a href="https://www.youtube.com/@VodwiseBot" rel="noopener" target="_blank" aria-label="Vodwise on YouTube"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg>YouTube</a></li><li><a href="https://www.facebook.com/profile.php?id=61595230036153" rel="noopener" target="_blank" aria-label="Vodwise on Facebook"><svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg>Facebook</a></li><li><a href="https://www.threads.net/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on Threads"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-th"/></svg>Threads</a></li></ul></div></div></section>
 </main>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
@@ -402,18 +291,13 @@
 <footer class="site">
   <div class="wrap">
     <div class="cols">
-      <div><a class="brand" href="./"><img src="../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Live-stream copilot and automatic editor for streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p><div class="fcol"><span class="follow">Follow us</span><ul class="social" aria-label="Vodwise social media"><li><a href="https://x.com/VodwiseX" rel="noopener" target="_blank" aria-label="Vodwise on X"><svg aria-hidden="true" focusable="false"><use href="#i-x"/></svg></a></li><li><a href="https://www.instagram.com/vodwise/" rel="noopener" target="_blank" aria-label="Vodwise on Instagram"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg></a></li><li><a href="https://www.tiktok.com/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on TikTok"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg></a></li><li><a href="https://www.youtube.com/@VodwiseBot" rel="noopener" target="_blank" aria-label="Vodwise on YouTube"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg></a></li><li><a href="https://www.facebook.com/profile.php?id=61595230036153" rel="noopener" target="_blank" aria-label="Vodwise on Facebook"><svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg></a></li><li><a href="https://www.threads.net/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on Threads"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-th"/></svg></a></li></ul></div></div>
-      <div><strong style="color:var(--text)">Features</strong><br><a href="features/">Features</a><br><a href="compare/">Compare</a><br><a href="pricing/">Pricing</a><br><a href="beta/">Free beta</a></div>
-      <div><strong style="color:var(--text)">Guides (Spanish)</strong><br><a href="../clips-automaticos-twitch/" hreflang="es">Clips automáticos de Twitch</a><br><a href="../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a><br><a href="../guias/" hreflang="es">All guides</a></div>
+      <div><a class="brand" href="../"><img src="../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Live-stream copilot and automatic editor for streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p><div class="fcol"><span class="follow">Follow us</span><ul class="social" aria-label="Vodwise social media"><li><a href="https://x.com/VodwiseX" rel="noopener" target="_blank" aria-label="Vodwise on X"><svg aria-hidden="true" focusable="false"><use href="#i-x"/></svg></a></li><li><a href="https://www.instagram.com/vodwise/" rel="noopener" target="_blank" aria-label="Vodwise on Instagram"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg></a></li><li><a href="https://www.tiktok.com/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on TikTok"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg></a></li><li><a href="https://www.youtube.com/@VodwiseBot" rel="noopener" target="_blank" aria-label="Vodwise on YouTube"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg></a></li><li><a href="https://www.facebook.com/profile.php?id=61595230036153" rel="noopener" target="_blank" aria-label="Vodwise on Facebook"><svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg></a></li><li><a href="https://www.threads.net/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on Threads"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-th"/></svg></a></li></ul></div></div>
+      <div><strong style="color:var(--text)">Product</strong><br><a href="features/">Features</a><br><a href="pricing/">Pricing</a><br><a href="compare/">Alternatives</a><br><a href="../guias/" hreflang="es">Guides (Spanish)</a><br><a href="help/">Help</a><br><a href="descargar.html">Download</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../privacidad.html">Privacy policy</a><br><a href="../condiciones.html">Terms of service</a><br><a href="aviso-legal.html">Legal notice</a><br><a href="../devoluciones.html">Refunds</a></div>
     </div>
     <div class="inception"><img src="../assets/nvidia-inception-program-badge-rgb-for-screen.svg" width="104" height="45" alt="NVIDIA Inception Program"><p>Vodwise Labs is an NVIDIA Inception Program member.</p></div>
-    <nav class="foot-lang" aria-label="Language"><a href="../" hreflang="es" lang="es">Español</a> · <a href="../pt/" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
-    <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them. © 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.<br>© 2026 Vodwise.</p>
+    <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them. © 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.<br>© 2026 Vodwise Labs, S.L.U.</p>
   </div>
 </footer>
-<script src="../assets/logo-3d/logo-3d.js" defer></script>
-<script src="../assets/explicativo.js" defer></script>
-<script src="../assets/waitlist.js" defer></script>
 </body>
 </html>

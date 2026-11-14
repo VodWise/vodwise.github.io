@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' 'unsafe-hashes' 'sha256-sT0CMEn6HNO6l4QB8iktLc9YOxKk2iWkcoaYx9yAYPA=' 'sha256-JZOPkz2v+7VKbsqQgyWHBoKtnxd7DcdzCPwatkV9ZkI=' 'sha256-bEGJjLRfkOU98uRaqMnKlJMX0drq4qpkBADNTQ0Je9s=' 'sha256-/3kWSXHts8LrwfemLzY9W0tOv5I4eLIhrf0pT8cU0WI='; img-src 'self'; base-uri 'none'; form-action 'none'; media-src 'self'">
+<meta name="referrer" content="same-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Pricing · Vodwise</title>
-<meta name="description" content="Vodwise pricing for streamers: free closed beta, plans from €14.99 a month depending on how often you stream, and top-ups that never expire.">
+<meta name="description" content="Vodwise plans are based on credits: from €14.99 a month (1,800 credits). Top-ups never expire and you can cancel anytime.">
 <meta name="theme-color" content="#0b0f17">
 <link rel="icon" href="../../assets/logo.svg" type="image/svg+xml">
 <link rel="canonical" href="https://vodwise.com/en/pricing/">
@@ -13,44 +15,18 @@
 <link rel="alternate" hreflang="pt-BR" href="https://vodwise.com/pt/precos/">
 <link rel="alternate" hreflang="x-default" href="https://vodwise.com/precios.html">
 <meta property="og:title" content="Pricing · Vodwise">
-<meta property="og:description" content="Vodwise pricing for streamers: free closed beta, plans from €14.99 a month depending on how often you stream, and top-ups that never expire.">
+<meta property="og:description" content="Vodwise plans are based on credits: from €14.99 a month (1,800 credits). Top-ups never expire and you can cancel anytime.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://vodwise.com/en/pricing/">
-<meta property="og:image" content="https://vodwise.com/assets/og/pricing-en.jpg">
+<meta property="og:image" content="https://vodwise.com/assets/og/pricing-credits-en.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="../../assets/styles.css">
-<style>
-.features-page .group{margin:34px 0 0}a.feat{text-decoration:none;color:inherit;display:block}a.feat:hover{border-color:var(--a1)}.features-page .group .features{grid-template-columns:repeat(4,1fr)}@media (max-width:960px){.features-page .group .features{grid-template-columns:repeat(2,1fr)}}@media (max-width:620px){.features-page .group .features{grid-template-columns:1fr}}.features-page .group h3{margin:0 0 14px;font-size:22px}
-.cmp{width:100%;border-collapse:separate;border-spacing:0;background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;font-size:15px}
-.cmp th,.cmp td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.cmp th{background:rgba(255,255,255,.04);font-weight:700}
-.cmp td:nth-child(2){color:var(--a1);font-weight:700}.cmp tr:last-child td{border-bottom:0}.cmp .ok{color:var(--a1);font-weight:700}
-.cmp-note{color:var(--muted);font-size:13px;margin-top:12px}.cmp-wrap{overflow-x:auto}
-.dl-steps{display:grid;gap:12px;margin:18px 0;padding:0;list-style:none;counter-reset:s}.dl-steps li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px 14px 56px;position:relative;color:var(--soft)}
-.dl-steps li::before{counter-increment:s;content:counter(s);position:absolute;left:16px;top:12px;width:28px;height:28px;border-radius:50%;background:var(--a1);color:#0b0f17;font-weight:800;display:grid;place-items:center}
-.dl-cta{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:18px}.dl-fine{color:var(--muted);font-size:13px}
-.deco{position:absolute;inset:0;pointer-events:none;z-index:0}.deco svg{position:absolute;fill:var(--text);opacity:.06;filter:blur(2.5px);transform:rotate(-8deg)}.deco svg:nth-child(even){transform:rotate(9deg);fill:var(--a1)}.hero .wrap{position:relative;z-index:1}@media (max-width:920px){.deco{display:none}}
-.fn-layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:26px;margin-top:22px;align-items:start}
-.fn-tabs{position:sticky;top:84px;display:flex;flex-direction:column;gap:14px;max-height:calc(100vh - 110px);overflow:auto;padding-right:6px}.fn-group h4{margin:0 0 6px;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.fn-tab{display:block;width:100%;text-align:left;background:transparent;border:1px solid transparent;color:var(--soft);padding:8px 10px;border-radius:10px;font:inherit;font-size:14.5px;cursor:pointer}.fn-tab:hover{background:rgba(255,255,255,.04);color:var(--text)}.fn-tab.on{background:var(--card);border-color:var(--line);color:var(--text);font-weight:650}
-.fn-panel[hidden]{display:none}.fn-panel{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:34px;align-items:center;padding:18px 4px;position:relative}
-.fn-shot{position:relative;perspective:1600px;padding:22px 10px}.fn-shot::before{content:"";position:absolute;inset:6% 4% 0 4%;background:radial-gradient(60% 55% at 35% 45%,rgba(62,230,200,.42),transparent 70%),radial-gradient(55% 50% at 75% 65%,rgba(123,108,255,.45),transparent 72%);filter:blur(28px);z-index:0}.fn-shot img{position:relative;z-index:1;width:100%;height:auto;display:block;border-radius:14px;background:#0b0f17;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 40px 90px -35px rgba(0,0,0,.9),0 18px 40px -20px rgba(62,230,200,.18);transition:transform .6s cubic-bezier(.2,.7,.2,1)}.fn-shot img.fn-ui{transform:rotateY(-7deg) rotateX(3deg);-webkit-mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));-webkit-mask-composite:source-in;mask-image:linear-gradient(to bottom,#000 62%,transparent 98%),linear-gradient(to right,#000 80%,rgba(0,0,0,.35));mask-composite:intersect}.fn-shot img.fn-art{transform:rotateY(-5deg) rotateX(2deg);-webkit-mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%);mask-image:radial-gradient(120% 110% at 50% 45%,#000 60%,transparent 100%)}.fn-shot img.fn-tall{width:auto;max-width:62%;max-height:520px;margin:0 auto;transform:rotate(-3deg);border-radius:22px;box-shadow:0 0 0 6px #0b0f17,0 0 0 7px rgba(255,255,255,.12),0 40px 90px -30px rgba(0,0,0,.9)}.fn-panel:hover .fn-shot img.fn-ui,.fn-panel:hover .fn-shot img.fn-art{transform:rotateY(-2deg) rotateX(1deg)}.fn-panel:hover .fn-shot img.fn-tall{transform:rotate(-1deg)}.fn-pending{aspect-ratio:16/10;border-radius:12px;border:1px dashed var(--line);display:grid;place-items:center;color:var(--muted);font-size:14px;background:repeating-conic-gradient(rgba(255,255,255,.03) 0 25%,transparent 0 50%) 0 0/24px 24px}
-.fn-text h3{margin:6px 0 10px;font-size:24px}.fn-text p{color:var(--soft);font-size:15.5px;line-height:1.55}.fn-nav{margin-top:14px}
-@media (max-width:860px){.fn-layout{grid-template-columns:1fr}.fn-tabs{position:static;max-height:none;flex-direction:row;flex-wrap:nowrap;overflow-x:auto;gap:10px;padding-bottom:6px}.fn-group{display:flex;gap:6px;align-items:center}.fn-group h4{display:none}.fn-tab{white-space:nowrap;width:auto;border-color:var(--line)}.fn-panel{grid-template-columns:1fr}.fn-shot img.fn-ui,.fn-shot img.fn-art{transform:none}}
-@media (max-width:700px){.cmp{font-size:13px}.cmp th,.cmp td{padding:9px 8px}}
-.plans{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
-.plan{background:var(--card);border:1px solid var(--line);border-radius:var(--r,18px);padding:22px;display:flex;flex-direction:column;gap:10px}
-.plan.best{border-color:var(--a1);box-shadow:0 10px 40px -18px var(--a1)}
-.plan h3{margin:0;font-size:20px}.plan .price{font-size:30px;font-weight:800;letter-spacing:-.02em}.plan .price small{font-size:15px;color:var(--muted);font-weight:600}
-.plan ul{list-style:none;margin:0;padding:0;display:grid;gap:7px;color:var(--soft);font-size:15px}.plan li::before{content:"✓ ";color:var(--a1)}
-.tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:999px;background:rgba(255,255,255,.07)}
-.topups{display:flex;flex-wrap:wrap;gap:12px;margin:10px 0 0}.topups span{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 16px;font-weight:650}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;margin-bottom:10px}.faq summary{cursor:pointer;font-weight:650}.faq p{color:var(--soft);margin:10px 0 0}
-.req{color:var(--soft);font-size:15px}
-@media (max-width:900px){.plans{grid-template-columns:1fr 1fr}}@media (max-width:560px){.plans{grid-template-columns:1fr}}
-</style>
+<link rel="stylesheet" href="../../assets/nav.css">
+<link rel="stylesheet" href="../../assets/estado.css">
+<link rel="stylesheet" href="../../assets/precios.css">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -58,26 +34,10 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What does the free version include?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Everything that doesn't need artificial intelligence: Twitch and Kick chat, VodwiseBot, alerts, actions, OBS overlays, Windows chat voices and a few basic clips of every stream made on your PC. It carries a discreet Vodwise signature that goes away with any plan."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "What is a credit?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The way your usage is measured. Every time the AI works for you (editing a stream, writing a title, talking with you live) it uses a few credits. The app shows your balance and how many streams you have left, and you can choose features and quality to spend less."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if I run out of credits in the middle of an edit?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Whatever started finishes: it's never cut halfway. Nothing new starts until you top up or your next month begins."
+        "text": "The way your usage is measured. Every time the AI works for you (editing a stream, writing a title, talking with you live) it uses a few credits. The app shows your balance and you can choose features and quality to spend less."
       }
     },
     {
@@ -90,6 +50,14 @@
     },
     {
       "@type": "Question",
+      "name": "What if I run out of credits in the middle of an edit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Whatever started finishes: it's never cut halfway. Nothing new starts until you top up or your next month begins."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I cancel anytime?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -98,34 +66,10 @@
     },
     {
       "@type": "Question",
-      "name": "Do I need to enter keys or create apps?",
+      "name": "What does the free version include?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. You sign in with Twitch or Kick and connect each platform with one button. No keys, nothing technical to set up."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are my recordings uploaded anywhere?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Your recordings stay on your computer. Only what the AI needs to work is sent, and it isn't stored. Nothing is published without your \"yes\". More details in the privacy policy."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which platforms does it work with?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Twitch, YouTube and Kick for your streams; YouTube, TikTok and Instagram (under construction) for your videos and clips, and X to announce you're live."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I delete my account?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes, from the app itself: your subscription is canceled and your account, balance and history are deleted."
+        "text": "Everything that doesn't need artificial intelligence: Twitch and Kick chat, VodwiseBot, alerts, actions, OBS overlays, Windows chat voices and a few basic clips of every stream made on your PC. It carries a discreet Vodwise signature that goes away with any plan."
       }
     }
   ]
@@ -145,7 +89,7 @@
         "@id": "https://vodwise.com/#website"
       },
       "about": {
-        "@id": "https://vodwise.com/en/#software"
+        "@id": "https://vodwise.com/#software"
       },
       "publisher": {
         "@id": "https://vodwise.com/#organization"
@@ -175,102 +119,134 @@
 <body>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
-    <nav class="menu con-pie" aria-label="Principal">
+    <a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a>
+    <nav class="menu" aria-label="Main">
       <a class="hide-sm" href="../features/">Features</a>
-      <a class="hide-sm" href="../compare/">Compare</a>
-      <a class="hide-sm" href="./">Pricing</a>
-      <a class="lang-switch" href="../../" hreflang="es" lang="es">ES</a>
-      <a class="lang-switch" href="../../pt/" hreflang="pt-BR" lang="pt-BR">PT</a>
+      <a class="hide-sm" href="./" aria-current="page">Pricing</a>
+      <a class="hide-sm" href="../help/">Help</a>
+      <a class="lang-switch" href="../../precios.html" hreflang="es" lang="es">ES</a>
+      <a class="lang-switch" href="../../pt/precos/" hreflang="pt-BR" lang="pt-BR">PT</a>
       <a class="btn btn-ghost btn-sm entrar" href="/cuenta">Sign in</a>
-      <a class="btn btn-primary btn-sm" href="../beta/">Request an invite</a>
+      <a class="btn btn-primary btn-sm descargar" href="../descargar.html">Download</a>
+      <details class="menu-m">
+        <summary aria-label="Open the menu"><span class="menu-m-icono" aria-hidden="true"></span></summary>
+        <div class="menu-m-panel">
+          <a href="../features/">Features</a>
+          <a href="./" aria-current="page">Pricing</a>
+          <a href="../help/">Help</a>
+          <a href="/cuenta">Sign in</a>
+          <a class="menu-m-idioma" href="../../precios.html" hreflang="es" lang="es">Español</a>
+          <a class="menu-m-idioma" href="../../pt/precos/" hreflang="pt-BR" lang="pt-BR">Português</a>
+        </div>
+      </details>
     </nav>
   </div>
 </header>
-<main><section class="block">
+<main>
+<section class="block pr-pad">
   <div class="wrap">
     <p class="eyebrow">Pricing</p>
-    <h1 class="page-h1">From €0.47 per hour of streaming</h1>
-    <p class="req" style="margin:0 0 10px"><strong>Light plan (€14.99/month, VAT included): 4 eight-hour streams a month (32 h) with basic editing. Monthly fee ÷ hours included in the plan. With other stream lengths, the default setup or Maximum mode, the price per hour is higher. Credits you don't use in a month don't carry over on Light or Standard.</strong></p>
-    <p class="intro" style="margin-bottom:18px">The longer the stream, the less you pay per hour. Tell us how many hours you stream and how many streams a month, and we'll tell you which plan fits.</p>
-    <h3>What you pay per hour by stream length (Light plan)</h3>
-    <div class="cmp-wrap" style="max-width:640px"><table class="cmp"><thead><tr><th>Stream length</th><th>Price per hour</th><th>What fits in Light</th></tr></thead><tbody><tr><td>With 2-hour streams</td><td>€1.08</td><td>7 streams (14 h)</td></tr><tr><td>With 3-hour streams</td><td>€0.84</td><td>6 streams (18 h)</td></tr><tr><td>With 4-hour streams</td><td>€0.63</td><td>6 streams (24 h)</td></tr><tr><td>With 6-hour streams</td><td>€0.50</td><td>5 streams (30 h)</td></tr><tr><td>With 8-hour streams</td><td>€0.47</td><td>4 streams (32 h)</td></tr></tbody></table></div>
-    <p class="fine" style="margin:12px 0 28px;max-width:720px">Basic editing is charged once per stream, so short streams cost more per hour and long ones less. With the default setup (Shorts, thumbnails and the AI that watches your stream) the cost per hour is higher: ≈ €1.25 per hour with 4-hour streams and ≈ €1.67 with 3-hour streams; in Maximum mode, more. Voices are extra. Prices include VAT. Rough estimate; the app shows your real balance.</p>
-    <p class="intro"><strong>Vodwise will have a free-forever version and plans from €14.99 a month</strong>, depending on how many hours you stream. It is now in closed beta and free for invited testers; these are the prices, with a welcome offer for your first purchase.</p>
-    <div class="plan" style="margin:22px 0"><span class="tag">Forever</span><h3>Free</h3><div class="price">€0 <small>no card</small></div>
-      <ul><li>Twitch and Kick chat in one window, VodwiseBot, alerts and actions</li><li>OBS overlays and OBS setup</li><li>Chat voices with Windows' voices</li><li>Basic clips of every stream, made on your PC</li><li class="no-incl">Not included: AI, full editing or posting to YouTube, TikTok, Instagram and X. That comes with the paid plans.</li></ul></div>
-    <p class="wip-bar"><span>You pay by card through Link (Stripe), which issues the invoice. You buy from the app: Settings → Account.</span></p>
-    <div class="plans">
-      <div class="plan"><h3>Light</h3><div class="price">€14.99 <small>/ month</small></div>
-        <ul><li>1,800 credits a month</li><li>≈ 32 h of streaming a month (4 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 12 h</small></li><li>Copilot, editor, Shorts, thumbnails and AI designs (full list below)</li></ul></div>
-      <div class="plan best"><span class="tag">Recommended</span><h3>Standard</h3><div class="price">€29.99 <small>/ month</small></div>
-        <ul><li>3,600 credits a month</li><li>≈ 64 h of streaming a month (8 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 24 h</small></li><li>Same as Light, with twice the credits</li></ul></div>
-      <div class="plan"><h3>Premium</h3><div class="price">€59.99 <small>/ month</small></div>
-        <ul><li>7,200 credits a month</li><li>≈ 136 h of streaming a month (17 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 52 h</small></li><li>Unused credits roll over up to 2 months</li></ul></div>
-      <div class="plan"><span class="tag">Exclusive</span><h3>Studio</h3><div class="price">€159.99 <small>/ month</small></div>
-        <ul><li>20,000 credits a month</li><li>≈ 384 h of streaming a month (48 eight-hour streams)<br><small>With the default setup and 4-hour streams: ≈ 152 h</small></li><li>Unused credits roll over up to 3 months</li><li>Priority support</li></ul></div>
+    <h1 class="page-h1">Plans based on credits</h1>
+    <p class="intro">Every plan gives you credits each month. The AI spends them only when it works for you: editing a stream, writing a title, talking with you.</p>
+    <div class="pr-plans">
+      <article class="pr-plan">
+        <h2>Light</h2>
+        <p class="pr-cred"><strong>1,800</strong><span>credits a month</span></p>
+        <p class="pr-price">€14.99 <small>/ month</small></p>
+        <p class="pr-note">To get started.</p>
+      </article>
+      <article class="pr-plan best"><span class="pr-badge">Recommended</span>
+        <h2>Standard</h2>
+        <p class="pr-cred"><strong>3,600</strong><span>credits a month</span></p>
+        <p class="pr-price">€29.99 <small>/ month</small></p>
+        <p class="pr-note">Twice Light.</p>
+      </article>
+      <article class="pr-plan">
+        <h2>Premium</h2>
+        <p class="pr-cred"><strong>7,200</strong><span>credits a month</span></p>
+        <p class="pr-price">€59.99 <small>/ month</small></p>
+        <p class="pr-note">Unused credits are kept for 2 months.</p>
+      </article>
+      <article class="pr-plan">
+        <h2>Studio</h2>
+        <p class="pr-cred"><strong>20,000</strong><span>credits a month</span></p>
+        <p class="pr-price">€159.99 <small>/ month</small></p>
+        <p class="pr-note">Kept for 3 months. Priority support.</p>
+      </article>
     </div>
-    <p class="fine">Prices include VAT. Cancel anytime: you keep your plan until the end of the paid month. Hours are approximate, with copilot and basic editing on 8-hour streams, and depend on what you turn on; the app always shows your real balance.</p>
+    <p class="pr-fine">Prices include VAT. Cancel anytime. On Light and Standard, unused credits don't carry over to the next month.</p>
+    <p class="pr-free"><span class="tag">Free</span> And a free version forever, no card: Twitch and Kick chat, alerts, actions and OBS screens.</p>
+  </div>
+</section>
+
+<section class="block alt pr-pad">
+  <div class="wrap pr-cols">
     <div class="incl">
-      <h3>Every plan includes</h3>
+      <h2>Every plan includes</h2>
       <ul class="checks">
-        <li><span><strong>Voice copilot</strong> live (F8) and to talk to it (F9).</span></li>
-        <li><span><strong>Full editing</strong> of your streams and of any video on your PC.</span></li>
-        <li><span><strong>Timeline editor</strong>, zooms, texts and over 120 effects.</span></li>
-        <li><span><strong>Shorts</strong>, 4 to 6 per stream, with 6 subtitle styles.</span></li>
-        <li><span><strong>Titles, description and thumbnails</strong> for your videos.</span></li>
-        <li><span><strong>AI designs:</strong> alerts, overlays and scenes with your logo.</span></li>
-        <li><span><strong>OBS setup</strong> from your scenes, with a backup to go back.</span></li>
-        <li><span><strong>Publishing</strong> to YouTube (private first), TikTok drafts and Instagram Reels <span class="wip">Under construction</span>.</span></li>
-        <li><span><strong>No watermark</strong> on your videos.</span></li>
+          <li><span><strong>Voice copilot</strong> while you stream.</span></li>
+          <li><span><strong>Full editing</strong> of your streams.</span></li>
+          <li><span><strong>Shorts, titles and thumbnails</strong> for your videos.</span></li>
+          <li><span><strong>AI designs:</strong> alerts, overlays and scenes.</span></li>
+          <li><span><strong>OBS setup</strong> with a backup to go back.</span></li>
+          <li><span><strong>Publishing to YouTube</strong> (private first).</span></li>
+          <li><span><strong>TikTok drafts and Instagram Reels</strong> <span class="wip">Under construction</span></span></li>
+          <li><span><strong>No watermark</strong> on your videos.</span></li>
       </ul>
     </div>
-    <div class="calc" id="calculadora">
-      <h3>Work out your price per hour</h3>
-      <div class="calc-row"><label>Hours per stream<input type="number" id="calc-h" min="1" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Streams per month<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
-      <p class="calc-total" style="margin:14px 0 0">Quality</p>
-      <label class="wl-consent"><input type="radio" name="calc-q" value="b" checked><span><strong>Basic</strong><br>Copilot, long-form video, subtitles, titles, description and thumbnail.</span></label>
-      <label class="wl-consent"><input type="radio" name="calc-q" value="s"><span><strong>Default</strong><br>What the app comes with: everything in Basic, plus the stream's «best of», 6 Shorts, an English version and the AI that watches your stream.</span></label>
-      <label class="wl-consent"><input type="radio" name="calc-q" value="m"><span><strong>Maximum</strong><br>Everything in Default, plus 8 reviewed Shorts, premium editing and a high-quality thumbnail with two variants.</span></label>
-      <p class="calc-out" id="calc-out" aria-live="polite"></p>
-      <p class="fine">The headline and the table use Basic quality; voices are extra.</p>
+    <div class="pr-top-up">
+      <h2>Top-ups</h2>
+      <p>For when you run out of credits. They never expire and are used after your plan's credits.</p>
+      <ul class="pr-chips"><li>€10 · 1,000 credits</li><li>€25 · 2,750 credits <em>+10%</em></li><li>€50 · 5,750 credits <em>+15%</em></li></ul>
+      <div class="pr-welcome">
+        <h3>Welcome offer</h3>
+        <p>After 60 minutes live with the app open you have 7 days for your first purchase at a special price: <strong>the first month of Light for €9.99</strong> or <strong>850 credits for €5</strong>.</p>
+      </div>
+      <p class="fine">You buy from the app (Settings → Account). Link (Stripe) charges you and emails the receipt and invoice.</p>
     </div>
-    <script src="/assets/precios-calc-en.js"></script>
-
-    <h3 style="margin-top:36px">Out of credits? Top up</h3>
-    <p class="req">Top-up credits <strong>never expire</strong> and are used after your plan's credits.</p>
-    <div class="topups"><span>€10 · 1,000 credits</span><span>€25 · 2,750 credits (+10%)</span><span>€50 · 5,750 credits (+15%)</span><span>Or any amount from €10 (same bonuses: +10% from €25, +15% from €50)</span></div>
-    <h3 style="margin-top:36px">Welcome offer</h3>
-    <p class="req">Once Vodwise checks that you stream from your channel (60 minutes live with the app open), you have <strong>7 days</strong> for your first purchase at a welcome price: <strong>the first month of Light for €9.99</strong> or <strong>850 credits for €5</strong>.</p>
-    <p class="fine">Purchases are made from the app (Settings → Account) and charged by Link (Stripe), which emails you the receipt and the invoice.</p>
   </div>
 </section>
 
-<section class="block alt" id="download">
-  <div class="wrap">
-    <p class="eyebrow">Free beta</p>
-    <h2>Request your beta spot</h2>
-    <p class="intro">One installer. Sign in with your Twitch or Kick account, connect each platform with one button and you're done: nothing technical to set up.</p>
-    <div class="cta-row"><a class="btn btn-primary" href="../beta/#early-access">Request a beta invite</a></div>
-    <p class="req" style="margin-top:18px"><strong>You need:</strong> 64-bit Windows 10 or 11 · OBS Studio · about 6 GB free and space for your recordings.</p>
+<section class="block pr-pad" id="calculadora">
+  <div class="wrap pr-calc">
+    <p class="eyebrow">Help</p>
+    <h2>How many credits will I use?</h2>
+    <p class="intro">Tell us how much you usually stream and we'll tell you which plan fits. It's an estimate; the app always shows your real balance.</p>
+    <div class="calc">
+      <div class="calc-row"><label>Hours per stream<input type="number" id="calc-h" min="1" max="24" step="0.5" value="4" inputmode="decimal"></label><label>Streams per month<input type="number" id="calc-n" min="1" max="62" step="1" value="8" inputmode="numeric"></label></div>
+      <fieldset class="pr-q"><legend>Quality</legend><div>
+        <label><input type="radio" name="calc-q" value="b"><span>Basic</span></label>
+        <label><input type="radio" name="calc-q" value="s" checked><span>Default</span></label>
+        <label><input type="radio" name="calc-q" value="m"><span>Maximum</span></label>
+      </div></fieldset>
+      <details><summary>What does each quality include?</summary><p><strong>Basic:</strong> copilot, long-form video, subtitles, titles and thumbnail. <strong>Default</strong> (what the app comes with): also the stream's best moments, 6 Shorts and an English version. <strong>Maximum:</strong> also 8 reviewed Shorts, premium editing and a high-quality thumbnail.</p></details>
+      <p class="calc-out" id="calc-out" aria-live="polite"></p>
+    </div>
   </div>
 </section>
 
-<section class="block" id="questions">
+<section class="block alt pr-faq pr-pad" id="preguntas">
   <div class="wrap">
     <p class="eyebrow">Questions</p>
     <h2>Common questions</h2>
     <div class="faq">
-    <details><summary>What does the free version include?</summary><p>Everything that doesn't need artificial intelligence: Twitch and Kick chat, VodwiseBot, alerts, actions, OBS overlays, Windows chat voices and a few basic clips of every stream made on your PC. It carries a discreet Vodwise signature that goes away with any plan.</p></details>
-    <details><summary>What is a credit?</summary><p>The way your usage is measured. Every time the AI works for you (editing a stream, writing a title, talking with you live) it uses a few credits. The app shows your balance and how many streams you have left, and you can choose features and quality to spend less.</p></details>
-    <details><summary>What if I run out of credits in the middle of an edit?</summary><p>Whatever started finishes: it's never cut halfway. Nothing new starts until you top up or your next month begins.</p></details>
-    <details><summary>Do credits expire?</summary><p>Top-up credits, never. Plan credits renew every month; on Premium and Studio, unused credits roll over up to 2 and 3 months.</p></details>
-    <details><summary>Can I cancel anytime?</summary><p>Yes, whenever you want. You keep your plan until the end of the paid month and you keep your top-up credits.</p></details>
-    <details><summary>Do I need to enter keys or create apps?</summary><p>No. You sign in with Twitch or Kick and connect each platform with one button. No keys, nothing technical to set up.</p></details>
-    <details><summary>Are my recordings uploaded anywhere?</summary><p>Your recordings stay on your computer. Only what the AI needs to work is sent, and it isn't stored. Nothing is published without your "yes". More details in the <a href="../../privacidad.html">privacy policy</a>.</p></details>
-    <details><summary>Which platforms does it work with?</summary><p>Twitch, YouTube and Kick for your streams; YouTube, TikTok and Instagram <span class="wip">Under construction</span> for your videos and clips, and X to announce you're live.</p></details>
-    <details><summary>Can I delete my account?</summary><p>Yes, from the app itself: your subscription is canceled and your account, balance and history are deleted.</p></details>
+      <details><summary>What is a credit?</summary><p>The way your usage is measured. Every time the AI works for you (editing a stream, writing a title, talking with you live) it uses a few credits. The app shows your balance and you can choose features and quality to spend less.</p></details>
+      <details><summary>Do credits expire?</summary><p>Top-up credits, never. Plan credits renew every month; on Premium and Studio, unused credits roll over up to 2 and 3 months.</p></details>
+      <details><summary>What if I run out of credits in the middle of an edit?</summary><p>Whatever started finishes: it's never cut halfway. Nothing new starts until you top up or your next month begins.</p></details>
+      <details><summary>Can I cancel anytime?</summary><p>Yes, whenever you want. You keep your plan until the end of the paid month and you keep your top-up credits.</p></details>
+      <details><summary>What does the free version include?</summary><p>Everything that doesn't need artificial intelligence: Twitch and Kick chat, VodwiseBot, alerts, actions, OBS overlays, Windows chat voices and a few basic clips of every stream made on your PC. It carries a discreet Vodwise signature that goes away with any plan.</p></details>
     </div>
+  </div>
+</section>
+
+<section class="block pr-cta pr-pad" id="descargar">
+  <div class="wrap">
+    <h2>Vodwise for Windows</h2>
+    <div class="dl-state">
+        <div class="dl-state-row"><button type="button" class="btn btn-off" disabled aria-disabled="true">Download for Windows</button><span class="wip">Under construction</span></div>
+        <p class="wip-note">Not available yet. Coming later.</p>
+      </div>
+    <p class="dl-side">Already have an account? <a href="/cuenta">Sign in</a> · <a href="../descargar.html">Requirements and setup</a></p>
   </div>
 </section>
 </main>
@@ -286,15 +262,14 @@
 <footer class="site">
   <div class="wrap">
     <div class="cols">
-      <div><a class="brand" href="../"><img src="../../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Live-stream copilot and automatic editor for streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p><div class="fcol"><span class="follow">Follow us</span><ul class="social" aria-label="Vodwise social media"><li><a href="https://x.com/VodwiseX" rel="noopener" target="_blank" aria-label="Vodwise on X"><svg aria-hidden="true" focusable="false"><use href="#i-x"/></svg></a></li><li><a href="https://www.instagram.com/vodwise/" rel="noopener" target="_blank" aria-label="Vodwise on Instagram"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg></a></li><li><a href="https://www.tiktok.com/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on TikTok"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg></a></li><li><a href="https://www.youtube.com/@VodwiseBot" rel="noopener" target="_blank" aria-label="Vodwise on YouTube"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg></a></li><li><a href="https://www.facebook.com/profile.php?id=61595230036153" rel="noopener" target="_blank" aria-label="Vodwise on Facebook"><svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg></a></li><li><a href="https://www.threads.net/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on Threads"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-th"/></svg></a></li></ul></div></div>
-      <div><strong style="color:var(--text)">Features</strong><br><a href="../features/">Features</a><br><a href="../compare/">Compare</a><br><a href="./">Pricing</a><br><a href="../beta/">Free beta</a></div>
-      <div><strong style="color:var(--text)">Guides (Spanish)</strong><br><a href="../../clips-automaticos-kick/" hreflang="es">Clips automáticos de Kick</a><br><a href="../../subir-directo-twitch-a-youtube/" hreflang="es">Subir un directo de Twitch a YouTube</a></div>
+      <div><a class="brand" href="../../"><img src="../../assets/logo.svg" alt="">Vodwise</a><p style="margin:10px 0 0;max-width:340px">Live-stream copilot and automatic editor for streamers.</p><p style="margin:10px 0 0"><a href="mailto:soporte@vodwise.com">soporte@vodwise.com</a></p><div class="fcol"><span class="follow">Follow us</span><ul class="social" aria-label="Vodwise social media"><li><a href="https://x.com/VodwiseX" rel="noopener" target="_blank" aria-label="Vodwise on X"><svg aria-hidden="true" focusable="false"><use href="#i-x"/></svg></a></li><li><a href="https://www.instagram.com/vodwise/" rel="noopener" target="_blank" aria-label="Vodwise on Instagram"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-ig"/></svg></a></li><li><a href="https://www.tiktok.com/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on TikTok"><svg aria-hidden="true" focusable="false"><use href="#i-tt"/></svg></a></li><li><a href="https://www.youtube.com/@VodwiseBot" rel="noopener" target="_blank" aria-label="Vodwise on YouTube"><svg aria-hidden="true" focusable="false"><use href="#i-yt"/></svg></a></li><li><a href="https://www.facebook.com/profile.php?id=61595230036153" rel="noopener" target="_blank" aria-label="Vodwise on Facebook"><svg aria-hidden="true" focusable="false"><use href="#i-fb"/></svg></a></li><li><a href="https://www.threads.net/@vodwise" rel="noopener" target="_blank" aria-label="Vodwise on Threads"><svg class="st" aria-hidden="true" focusable="false"><use href="#i-th"/></svg></a></li></ul></div></div>
+      <div><strong style="color:var(--text)">Product</strong><br><a href="../features/">Features</a><br><a href="./">Pricing</a><br><a href="../compare/">Alternatives</a><br><a href="../../guias/" hreflang="es">Guides (Spanish)</a><br><a href="../help/">Help</a><br><a href="../descargar.html">Download</a></div>
       <div><strong style="color:var(--text)">Legal</strong><br><a href="../../privacidad.html">Privacy policy</a><br><a href="../../condiciones.html">Terms of service</a><br><a href="../aviso-legal.html">Legal notice</a><br><a href="../../devoluciones.html">Refunds</a></div>
     </div>
-    <nav class="foot-lang" aria-label="Language"><a href="../../" hreflang="es" lang="es">Español</a> · <a href="../../pt/" hreflang="pt-BR" lang="pt-BR">Português</a></nav>
-    <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them.<br>© 2026 Vodwise.</p>
+    <div class="inception"><img src="../../assets/nvidia-inception-program-badge-rgb-for-screen.svg" width="104" height="45" alt="NVIDIA Inception Program"><p>Vodwise Labs is an NVIDIA Inception Program member.</p></div>
+    <p class="legal">Vodwise uses <a href="https://developers.google.com/youtube/terms/api-services-terms-of-service">YouTube API Services</a>: <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Twitch, Kick, YouTube, TikTok, Instagram, X, Facebook, Threads and Discord are trademarks of their respective owners; Vodwise is not affiliated with them. © 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.<br>© 2026 Vodwise Labs, S.L.U.</p>
   </div>
 </footer>
-<script src="../../assets/waitlist.js" defer></script>
+<script src="../../assets/precios-calc.js" defer></script>
 </body>
 </html>

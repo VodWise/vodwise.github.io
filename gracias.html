@@ -2,20 +2,16 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="same-origin">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Gracias · Vodwise</title>
-<!-- Página tras pagar (11-10). La abre Stripe al terminar (success_url que pone el servidor, cloud/src/stripe-cobros.js; 26-10); hasta ahora apuntaba a una
-     página que no existía. -->
-<style>
-  :root{--bg:#0d1117;--card:#161b26;--text:#e8eaf0;--muted:#9aa3b5;--ok:#46d39a}
-  body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",sans-serif}
-  main{max-width:34rem;margin:0 auto;padding:4rem 16px;text-align:center}
-  .card{background:var(--card);border-radius:14px;padding:2rem 1.5rem;margin-top:1.5rem}
-  .tick{font-size:2.6rem;color:var(--ok);line-height:1}
-  h2{margin:.6rem 0}
-  p{color:var(--muted);line-height:1.5}
-</style>
+<meta name="description" content="Pago completado. Tus créditos aparecerán en Vodwise en un minuto.">
+<meta name="theme-color" content="#0d1117">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<!-- Página que abre Stripe al terminar el pago. En español, inglés o portugués. -->
+<link rel="stylesheet" href="assets/pago.css">
 </head>
 <body>
 <main>

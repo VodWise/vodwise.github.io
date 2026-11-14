@@ -1,43 +1,55 @@
 # Vodwise
 
-> Vodwise is a Windows desktop app for Twitch, Kick and YouTube streamers that helps before, during and after the stream. During the stream it unifies the chat of the three platforms, moderates, runs a multistream bot, alerts and OBS scenes, and answers when the streamer talks to it. When the stream ends it goes through the recording on the streamer's own PC and prepares the full video with chapters, a highlights cut and vertical Shorts with subtitles, together with titles, descriptions and thumbnails. Nothing is published without the streamer's approval.
+> Vodwise is a Windows desktop app that works as a live-stream copilot and automatic editor for streamers on Twitch, Kick and YouTube. During the stream it unifies chat, helps with moderation, alerts and OBS scenes, and answers when the streamer talks to it. After the stream it works through the recording on the streamer's own PC and prepares the full video with chapters, a highlights cut and vertical clips with subtitles, plus titles, descriptions and thumbnails. Nothing is published without the streamer's approval.
+
+Current status (November 2026):
+
+- Under construction. The public Windows download is not available yet; the download page shows the real state.
+- Platforms in use today: Twitch, Kick and YouTube. TikTok and Instagram are under construction and not available.
+- Pricing works with credits: plans with credits included and top-ups that never expire. Current details are on the pricing page.
+- The site is available in Spanish, English and Portuguese.
 
 Key facts:
 
-- Made by Diego García González («Degolas»), a Spanish streamer on Twitch, Kick and YouTube who uses it on his own streams.
-- Status (October 2026): closed beta, free for invited testers. The app and the website are in English, Spanish and Portuguese.
-- Works on Windows 10 and 11 with OBS. Platforms: Twitch, Kick and YouTube for the stream; YouTube, TikTok, Instagram (under construction) and X for publishing.
-- The recording is edited on the streamer's PC; it is not uploaded to a cloud editor.
-- How it differs: clip tools such as Opus Clip turn a video you give them into short clips; stream tools such as Streamlabs or StreamElements focus on alerts, overlays and the bot. Vodwise does both in one app and also builds the long video for YouTube.
-- Pricing: planned free-forever version (without the AI features) and paid plans; current details on the pricing page.
-- Contact: soporte@vodwise.com · X: @VodwiseX
+- Runs on Windows 10 and 11 together with OBS.
+- The recording is edited on the streamer's own PC, not on a web editor. To analyse it, the recording is processed by AI providers as the privacy policy explains.
+- Clip tools turn a video you give them into short clips; stream tools focus on alerts, overlays and the bot. Vodwise covers both in one app and also builds the long video for YouTube.
+- Made by Vodwise Labs, S.L.U. Contact: soporte@vodwise.com. X: @VodwiseX
 
 ## Main pages
 
-- [Home (Spanish)](https://vodwise.com/): what Vodwise is, how it works before, during and after the stream, FAQ
+- [Home (Spanish)](https://vodwise.com/): what Vodwise is and how it works before, during and after the stream
 - [Home (English)](https://vodwise.com/en/)
 - [Home (Portuguese)](https://vodwise.com/pt/)
-- [Features (Spanish)](https://vodwise.com/funciones.html): every feature, grouped by stream, chat, OBS, editing and account
+- [Features (Spanish)](https://vodwise.com/funciones.html)
 - [Features (English)](https://vodwise.com/en/features/)
-- [Comparison (Spanish)](https://vodwise.com/comparativa.html): Vodwise vs StreamElements, Streamlabs, Botrix, Nightbot, Opus Clip and Eklipse, with sources
-- [Comparison (English)](https://vodwise.com/en/compare/)
+- [Features (Portuguese)](https://vodwise.com/pt/funcionalidades/)
 - [Pricing (Spanish)](https://vodwise.com/precios.html)
 - [Pricing (English)](https://vodwise.com/en/pricing/)
-- [Closed beta (English)](https://vodwise.com/en/beta/)
+- [Pricing (Portuguese)](https://vodwise.com/pt/precos/)
+- [Help (Spanish)](https://vodwise.com/ayuda.html)
+- [Help (English)](https://vodwise.com/en/help/)
+- [Help (Portuguese)](https://vodwise.com/pt/ajuda/)
+- [Download status (Spanish)](https://vodwise.com/descargar.html)
+- [Download status (English)](https://vodwise.com/en/descargar.html)
+- [Download status (Portuguese)](https://vodwise.com/pt/descargar.html)
+- [Alternatives (Spanish)](https://vodwise.com/alternativas/)
+- [Alternatives (English)](https://vodwise.com/en/compare/)
+- [Alternatives (Portuguese)](https://vodwise.com/pt/comparativo/)
 
-## Comparisons and guides (Spanish)
+## Guides (Spanish)
 
-- [Alternatives to Opus Clip for streamers](https://vodwise.com/alternativa-opus-clip/)
-- [Vodwise vs Eklipse](https://vodwise.com/vodwise-vs-eklipse/)
-- [Vodwise vs StreamLadder](https://vodwise.com/vodwise-vs-streamladder/)
-- [Automatic Kick clips](https://vodwise.com/clips-automaticos-kick/)
-- [Automatic Twitch clips](https://vodwise.com/clips-automaticos-twitch/)
-- [Twitch clips for TikTok](https://vodwise.com/clips-de-twitch-para-tiktok/)
-- [Uploading a Twitch stream to YouTube](https://vodwise.com/subir-directo-twitch-a-youtube/)
+- [Automatic clips for Twitch and Kick](https://vodwise.com/guias/clips-automaticos-twitch-kick/)
+- [Uploading a Twitch stream to YouTube](https://vodwise.com/guias/subir-directo-twitch-a-youtube/)
+- [Streaming to Twitch, Kick and YouTube at once](https://vodwise.com/guias/emitir-en-twitch-kick-y-youtube-a-la-vez/)
+- [From horizontal to vertical and Shorts](https://vodwise.com/guias/directo-horizontal-a-vertical/)
 - [All guides](https://vodwise.com/guias/)
 
 ## Optional
 
 - [Privacy policy (Spanish)](https://vodwise.com/privacidad.html)
-- [Terms (Spanish)](https://vodwise.com/condiciones.html)
+- [Terms of service (Spanish)](https://vodwise.com/condiciones.html)
+- [Refunds (Spanish)](https://vodwise.com/devoluciones.html)
 - [Legal notice (Spanish)](https://vodwise.com/aviso-legal.html)
+- [Legal notice (English)](https://vodwise.com/en/aviso-legal.html)
+- [Legal notice (Portuguese)](https://vodwise.com/pt/aviso-legal.html)

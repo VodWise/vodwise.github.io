@@ -1,0 +1,6 @@
+/* Página «Correo confirmado»: centrada, con el mensaje en tres idiomas. */
+.conf{text-align:center;padding-top:110px}
+.conf .conf-logo{width:64px;margin:0 auto 22px;display:block}
+.conf .lead{margin:10px auto 8px}
+.conf .meta{margin:0 0 4px}
+.conf .conf-more{margin-top:26px}
