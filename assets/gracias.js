@@ -17,3 +17,5 @@ if (T) {
   document.getElementById('title').textContent = titulo; document.getElementById('what').textContent = que; document.title = pestana;
   if (correo) mail.textContent = correo; else mail.hidden = true;
 }
+// Un pago cancelado no lleva la marca de hecho.
+if (caso === 'cancelado') document.querySelector('.tick').hidden = true;
